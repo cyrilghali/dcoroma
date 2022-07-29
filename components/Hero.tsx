@@ -128,7 +128,7 @@ export default function Example() {
                   <span className="sr-only">Watch our video to learn more</span>
                   <img
                     className="w-full"
-                    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    src="https://images.unsplash.com/photo-1624215998649-005b86bd9970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29wdGljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
                     alt=""
                   />
                   <span className="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
