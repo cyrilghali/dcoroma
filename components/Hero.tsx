@@ -22,10 +22,11 @@ import {
   MenuIcon,
   HeartIcon,
   SupportIcon,
-  ViewGridIcon,
   HomeIcon,
   XIcon,
   ExternalLinkIcon,
+  NewspaperIcon,
+  BookOpenIcon,
 } from '@heroicons/react/outline'
 import Image from 'next/image'
 
@@ -40,18 +41,17 @@ const navigation = [
     href: '/chiese',
     icon: LocationMarkerIcon,
   },
-  { name: 'Fare una donazione', description: "Your customers' data will be safe and secure.", href: '/donazione', icon: HeartIcon},
-  { name: 'Katameros', description: "Your customers' data will be safe and secure.", href: 'https://katameros.app/?lang=it', icon: ExternalLinkIcon },
+  { name: 'Fare una donazione', href: '/donation', icon: HeartIcon},
+  { name: 'Katameros', href: 'https://katameros.app/?lang=it', icon: ExternalLinkIcon },
+  { name: 'Blog', href: '/blog', icon: NewspaperIcon },
   {
     name: 'Libreria',
-    description: "Connect with third-party tools that you're already using.",
-    href: '/libreria',
-    icon: ViewGridIcon,
+    href: '/library',
+    icon: BookOpenIcon,
   },
   {
     name: 'Contatti',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '/contatti',
+    href: '/contact',
     icon: SupportIcon,
   },
 ]
@@ -95,7 +95,7 @@ export default function Hero() {
                   <span className="sr-only">Workflow</span>
                   <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
                 </a>
-                <div className="-mr-2 flex items-center md:hidden">
+                <div className="mr-2 flex items-center md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-800">
                     <span className="sr-only">Open main menu</span>
                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
