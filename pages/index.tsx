@@ -4,7 +4,6 @@ import Hero from '../components/Hero'
 import Team from '../components/Team'
 import FAQ from '../components/FAQ'
 import Stats from '../components/Stats'
-import Calendar from '../components/Calendar'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
