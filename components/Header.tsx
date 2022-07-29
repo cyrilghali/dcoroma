@@ -16,28 +16,26 @@ import Image from 'next/image'
 const nav = [
   {
     name: 'Home',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '',
     icon: HomeIcon,
   },
   {
     name: 'Chiese',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '/chiese',
     icon: LocationMarkerIcon,
   },
-  { name: 'Fare una donazione', description: "Your customers' data will be safe and secure.", href: '#', icon: HeartIcon},
-  { name: 'Katameros', description: "Your customers' data will be safe and secure.", href: '#', icon: ExternalLinkIcon },
+  { name: 'Fare una donazione', description: "Your customers' data will be safe and secure.", href: '/donazione', icon: HeartIcon},
+  { name: 'Katameros', description: "Your customers' data will be safe and secure.", href: 'https://katameros.app/?lang=it', icon: ExternalLinkIcon },
   {
     name: 'Libreria',
     description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    href: '/libreria',
     icon: ViewGridIcon,
   },
   {
     name: 'Contatti',
     description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
+    href: '/contatti',
     icon: SupportIcon,
   },
 ]
@@ -48,7 +46,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#" className="h-8 w-auto sm:h-10">
+            <a href="" className="h-10 w-auto">
               <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
             </a>
           </div>
