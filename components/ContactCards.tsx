@@ -45,6 +45,13 @@ const people = [
     imageUrl: '/samaan_elanbapola.jpg'
   },
   {
+    name: 'Padre Dawoud el Naklouni',
+    title: 'Chiesa di Santa Maria Assunta, Via caselle 104, San Lazzaro di Savena(BO) 40068',
+    telephone: '+393907881283',
+    email: 'abonadavid140@gmail.com',
+    imageUrl: '/padre_daoud_naqlony.jpg'
+  },
+  {
     name: 'Padre Armia el Antony',
     title: "Chiesa dell'Arcangelo Raffaele, Piazza San Domenico 3, 42100 Reggio Emilia", 
     telephone: '+393282080997',
@@ -57,13 +64,6 @@ const people = [
     telephone: '+393890568095',
     email: 'fr.youhannas@yahoo.it',
     imageUrl: '/youhanna_elantonyavamoussa.jpg'
-  },
-  {
-    name: 'Padre Dawoud el Naklouni',
-    title: 'Chiesa di Santa Maria Assunta, Via caselle 104, San Lazzaro di Savena(BO) 40068',
-    telephone: '+393907881283',
-    email: 'abonadavid140@gmail.com',
-    imageUrl: '/padre_daoud_naqlony.jpg'
   },
   {
     name: 'Padre Youlios el Anba Pola',

@@ -38,7 +38,7 @@ const navigation = [
   },
   {
     name: 'Chiese',
-    href: '/chiese',
+    href: '/churches',
     icon: LocationMarkerIcon,
   },
   { name: 'Fare una donazione', href: '/donation', icon: HeartIcon},
