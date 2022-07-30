@@ -1,17 +1,17 @@
+import Image from "next/image"
+
 /* This example requires Tailwind CSS v2.0+ */
 const people = [
   {
     name: 'S.S Papa Teodoro II',
     role: 'Papa della Chiesa Copta Ortodossa',
-    imageUrl: 
-    'https://egyptwatch.net/wp-content/uploads/2020/08/116787545_3241641062541115_288411126836079255_n.jpg',
+    imageUrl: '/pope-tawadros.jpg', 
     twitterUrl: 'https://twitter.com/popetawadros',
   },
   {
     name: 'S.E Anba Barnaba El Soryany',
     role: 'Vescovo della Chiesa Copta Ortodossa – Roma.', 
-    imageUrl:
-    'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    imageUrl:'/anba-bernaba.jpg'
   },
   // More people...
 ]
@@ -35,7 +35,7 @@ export default function Team() {
             {people.map((person) => (
               <li key={person.name}>
                 <div className="space-y-6">
-                  <img className="mx-auto h-40 w-40 object-contain rounded-full xl:w-56 xl:h-56" src={person.imageUrl} alt="" />
+                  <Image className="mx-auto h-40 w-40 object-contain rounded-full xl:w-56 xl:h-56" width={200} height={200} src={person.imageUrl} alt="" />
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h3>{person.name}</h3>
