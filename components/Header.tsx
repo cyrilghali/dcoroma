@@ -18,7 +18,7 @@ import Image from 'next/image'
 const navigation = [
   {
     name: 'Home',
-    href: '',
+    href: '/',
     icon: HomeIcon,
   },
   {

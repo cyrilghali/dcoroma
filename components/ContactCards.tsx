@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
+import Image from 'next/image'
 
 const people = [
   {
@@ -8,87 +9,93 @@ const people = [
     email: 'mons.barnaba@hotmail.com',
     telephone: '+393381341131',
     imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+      '/anba-bernaba.jpg',
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Youhanna el Soryany',
+    title: 'Chiesa di San Mary Mina & Papa Kyrellos, Roma \n Chiesa di Mary Marcos, Roma',
+    telephone: '+393285933308',
+    imageUrl: '/father_youhannaelsoryany.jpg',
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Vicario episcopale Rev. Padre Thaoufilos el Soryany',
+    title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
+    telephone: '+393397934612',
+    imageUrl: '/padre_thaoufilos.jpg',
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Mikhail El Antony',
+    title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
+    email: '',
+    telephone: '+393516620223',
+    imageUrl: '',
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Pola el Akhmimi',
+    title: 'Chiesa di S. Giorgio Piazza Carlo Alberto, Catania',
+    telephone: '+393278994129',
+    email: 'ppola_p@yahoo.com',
+    imageUrl: '/padre_bola_akhmimy.jpg',
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Samaan el Anba Pola',
+    title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
+    telephone: '+393899146048',
+    email: 'samaan_fr@yahoo.com',
+    imageUrl: '/samaan_elanbapola.jpg'
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Armia el Antony',
+    title: "Chiesa dell'Arcangelo Raffaele, Piazza San Domenico 3, 42100 Reggio Emilia", 
+    telephone: '+393282080997',
+    email: 'abonaarmia@gmail.com',
+    imageUrl: '/abuna_armia_elantony.jpg'
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Youhanna el Antony Ava Mousa',
+    title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma. \n Chiesa San Macario Ostia, Roma. \n Chiesa dell Arcangelo Mikhail Frescatti, Roma',
+    telephone: '+393890568095',
+    email: 'fr.youhannas@yahoo.it',
+    imageUrl: '/youhanna_elantonyavamoussa.jpg'
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Dawoud el Naklouni',
+    title: 'Chiesa di Santa Maria Assunta, Via caselle 104, San Lazzaro di Savena(BO) 40068',
+    telephone: '+393907881283',
+    email: 'abonadavid140@gmail.com',
+    imageUrl: '/padre_daoud_naqlony.jpg'
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Youlios el Anba Pola',
+    title: 'Chiesa di San Antonio, Geneva',
+    telephone: '+393279554281',
+    imageUrl: '/padre_youlios_anba_bola.jpg'
   },
   {
-    name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
-    email: 'mons.barnaba@hotmail.com',
-    telephone: '+393381341131',
-    imageUrl:
-      'https://eglisecopte.ch/wp-content/uploads/2017/11/anba-bernaba.jpg',
+    name: 'Padre Antonio Gabriel',
+    title: 'Chiesa di San Mina Piazza della Trasfigurazione, 2 00151 Roma, Chiesa di Mary Marcos', 
+    telephone: '+393397186153',
+    email: 'padreantonio40@hotmail.com',
+    imageUrl: '/padre_antonio2.jpg'
+  },
+  {
+    name: 'Padre Angelos Gaber Aiad',
+    title: 'Chiesa di San Mina Via S. Bartolo in Tuto, 7 50018 Firenze',
+    email: 'padreangelos@hotmail.it',
+    telephone: '+393281537360',
+    imageUrl: '/abunaangelos.jpg'
+  },
+  {
+    name: 'Padre Hanania Abdelmassih',
+    title: 'Monastero di San Maria, Via Laurentina, Roma',
+    telephone: '+393284540988',
+    imageUrl: '',
+  },
+  {
+    name: 'Padre Maro Hagos',
+    title: 'Monastero di San Maria, Via Laurentina, Roma',
+    telephone: '+393894778675',
+    imageUrl: '/abouna_maro.jpeg'
   },
   // More people...
 ]
@@ -103,11 +110,11 @@ export default function ContactCards() {
     <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {people.map((person) => (
         <li
-          key={person.email}
+          key={person.name}
           className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
         >
           <div className="flex-1 flex flex-col p-8">
-            <img className="w-32 h-32 flex-shrink-0 mx-auto object-contain rounded-full" src={person.imageUrl} alt="" />
+             <Image className="w-32 h-32 flex-shrink-0 mx-auto object-contain rounded-full" width={200} height={200} src={person.imageUrl} alt="" />
             <h3 className="mt-6 text-gray-900 text-sm font-medium">{person.name}</h3>
             <dl className="mt-1 flex-grow flex flex-col justify-between">
               <dt className="sr-only">Title</dt>
@@ -117,6 +124,7 @@ export default function ContactCards() {
           </div>
           <div>
             <div className="-mt-px flex divide-x divide-gray-200">
+              { person.email ? 
               <div className="w-0 flex-1 flex">
                 <a
                   href={`mailto:${person.email}`}
@@ -125,14 +133,15 @@ export default function ContactCards() {
                   <MailIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
                   <span className="ml-3">Email</span>
                 </a>
-              </div>
+              </div> : <></>
+              }
               <div className="-ml-px w-0 flex-1 flex">
                 <a
                   href={`tel:${person.telephone}`}
                   className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
                 >
                   <PhoneIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">Call</span>
+                  <span className="ml-3">Chiamata</span>
                 </a>
               </div>
             </div>
