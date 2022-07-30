@@ -31,11 +31,11 @@ export default function LibraryCards() {
       {categories.map((category) => (
         <li
           key={category.name}
-          className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
+          className="card-zoom col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200 hover:cursor-pointer"
         >
-          <div className="h-60 bg-gray-800 rounded-lg text-gray-100 text-4xl  overflow-hidden grid relative img-card titre-doc">
-            <Image className="bg-cover bg-center relative justify-center items-center img row-span-full col-span-full w-full min-h-full" width={200} height={200} src={category.imageUrl} alt="" />
-            <div className="row-span-full col-span-full flex justify-center text-center items-center z-30">
+          <div className=" h-60 bg-gray-800 rounded-lg text-gray-100 text-4xl overflow-hidden grid relative">
+            <Image className="card-zoom-image bg-cover bg-center relative justify-center items-center img row-span-full col-span-full w-full min-h-full" width={200} height={200} src={category.imageUrl} alt="" />
+            <div className="row-span-full col-span-full flex justify-center text-center items-center ">
               <span>{category.name}</span>
             </div>
           </div>
