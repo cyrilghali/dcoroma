@@ -3,19 +3,19 @@ import Image from 'next/image'
 const categories = [
   {
     name: 'Liturgia',
-    imageUrl: '/anba-bernaba.jpg',
+    imageUrl: '/icon1.jpg',
   },
   {
     name: 'Tasbeha',
-    imageUrl: '/anba-bernaba.jpg',
+    imageUrl: '/icon2.jpg',
   },
   {
     name: 'Libri spirituali',
-    imageUrl: '/anba-bernaba.jpg',
+    imageUrl: '/icon4.jpg',
   },
   {
     name: 'Settimana Santa',
-    imageUrl: '/anba-bernaba.jpg',
+    imageUrl: '/icon3.jpg',
   },
   // More categories
 ]
@@ -33,9 +33,11 @@ export default function LibraryCards() {
           key={category.name}
           className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
         >
-          <div className="flex-1 flex flex-col p-8">
-             <Image className="w-32 h-32 flex-shrink-0 mx-auto object-contain rounded-full" width={200} height={200} src={category.imageUrl} alt="" />
-            <h3 className="mt-6 text-gray-900 text-sm font-medium">{category.name}</h3>
+          <div className="h-60 bg-gray-800 rounded-lg text-gray-100 text-4xl  overflow-hidden grid relative img-card titre-doc">
+            <Image className="bg-cover bg-center relative justify-center items-center img row-span-full col-span-full w-full min-h-full" width={200} height={200} src={category.imageUrl} alt="" />
+            <div className="row-span-full col-span-full flex justify-center text-center items-center z-30">
+              <span>{category.name}</span>
+            </div>
           </div>
         </li>
       ))}
