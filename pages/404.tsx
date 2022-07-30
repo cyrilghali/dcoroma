@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* This example requires Tailwind CSS v2.0+ */
 export default function error404() {
   return (
@@ -12,12 +14,13 @@ export default function error404() {
                 <p className="mt-1 text-base text-gray-500">Please check the URL in the address bar and try again.</p>
               </div>
               <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-                <a
+                <div className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-rose-900 hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-700">
+                <Link
                   href="/"
-                  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-rose-900 hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Go back home
-                </a>
+                </Link>
+                </div>
               </div>
             </div>
           </main>
