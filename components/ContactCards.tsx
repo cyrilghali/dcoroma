@@ -5,7 +5,7 @@ import Image from 'next/image'
 const people = [
   {
     name: 'S.E. Mons. Barnaba el Soryany',
-    title: 'Vescovado della diocesi copta ortodossa di San Giorgio Roma',
+    title: 'Vescovo della Diocesi Copto Ortodossa di San Giorgio, Roma',
     email: 'mons.barnaba@hotmail.com',
     telephone: '+393381341131',
     imageUrl:
@@ -13,7 +13,7 @@ const people = [
   },
   {
     name: 'Padre Youhanna el Soryany',
-    title: 'Chiesa di San Mary Mina & Papa Kyrellos, Roma \n Chiesa di Mary Marcos, Roma',
+    title: 'Chiesa di San Mina e Papa Kyrellos e Chiesa di San Marco, Roma',
     telephone: '+393285933308',
     imageUrl: '/father_youhannaelsoryany.jpg',
   },
@@ -53,7 +53,7 @@ const people = [
   },
   {
     name: 'Padre Youhanna el Antony Ava Mousa',
-    title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma. \n Chiesa San Macario Ostia, Roma. \n Chiesa dell Arcangelo Mikhail Frescatti, Roma',
+    title: "Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma. \n Chiesa San Macario Ostia, Roma. \n Chiesa dell'Arcangelo Mikhail Frascati, Roma.", 
     telephone: '+393890568095',
     email: 'fr.youhannas@yahoo.it',
     imageUrl: '/youhanna_elantonyavamoussa.jpg'
