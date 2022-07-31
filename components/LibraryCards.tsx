@@ -13,9 +13,9 @@ const categories = [
     href: '/library/tasbeha'
   },
   {
-    name: 'Liturgia',
-    imageUrl: '/photos/icon1.jpg',
-    href: '/library/liturgy'
+    name: 'Libri Spirituali',
+    imageUrl: '/photos/libri.png',
+    href: '/library/books'
   },
   {
     name: 'Tasbeha',
