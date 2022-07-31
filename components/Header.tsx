@@ -1,54 +1,52 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
+
 import {
   LocationMarkerIcon,
   MenuIcon,
   HeartIcon,
   SupportIcon,
-  ViewGridIcon,
   HomeIcon,
   XIcon,
   ExternalLinkIcon,
+  NewspaperIcon,
+  BookOpenIcon,
 } from '@heroicons/react/outline'
 import Image from 'next/image'
 
-const nav = [
+const navigation = [
   {
     name: 'Home',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '/',
     icon: HomeIcon,
   },
   {
     name: 'Chiese',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '/churches',
     icon: LocationMarkerIcon,
   },
-  { name: 'Fare una donazione', description: "Your customers' data will be safe and secure.", href: '#', icon: HeartIcon},
-  { name: 'Katameros', description: "Your customers' data will be safe and secure.", href: '#', icon: ExternalLinkIcon },
+  { name: 'Fare una donazione', href: '/donation', icon: HeartIcon},
+  { name: 'Katameros', href: 'https://katameros.app/?lang=it', icon: ExternalLinkIcon },
+  { name: 'Blog', href: '/blog', icon: NewspaperIcon },
   {
     name: 'Libreria',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
+    href: '/library',
+    icon: BookOpenIcon,
   },
   {
     name: 'Contatti',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
+    href: '/contact',
     icon: SupportIcon,
   },
 ]
-
 export default function Header() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="z-50 relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#" className="h-8 w-auto sm:h-10">
+            <a href="" className="h-10 w-auto">
               <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
             </a>
           </div>
@@ -60,7 +58,7 @@ export default function Header() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-            {nav.map((item) => (
+            {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
@@ -98,13 +96,13 @@ export default function Header() {
               </div>
               <div className="mt-10">
                 <nav className="grid gap-y-8">
-                  {nav.map((item) => (
+                  {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
-                      <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                      <item.icon className="flex-shrink-0 h-6 w-6 text-rose-900" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                     </a>
                   ))}

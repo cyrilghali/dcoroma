@@ -2,19 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply flex flex-col min-h-screen;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.img-card .img {
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-* {
-  box-sizing: border-box;
+.card-zoom {
+  @apply overflow-hidden shadow-xl rounded-2xl hover:cursor-pointer;
+}
+
+.card-zoom-image {
+  @apply transition-all duration-500 ease-in-out transform ;
+}
+
+.card-zoom:hover .card-zoom-image {
+  @apply scale-125;
+}
+
+footer {
+  @apply mt-auto;
 }
