@@ -5,13 +5,13 @@ const people = [
   {
     name: 'S.S Papa Teodoro II',
     role: 'Papa della Chiesa Copta Ortodossa',
-    imageUrl: '/pope-tawadros.jpg', 
+    imageUrl: '/photos/pope-tawadros.jpg', 
     twitterUrl: 'https://twitter.com/popetawadros',
   },
   {
     name: 'S.E Anba Barnaba El Soryany',
     role: 'Vescovo della Chiesa Copta Ortodossa – Roma.', 
-    imageUrl:'/anba-bernaba.jpg'
+    imageUrl:'/photos/anba-bernaba.jpg'
   },
   // More people...
 ]

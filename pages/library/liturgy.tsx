@@ -6,10 +6,9 @@ import LibraryTables from '../../components/LibraryTable'
 
 const documents = [
   {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
+  {name: 'Il Santo Messale', description: 'this is the book of our prayers', href: '/files/Il_santo_messale.pdf'},
+  {name: 'Santo Messale Grande', description: 'this is the book of our prayers', href: '/files/santo_messale_grande.pdf'},
+  {name: 'Messa Pasqua 2020', description: 'this is the book of our prayers', href: '/files/pasqua_2020.pdf'},
   // More documents...
 ]
 

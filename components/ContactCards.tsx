@@ -82,7 +82,7 @@ const people = [
     name: 'Padre Hanania Abdelmassih',
     title: 'Monastero di San Maria, Via Laurentina, Roma',
     telephone: '+393284540988',
-    imageUrl: '',
+    imageUrl: '/photos/abounahanania.jpg',
   },
   {
     name: 'Padre Maro Hagos',
