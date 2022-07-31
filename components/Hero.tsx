@@ -43,7 +43,7 @@ const navigation = [
   },
   { name: 'Fare una donazione', href: '/donation', icon: HeartIcon},
   { name: 'Katameros', href: 'https://katameros.app/?lang=it', icon: ExternalLinkIcon },
-  { name: 'Blog', href: '/blog', icon: NewspaperIcon },
+  { name: 'Notizie', href: '/news', icon: NewspaperIcon },
   {
     name: 'Libreria',
     href: '/library',

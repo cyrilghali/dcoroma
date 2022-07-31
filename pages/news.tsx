@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const Contact: NextPage = () => {
+const News: NextPage = () => {
   return (
     <div>
       <Header />
@@ -11,4 +11,4 @@ const Contact: NextPage = () => {
   )
 }
 
-export default Contact
+export default News
