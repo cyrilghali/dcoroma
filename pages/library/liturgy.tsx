@@ -13,15 +13,15 @@ const documents = [
   // More documents...
 ]
 
-const Tasbeha: NextPage = () => {
+const Liturgy: NextPage = () => {
   return (
     <div>
       <Header />
-      <Title title="Tasbeha" />
+      <Title title="Liturgia" />
       <LibraryTables docs={documents}/>
       <Footer />
     </div>
   )
 }
 
-export default Tasbeha
+export default Liturgy

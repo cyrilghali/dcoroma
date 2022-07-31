@@ -9,74 +9,74 @@ const people = [
     email: 'mons.barnaba@hotmail.com',
     telephone: '+393381341131',
     imageUrl:
-      '/anba-bernaba.jpg',
+      '/photos/anba-bernaba.jpg',
   },
   {
     name: 'Padre Youhanna el Soryany',
     title: 'Chiesa di San Mina e Papa Kyrellos e Chiesa di San Marco, Roma',
     telephone: '+393285933308',
-    imageUrl: '/father_youhannaelsoryany.jpg',
+    imageUrl: '/photos/father_youhannaelsoryany.jpg',
   },
   {
     name: 'Vicario episcopale Rev. Padre Thaoufilos el Soryany',
     title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
     telephone: '+393397934612',
-    imageUrl: '/abounathaoufilos.jpg',
+    imageUrl: '/photos/abounathaoufilos.jpg',
   },
   {
     name: 'Padre Mikhail El Antony',
     title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
     email: '',
     telephone: '+393516620223',
-    imageUrl: '/abounamikhail.jpg',
+    imageUrl: '/photos/abounamikhail.jpg',
   },
   {
     name: 'Padre Pola el Akhmimi',
     title: 'Chiesa di S. Giorgio Piazza Carlo Alberto, Catania',
     telephone: '+393278994129',
     email: 'ppola_p@yahoo.com',
-    imageUrl: '/padre_bola_akhmimy.jpg',
+    imageUrl: '/photos/padre_bola_akhmimy.jpg',
   },
   {
     name: 'Padre Samaan el Anba Pola',
     title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
     telephone: '+393899146048',
     email: 'samaan_fr@yahoo.com',
-    imageUrl: '/samaan_elanbapola.jpg'
+    imageUrl: '/photos/samaan_elanbapola.jpg'
   },
   {
     name: 'Padre Armia el Antony',
     title: "Chiesa dell'Arcangelo Raffaele, Piazza San Domenico 3, 42100 Reggio Emilia", 
     telephone: '+393282080997',
     email: 'abonaarmia@gmail.com',
-    imageUrl: '/abuna_armia_elantony.jpg'
+    imageUrl: '/photos/abuna_armia_elantony.jpg'
   },
   {
     name: 'Padre Youhanna el Antony Ava Mousa',
     title: "Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma. \n Chiesa San Macario Ostia, Roma. \n Chiesa dell'Arcangelo Mikhail Frascati, Roma.", 
     telephone: '+393890568095',
     email: 'fr.youhannas@yahoo.it',
-    imageUrl: '/youhanna_elantonyavamoussa.jpg'
+    imageUrl: '/photos/youhanna_elantonyavamoussa.jpg'
   },
   {
     name: 'Padre Youlios el Anba Pola',
-    title: 'Chiesa di San Antonio, Geneva',
+    title: 'Chiesa di San Antonio, Genova',
     telephone: '+393279554281',
-    imageUrl: '/padre_youlios_anba_bola.jpg'
+    imageUrl: '/photos/padre_youlios_anba_bola.jpg'
   },
   {
     name: 'Padre Antonio Gabriel',
     title: 'Chiesa di San Mina Piazza della Trasfigurazione, 2 00151 Roma, Chiesa di Mary Marcos', 
     telephone: '+393397186153',
     email: 'padreantonio40@hotmail.com',
-    imageUrl: '/padre_antonio2.jpg'
+    imageUrl: '/photos/padre_antonio2.jpg'
   },
   {
     name: 'Padre Angelos Gaber Aiad',
     title: 'Chiesa di San Mina Via S. Bartolo in Tuto, 7 50018 Firenze',
     email: 'padreangelos@hotmail.it',
     telephone: '+393281537360',
-    imageUrl: '/abunaangelos.jpg'
+    imageUrl: '/photos/abunaangelos.jpg'
   },
   {
     name: 'Padre Hanania Abdelmassih',
@@ -88,14 +88,14 @@ const people = [
     name: 'Padre Maro Hagos',
     title: 'Monastero di San Maria, Via Laurentina, Roma',
     telephone: '+393894778675',
-    imageUrl: '/abouna_maro.jpeg'
+    imageUrl: '/photos/abouna_maro.jpeg'
   },
   // More people...
 ]
 
 export default function ContactCards() {
   return (
-    <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <ul role="list" className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {people.map((person) => (
         <li
           key={person.name}
