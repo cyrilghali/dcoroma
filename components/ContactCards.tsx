@@ -21,14 +21,14 @@ const people = [
     name: 'Vicario episcopale Rev. Padre Thaoufilos el Soryany',
     title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
     telephone: '+393397934612',
-    imageUrl: '/padre_thaoufilos.jpg',
+    imageUrl: '/abounathaoufilos.jpg',
   },
   {
     name: 'Padre Mikhail El Antony',
     title: 'Chiesa di S. Giorgio Via Sante Bargellini, 13A 00157 Roma',
     email: '',
     telephone: '+393516620223',
-    imageUrl: '',
+    imageUrl: '/abounamikhail.jpg',
   },
   {
     name: 'Padre Pola el Akhmimi',
@@ -43,13 +43,6 @@ const people = [
     telephone: '+393899146048',
     email: 'samaan_fr@yahoo.com',
     imageUrl: '/samaan_elanbapola.jpg'
-  },
-  {
-    name: 'Padre Dawoud el Naklouni',
-    title: 'Chiesa di Santa Maria Assunta, Via caselle 104, San Lazzaro di Savena(BO) 40068',
-    telephone: '+393907881283',
-    email: 'abonadavid140@gmail.com',
-    imageUrl: '/padre_daoud_naqlony.jpg'
   },
   {
     name: 'Padre Armia el Antony',
