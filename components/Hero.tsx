@@ -170,7 +170,7 @@ export default function Hero() {
                 fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <p className="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
+                <p className="text-base font-medium text-gray-900">Iscriviti per ricevere le notizie</p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
                     Email
