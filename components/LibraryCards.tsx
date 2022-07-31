@@ -17,17 +17,12 @@ const categories = [
     imageUrl: '/photos/libri.png',
     href: '/library/books'
   },
-  {
-    name: 'Tasbeha',
-    imageUrl: '/photos/icon2.jpg',
-    href: '/library/tasbeha'
-  },
-  // More categories
+ // More categories
 ]
 
 export default function LibraryCards() {
   return (
-    <ul role="list" className="grid grid-cols-1 px-4 gap-6 content-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <ul role="list" className="grid grid-cols-1 px-4 gap-6 content-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       {categories.map((category) => (
         <li
           key={category.name}
