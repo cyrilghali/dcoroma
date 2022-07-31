@@ -16,22 +16,14 @@ export default function LibraryTable(props) {
                     <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pl-6">
                       Name
                     </th>
-                    <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                      Description
-                    </th>
-                    <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-6">
-                      Link
-                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 bg-white">
                   {documents.map((document: any) => (
                     <tr key={document.name} className="divide-x divide-gray-200">
-                      <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-                        {document.name}
+                      <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-blue-500 hover:cursor-pointer hover:underline sm:pl-6">
+                        <Link href={document.href}>{document.name}</Link> 
                       </td>
-                      <td className="whitespace-nowrap p-4 text-sm text-gray-500">{document.description}</td>
-                      <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-blue-500 hover:cursor-pointer sm:pr-6"><Link href={document.href}><ExternalLinkIcon className="w-5 h-5"/></Link></td>
                     </tr>
                   ))}
                 </tbody>
