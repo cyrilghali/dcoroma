@@ -66,7 +66,7 @@ const people = [
   },
   {
     name: 'Padre Antonio Gabriel',
-    title: 'Chiesa di San Mina Piazza della Trasfigurazione, 2 00151 Roma, Chiesa di Mary Marcos', 
+    title: 'Chiesa di San Mina Piazza della Trasfigurazione, 2 00151 Roma', 
     telephone: '+393397186153',
     email: 'padreantonio40@hotmail.com',
     imageUrl: '/photos/padre_antonio2.jpg'
