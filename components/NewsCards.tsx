@@ -41,10 +41,12 @@ export default function NewsCards({ articles }) {
               <p className="text-sm text-gray-800">
                 <time dateTime={article.date}>{article.date}</time>
               </p>
-              <a href="#" className="mt-2 block">
-                <p className="text-xl font-semibold text-gray-900">{article.attributes.title}</p>
-                <p className="mt-3 text-base text-gray-800">{article.attributes.description}</p>
-              </a>
+              <Link href={`/article/${article.attributes.slug}`}>
+                <div className="mt-2 block">
+                  <p className="text-xl font-semibold text-gray-900">{article.attributes.title}</p>
+                  <p className="mt-3 text-base text-gray-800">{article.attributes.description}</p>
+                </div>
+              </Link>
               <div className="mt-3">
               <Link href={`/article/${article.attributes.slug}`}>
                 <div className="text-base font-semibold text-rose-900 hover:text-rose-800">
