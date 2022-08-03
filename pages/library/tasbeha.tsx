@@ -5,11 +5,7 @@ import { Title } from '../../components/Title'
 import LibraryTables from '../../components/LibraryTable'
 
 const documents = [
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
-  {name: 'Agpeya', description: 'this is the book of our prayers', href: '/files/agpeya.pdf'},
+  {name: 'Tasbeha Annuale', description: '', href: '/files/Tasbeha Annuale.pdf'},
   // More documents...
 ]
 
