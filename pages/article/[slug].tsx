@@ -1,4 +1,5 @@
-import type { NextPage } from 'next'
+import Footer from "../../components/Footer"
+import Header from "../../components/Header"
 import { fetchAPI } from "../../lib/api"
 
 
@@ -34,7 +35,9 @@ export async function getStaticProps({ params }) {
 const Article = ({ article }) => {
   return (
     <div>
+      <Header />
       {article.attributes.title}
+      <Footer />
     </div>
   )
 }
