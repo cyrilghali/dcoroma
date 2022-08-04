@@ -88,7 +88,7 @@ export default function Hero() {
                 <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
                 <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
               </svg>
-                <Image className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md" src="/photos/monasterio.jpg" alt="" layout="fill" />
+                <Image className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md" src="/photos/monasterio.jpg" alt="" width={1024} height={770} />
             </div>
           </div>
         </main>
