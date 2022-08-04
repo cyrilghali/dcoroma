@@ -3,8 +3,9 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Title } from '../components/Title'
 import Verse from '../components/Verse'
-import { DonationCards } from '../components/DonationCards'
 import Divider from '../components/Divider'
+import Paypal from '../components/Paypal'
+import IBAN from '../components/IBAN'
 
 const Contact: NextPage = () => {
   return (
@@ -13,7 +14,9 @@ const Contact: NextPage = () => {
       <Title title="Donazione" />
       <Verse />
       <Divider />
-      <DonationCards />
+      <Paypal />
+      <Divider />
+      <IBAN />
       <Footer />
     </div>
   )

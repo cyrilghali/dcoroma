@@ -1,4 +1,3 @@
-import { ExternalLinkIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 
 /* This example requires Tailwind CSS v2.0+ */

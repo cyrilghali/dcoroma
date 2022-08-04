@@ -1,8 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
-import Image from 'next/image'
-
-const people = [
+const fathers = [
   {
     name: 'S.E. Mons. Barnaba el Soryany',
     title: 'Vescovo della Diocesi Copto Ortodossa di San Giorgio, Roma',
@@ -90,53 +86,6 @@ const people = [
     telephone: '+393894778675',
     imageUrl: '/photos/abouna_maro.jpeg'
   },
-  // More people...
 ]
 
-export default function ContactCards() {
-  return (
-    <ul role="list" className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {people.map((person) => (
-        <li
-          key={person.name}
-          className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
-        >
-          <div className="flex-1 flex flex-col p-8">
-             <Image className="w-32 h-32 flex-shrink-0 mx-auto object-contain rounded-full" width={200} height={200} src={person.imageUrl} alt="" />
-            <h3 className="mt-6 text-gray-900 text-sm font-medium">{person.name}</h3>
-            <dl className="mt-1 flex-grow flex flex-col justify-between">
-              <dt className="sr-only">Title</dt>
-              <dd className="text-gray-500 text-sm">{person.title}</dd>
-              <dt className="sr-only">Role</dt>
-            </dl>
-          </div>
-          <div>
-            <div className="-mt-px flex divide-x divide-gray-200">
-              { person.email ? 
-              <div className="w-0 flex-1 flex">
-                <a
-                  href={`mailto:${person.email}`}
-                  className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
-                >
-                  <MailIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">Email</span>
-                </a>
-              </div> : <></>
-              }
-              <div className="-ml-px w-0 flex-1 flex">
-                <a
-                  href={`tel:${person.telephone}`}
-                  className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
-                >
-                  <PhoneIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">Chiamata</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-      ))}
-    </ul>
-  )
-}
-
+export default fathers
