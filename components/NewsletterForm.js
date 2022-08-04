@@ -41,7 +41,7 @@ const NewsletterForm = () => {
           </label>
           <input
             autoComplete="email"
-            className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-rose-800 focus:border-rose-800 sm:flex-1 border-gray-300"
+            className="block w-full md:w-96 py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-rose-800 focus:border-rose-800 sm:flex-1 border-gray-300"
             id="email-input"
             name="email"
             placeholder={subscribed ? "Sei iscritto !  🎉" : 'Inserisci il tuo indirizzo e-mail'}
