@@ -33,20 +33,17 @@ export default function Hero() {
       <div className="relative pb-16 sm:pb-24 lg:pb-32">
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-            <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+            <div className="flex sm:text-center items-center flex-col justify-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                <Image className="flex items-center" src="/assets/cross.svg" height={60} width={60} alt=""/>
               <h1>
-                <span className="block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+                <span className="block text-4xl pt-16 tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-gray-900">Diocesi Copta Ortodossa</span>
                   <span className="block text-rose-900">di Roma</span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Benvenuti nella pagina ufficiale della Diocesi copto-ortodossa di Roma. Se desiderate ricevere le ultime notizie, registratevi qui sotto.
+                Benvenuti nella pagina ufficiale della Diocesi copto-ortodossa di Roma. 
               </p>
-              <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <p className="text-base font-medium text-gray-900">Iscriviti per ricevere le notizie</p>
-                <NewsletterForm />
-              </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
               <svg
