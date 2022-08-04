@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Header from './Header'
+import NewsletterForm from './NewsletterForm'
 
 export default function Hero() {
   return (
@@ -44,24 +45,7 @@ export default function Hero() {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">Iscriviti per ricevere le notizie</p>
-                <form action="#" method="POST" className="mt-3 sm:flex">
-                  <label htmlFor="email" className="sr-only">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-rose-800 focus:border-rose-800 sm:flex-1 border-gray-300"
-                    placeholder="Inserisci il tuo indirizzo e-mail"
-                  />
-                  <button
-                    type="submit"
-                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-800 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
-                  >
-                    Avvisami
-                  </button>
-                </form>
+                <NewsletterForm />
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">

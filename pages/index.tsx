@@ -14,8 +14,10 @@ const Home: NextPage = () => {
       <Team />
       <FAQ /> 
       <Stats />
-      <Title title="Libreria" />
-      <LibraryCards />
+      <div className="px-24">
+        <Title title="Libreria" />
+        <LibraryCards />
+      </div>
       <Footer />
     </div>
   )
