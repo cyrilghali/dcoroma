@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const Title = (props) => {
+const Title = (props) => {
   return (
   <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
     <div className="space-y-12">
@@ -13,3 +13,4 @@ export const Title = (props) => {
   </div>
   )
 }
+export default Title

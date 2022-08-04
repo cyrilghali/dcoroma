@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Header from './Header'
-import NewsletterForm from './NewsletterForm'
 
 export default function Hero() {
   return (

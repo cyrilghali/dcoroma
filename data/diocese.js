@@ -1,7 +1,7 @@
 const diocese = [
   {
     name: 'S.S Papa Teodoro II',
-    role: 'Papa della Chiesa Copta Ortodossa',
+    role: 'Papa della Chiesa Copta Ortodossa - Alessandria',
     imageUrl: '/photos/pope-tawadros.jpg', 
   },
   {
