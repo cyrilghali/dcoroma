@@ -47,7 +47,7 @@ export default function Header() {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="" className="h-10 w-auto">
-              <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
+              <Image width={50} height={50} src={'/logo1.png'} alt={'logo'}/>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">

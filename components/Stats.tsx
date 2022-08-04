@@ -8,7 +8,6 @@ export default function Stats() {
             Alcune figure che rappresentano i copti
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.
           </p>
         </div>
       </div>

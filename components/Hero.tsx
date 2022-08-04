@@ -1,19 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 
@@ -93,7 +77,7 @@ export default function Hero() {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="" className="h-10 w-auto">
                   <span className="sr-only">Workflow</span>
-                  <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
+                  <Image width={50} height={50} src={'/logo1.png'} alt={'logo'} />
                 </a>
                 <div className="mr-2 flex items-center md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-800">
@@ -166,8 +150,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+              Benvenuti nella pagina ufficiale della Diocesi copto-ortodossa di Roma. Se desiderate ricevere le ultime notizie, registratevi qui sotto.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">Iscriviti per ricevere le notizie</p>
@@ -180,22 +163,15 @@ export default function Hero() {
                     name="email"
                     id="email"
                     className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-rose-800 focus:border-rose-800 sm:flex-1 border-gray-300"
-                    placeholder="Enter your email"
+                    placeholder="Inserisci il tuo indirizzo e-mail"
                   />
                   <button
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-800 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Notify me
+                    Avvisami
                   </button>
                 </form>
-                <p className="mt-3 text-sm text-gray-500">
-                  We care about the protection of your data. Read our
-                  <a href="#" className="font-medium text-gray-900 underline">
-                    Privacy Policy
-                  </a>
-                  .
-                </p>
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -222,25 +198,7 @@ export default function Hero() {
                 <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
                 <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
               </svg>
-              <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                <button
-                  type="button"
-                  className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-800"
-                >
-                  <span className="sr-only">Watch our video to learn more</span>
-                  <img
-                    className="w-full"
-                    src="https://images.unsplash.com/photo-1624215998649-005b86bd9970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format"
-                    alt=""
-                  />
-                  <span className="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
-                    <svg className="h-20 w-20 text-rose-800" fill="currentColor" viewBox="0 0 84 84">
-                      <circle opacity="0.9" cx={42} cy={42} r={42} fill="white" />
-                      <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                    </svg>
-                  </span>
-                </button>
-              </div>
+                <Image className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md" src="/photos/monasterio.jpg" alt="" layout="fill" />
             </div>
           </div>
         </main>
