@@ -1,17 +1,18 @@
 import type { NextPage } from 'next'
 import Hero from '../components/Hero'
 import Team from '../components/Team'
-import FAQ from '../components/FAQ'
-import Stats from '../components/Stats'
 import Footer from '../components/Footer'
+import SocialLinks from '../components/SocialLinks'
+import DonationCTA from '../components/DonationCTA'
+import { Card } from '../components/Card'
 
 const Home: NextPage = () => {
   return (
     <div>
       <Hero />
       <Team />
-      <FAQ /> 
-      <Stats />
+      <SocialLinks />
+      <DonationCTA />
       <Footer />
     </div>
   )

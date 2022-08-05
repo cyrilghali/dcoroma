@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['eglisecopte.ch'],
+    domains: ['eglisecopte.ch', 'strapi.dcoroma.it'],
   },
   swcMinify: true,
 }
