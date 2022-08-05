@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import Team from '../components/Team'
 import Footer from '../components/Footer'
 import SocialLinks from '../components/SocialLinks'
+import DonationCTA from '../components/DonationCTA'
+import { Card } from '../components/Card'
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +12,7 @@ const Home: NextPage = () => {
       <Hero />
       <Team />
       <SocialLinks />
+      <DonationCTA />
       <Footer />
     </div>
   )

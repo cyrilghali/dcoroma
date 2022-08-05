@@ -1,16 +1,12 @@
 import Image from "next/image"
 import diocese from '../data/diocese' 
+import { HomeTitle } from "./Title"
 export default function Team() {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+    <div className="bg-white mt-4">
+      <div className="max-w-7xl mx-auto pb-12 px-4 text-center sm:px-6 lg:px-8 lg:pb-24">
         <div className="space-y-12">
-          <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-            <Image src="/assets/cross.svg" height={60} width={60} alt=""/>
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">La Diocesi</h2>
-            <p className="text-xl text-gray-500">
-            </p>
-          </div>
+          <HomeTitle title="La Diocesi" />
           <ul
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl"

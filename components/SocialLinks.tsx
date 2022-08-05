@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from './Title'
+import { HomeTitle } from './Title'
 import Image from 'next/image'
 import Link from 'next/link';
 
@@ -19,8 +19,8 @@ imageUrl: '/assets/youtube.svg',
 ];
 export const SocialLinks = () => {
   return (
-    <div>
-<Title title="Rimanere in contatto" />
+    <div className="pb-20">
+        <HomeTitle title="Rimanere in contatto" />
           <ul
             role="list"
             className="mx-auto sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl"
@@ -29,7 +29,7 @@ export const SocialLinks = () => {
               <li key={social.alt}>
                 <div className="flex justify-center">
                 <Link href={social.href}>
-                  <Image className="mx-auto h-40 w-40 object-contain rounded-full xl:w-56 xl:h-56 hover:cursor-pointer" width={150} height={200} src={social.imageUrl} alt="" />
+                  <Image className="mx-auto h-40 w-40 object-contain rounded-full xl:w-56 xl:h-56 hover:cursor-pointer " width={100} height={150} src={social.imageUrl} alt="" />
                 </Link>
                 </div>
               </li>
