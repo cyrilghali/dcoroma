@@ -4,7 +4,7 @@ import Team from '../components/Team'
 import Footer from '../components/Footer'
 import SocialLinks from '../components/SocialLinks'
 import DonationCTA from '../components/DonationCTA'
-import { Card } from '../components/Card'
+import { CityChurches } from '../components/CityChurches'
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
       <Hero />
       <Team />
       <SocialLinks />
+      <CityChurches />
       <DonationCTA />
       <Footer />
     </div>
