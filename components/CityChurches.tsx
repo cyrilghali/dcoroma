@@ -1,16 +1,16 @@
 import React from 'react'
 import { HomeTitle } from './Title'
 import { Card } from './Card'
-
+import city from '../data/cities'
 export const CityChurches = (props : {}) => {
   return (
     <div className="pb-20">
-      <HomeTitle title="Chiese" />
+      <HomeTitle title="Principali citta' della Diocesi" />
       <div className="flex flex-row flex-wrap justify-evenly">
-        <Card title="Roma" imageUrl="/photos/roma.avif" href="#"/>
-        <Card title="Firenze" imageUrl="/photos/firenze.avif" href="#"/>
-        <Card title="Torino" imageUrl="/photos/torino.avif" href="#"/>
-        <Card title="Reggio Emilia" imageUrl="/photos/reggio.avif" href="#"/>
+        {city.filter(ct => ct.href).map((ct) => (
+          <Card title={ct.name} imageUrl={ct.imageUrl} href={ct.href}/>
+        ))}
+        
       </div>
     </div>
   )

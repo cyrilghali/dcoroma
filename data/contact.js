@@ -55,6 +55,13 @@ const fathers = [
     imageUrl: '/photos/youhanna_elantonyavamoussa.jpg'
   },
   {
+    name: 'Padre Dawoud el Naklouni',
+    title: 'Chiesa di Santa Maria Assunta, San Lazzaro di Savena (BO)',
+    telephone: '+393907881283',
+    email: 'abonadavid140@gmail.com',
+    imageUrl: '/photos/padre_youlios_anba_bola.jpg'
+  },
+  {
     name: 'Padre Youlios el Anba Pola',
     title: 'Chiesa di San Antonio, Genova',
     telephone: '+393279554281',

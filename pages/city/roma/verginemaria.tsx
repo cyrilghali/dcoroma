@@ -5,25 +5,25 @@ import Header from '../../../components/Header';
 import ContactCard from '../../../components/ContactCard';
 import fathers from '../../../data/contact';
 
-export default function Sangiorgio () {
+export default function VergineMaria () {
   console.log('Hai cliccato Invia. Sangiorgio');
   return (
     <div>
     <Header />
-    <DetailSangiorgio />
+    <DetailVergineMaria />
     <Footer />
     </div>
   )
   
-  function DetailSangiorgio(){
-    const person = fathers.find((el)=> 'Vicario episcopale Rev. Padre Thaoufilos el Soryany'===el.name)
+  function DetailVergineMaria(){
+    const person = fathers.find((el)=> 'Padre Hanania Abdelmassih'===el.name)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">
           <img src="/photos/monasterio.jpg" className="h-96 lg:h-96 mx-auto w-full object-cover" alt="" />
           <div className="flex w-full justify-center">
             <h1 className="text-4xl lg:text-5xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-3/4 lg:w-1/2 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2">
-              <span>Chiesa di San Giorgio</span>
+              <span>Chiesa della Santa Vergine Maria (Vescovado)</span>
             </h1>
           </div>
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-4 hidden lg:block">
@@ -78,9 +78,6 @@ export default function Sangiorgio () {
                                 </div>
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 font-semibold text-center">
-                                <div>
-                                  09:00 - 11:30
-                                </div>
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 font-semibold text-center">
                                 <div>
@@ -88,9 +85,6 @@ export default function Sangiorgio () {
                                 </div>
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 font-semibold text-center">
-                                <div>
-                                09:00 - 11:30
-                                </div>
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 font-semibold text-center">
                                 <div>
