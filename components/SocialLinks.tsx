@@ -21,6 +21,7 @@ export const SocialLinks = () => {
   return (
     <div className="bg-rose-50">
         <HomeTitle title="Rimanere in contatto" />
+        <div className="flex justify-between items-center flex-col max-w-7xl mx-auto py-12 px-4 sm:px-6">
           <ul
             role="list"
             className="mx-auto sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl"
@@ -35,6 +36,7 @@ export const SocialLinks = () => {
               </li>
             ))}
           </ul>
+        </div>
     </div>
   )
 }

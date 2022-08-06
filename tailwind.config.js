@@ -5,7 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,json}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['"Crimson Text"'],
+        'body': ['"Crimson Text"'],
+        'sans': ['"Crimson Text"'],
+        'serif': ['"Crimson Text"'],
+        'mono': ['"Crimson Text"'],
+      }
+
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
