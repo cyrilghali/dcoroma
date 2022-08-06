@@ -13,11 +13,13 @@ const fathers = [
   },
   {
     name: 'Padre Thaoufilos el Soryany',
+    email: 'thaoufiloselsoriani@yahoo.com',
     telephone: '+393397934612',
     imageUrl: '/photos/abounathaoufilos.jpg',
   },
   {
     name: 'Padre Mikhail El Antony',
+    email: 'frmaik97@gmail.com',
     telephone: '+393516620223',
     imageUrl: '/photos/abounamikhail.jpg',
   },
@@ -46,7 +48,7 @@ const fathers = [
     imageUrl: '/photos/abuna_armia_elantony.jpg'
   },
   {
-    name: 'Padre Youhanna el Antony Ava Mousa',
+    name: 'Padre Youhanna el Antony',
 
     telephone: '+393890568095',
     email: 'fr.youhannas@yahoo.it',
@@ -71,6 +73,7 @@ const fathers = [
   },
   {
     name: 'Padre Hanania Abdelmassih',
+    email: 'father.hanania@yahoo.it',
     telephone: '+393284540988',
     imageUrl: '/photos/abounahanania.jpg',
   },
