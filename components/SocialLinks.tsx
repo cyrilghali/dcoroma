@@ -19,7 +19,7 @@ imageUrl: '/assets/youtube.svg',
 ];
 export const SocialLinks = () => {
   return (
-    <div className="">
+    <div className="bg-rose-50">
         <HomeTitle title="Rimanere in contatto" />
           <ul
             role="list"
