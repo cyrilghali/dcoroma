@@ -11,7 +11,7 @@ export default function ContactCTA() {
         <p className="mt-4 text-lg leading-6 text-rose-200">
         </p>
         <Link
-          href="/donation">
+          href="/contact">
         <div
           className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-rose-800 hover:bg-rose-900 sm:w-auto"
         >
