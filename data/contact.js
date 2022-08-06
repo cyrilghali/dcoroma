@@ -37,7 +37,7 @@ const fathers = [
     name: 'Padre Dawoud el Naklouni',
     telephone: '+393907881283',
     email: 'abonadavid140@gmail.com',
-    imageUrl: '/padre_daoud_naqlony.jpg'
+    imageUrl: '/photos/padre_daoud_naqlony.jpg'
   },
   {
     name: 'Padre Armia el Antony',
