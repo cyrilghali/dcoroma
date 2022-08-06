@@ -2,7 +2,7 @@ const city = [
 
     {
       name: "Roma",
-      imageUrl:"/photos/roma.avif",
+      imageUrl:"/photos/roma.png",
       href:"/city/roma"
      },
      {
@@ -12,7 +12,7 @@ const city = [
      },
      {
       name: "Firenze",
-      imageUrl:"/photos/firenze.avif",
+      imageUrl:"/photos/firenze.png",
       href:"/city/firenze"
      },
      {
@@ -32,11 +32,11 @@ const city = [
      },
      {
       name: "Torino",
-      imageUrl:"/photos/torino.avif"
+      imageUrl:"/photos/torino.png"
      },
      {
       name: "Reggio Emilia",
-      imageUrl:"/photos/reggio.avif"
+      imageUrl:"/photos/reggio.png"
      },
      {
       name: "Genova",

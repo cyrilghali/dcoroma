@@ -7,19 +7,19 @@ const cities = [
   {
     name: 'Roma',
     title: 'Nella capitale italiana ci sono piu di 5 chiese Copte con oltre 200 famiglie.',
-    images: '/photos/colosseo.jpg',
+    images: '/photos/roma.png',
     url: '/city/roma'
   },
   {
     name: 'Torino',
     title: 'Torino è la seconda città con maggiore presenza di copti della diocesi.',
-    images: '/photos/torino.jpg',
+    images: '/photos/torino.png',
     url: '/city/roma'
   },
   {
     name: 'Firenze',
     title: 'Nella meravigliosa città di Firenze vi sono presenti altri copti della diocesi.',
-    images: '/photos/firenze.jpg',
+    images: '/photos/firenze.png',
     url: '/city/roma'
   },
   {
