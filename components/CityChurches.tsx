@@ -10,8 +10,7 @@ export const CityChurches = (props : {}) => {
         {city.filter(ct => ct.href).map((ct) => (
           <Card title={ct.name} imageUrl={ct.imageUrl} href={ct.href}/>
         ))}
-        
-      </div>
+       </div>
     </div>
   )
 }

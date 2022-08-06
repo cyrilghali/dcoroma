@@ -14,6 +14,7 @@ import {
   BookOpenIcon,
 } from '@heroicons/react/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
   {
@@ -46,9 +47,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="" className="h-10 w-auto">
-              <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
-            </a>
+            <div className="h-10 w-auto">
+              <Link href="/" className="hover:cursor-pointer">
+                <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
+              </Link>
+            </div>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-900">
@@ -85,8 +88,10 @@ export default function Header() {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div className="h-8 w-auto">
-                  <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
-                </div>
+                  <Link href="/">
+                    <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
+                  </Link>
+                  </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-900">
                     <span className="sr-only">Close menu</span>

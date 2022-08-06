@@ -3,7 +3,7 @@ import diocese from '../data/diocese'
 import { HomeTitle } from "./Title"
 export default function Team() {
   return (
-    <div className="bg-white mt-4">
+    <div className="bg-white">
       <div className="max-w-7xl mx-auto pb-12 px-4 text-center sm:px-6 lg:px-8 lg:pb-24">
         <div className="space-y-12">
           <HomeTitle title="La Diocesi" />

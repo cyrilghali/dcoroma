@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Title } from '../components/Title'
+import { HomeTitle, Title } from '../components/Title'
 import { fetchAPI } from "../lib/api"
 import NewsCards from '../components/NewsCards'
 
@@ -15,6 +15,15 @@ const News = ({articles}) => {
   )
 }
 
+export const HomeNews = ({articles}) => {
+  return (
+    <div>
+      <HomeTitle title="Notizie" />
+      <NewsCards articles={articles} />
+    </div>
+  )
+}
+
 export default News;
 
 export async function getStaticProps() {
@@ -25,7 +34,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: articlesRes.data,
+      articles: articlesRes.data.reverse(),
     },
     revalidate: 1,
   }
