@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import NewsletterForm from './NewsletterForm'
 export default function NewsCards({ articles }) {
   console.log(articles);
   return (
@@ -9,30 +9,7 @@ export default function NewsCards({ articles }) {
           <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Attualità</h2>
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
             <p className="text-xl text-gray-800">Se desiderate ricevere le ultime notizie, registratevi qui sotto.</p>
-            <form className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-end">
-              <div>
-                <label htmlFor="email-address" className="sr-only">
-                  Indirizzo e-mail
-                </label>
-                <input
-                  id="email-address"
-                  name="email-address"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  className="appearance-none w-full px-4 py-2 border border-gray-300 text-base rounded-md text-gray-900 bg-white placeholder-gray-800 focus:outline-none focus:ring-rose-800 focus:border-rose-800 lg:max-w-xs"
-                  placeholder="Inserisci il tuo indirizzo e-mail"
-                />
-              </div>
-              <div className="mt-2 flex-shrink-0 w-full flex rounded-md shadow-sm sm:mt-0 sm:ml-3 sm:w-auto sm:inline-flex">
-                <button
-                  type="button"
-                  className="w-full bg-rose-900 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-base font-medium text-white hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-800 sm:w-auto sm:inline-flex"
-                >
-                  Avvisami
-                </button>
-              </div>
-            </form>
+            <NewsletterForm />
           </div>
         </div>
         <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
