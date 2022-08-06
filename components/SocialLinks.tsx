@@ -3,50 +3,11 @@ import { HomeTitle } from './Title'
 import Image from 'next/image'
 import Link from 'next/link';
 
-function getOS() {
-  var userAgent = window.navigator.userAgent,
-      platform = window.navigator?.userAgentData?.platform || window.navigator.platform,
-      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-      os = '';
-
-  if (macosPlatforms.indexOf(platform) !== -1) {
-    os = 'Mac OS';
-  } else if (iosPlatforms.indexOf(platform) !== -1) {
-    os = 'iOS';
-  } else if (windowsPlatforms.indexOf(platform) !== -1) {
-    os = 'Windows';
-  } else if (/Android/.test(userAgent)) {
-    os = 'Android';
-  } else if (/Linux/.test(platform)) {
-    os = 'Linux';
-  }
-
-  return os;
-}
-
-export const SocialLinks = () => {
-var os = ''
-var fblink = 'https://www.facebook.com/DCOTorinoRoma/'
-if (typeof window !== 'undefined') {
-  os = getOS()
-  if(os == 'iOS')
-  {
-    fblink = 'fb://profile/DCOTorinoRoma'
-  }
-  else if(os='Android'){
-    fblink = 'fb://page/DCOTorinoRoma'
-  }
-
-}
-
-
-const links = [
+export const links = [
 
 {
 alt: 'facebook',
-href: fblink,
+href: 'https://www.facebook.com/DCOTorinoRoma/',
 imageUrl: '/assets/facebook.svg',
 },
 {
@@ -56,9 +17,10 @@ imageUrl: '/assets/youtube.svg',
 },
 
 ];
+export const SocialLinks = () => {
   return (
     <div className="bg-rose-50">
-        <HomeTitle title="Seguici" />
+        <HomeTitle title="Rimanere in contatto" />
         <div className="flex justify-between items-center flex-col max-w-7xl mx-auto py-12 px-4 sm:px-6">
           <ul
             role="list"
