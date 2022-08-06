@@ -15,7 +15,7 @@ export default function Fiumicino () {
   )
   
   function DetailFiumicino(){
-    const person = fathers.find((el)=> 'Padre Samaan el Anba Pola'===el.name)
+    const person = fathers.find((el)=> 6===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

@@ -16,7 +16,7 @@ export default function VergineMaria () {
   )
   
   function DetailVergineMaria(){
-    const person = fathers.find((el)=> 'Padre Hanania Abdelmassih'===el.name)
+    const person = fathers.find((el)=> 14===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

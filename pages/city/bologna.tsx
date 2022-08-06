@@ -15,7 +15,7 @@ export default function Bologna () {
   )
   
   function DetailBologna(){
-    const person = fathers.find((el)=> 'Padre Dawoud el Naklouni'===el.name)
+    const person = fathers.find((el)=> 10===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

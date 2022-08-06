@@ -15,7 +15,7 @@ export default function Firenze () {
   )
   
   function DetailFirenze(){
-    const person = fathers.find((el)=> 'Padre Angelos Gaber Aiad'===el.name)
+    const person = fathers.find((el)=> 13===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

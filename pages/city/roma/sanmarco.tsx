@@ -16,7 +16,7 @@ export default function SanMarco () {
   )
   
   function DetailSanMarco(){
-    const person = fathers.find((el)=> 'Padre Youhanna el Soryany'===el.name)
+    const person = fathers.find((el)=> 2===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

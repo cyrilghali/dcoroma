@@ -15,7 +15,7 @@ export default function Catania () {
   )
   
   function DetailCatania(){
-    const person = fathers.find((el)=> 'Padre Pola el Akhmimi'===el.name)
+    const person = fathers.find((el)=> 5===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

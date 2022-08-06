@@ -15,7 +15,7 @@ export default function Frascati () {
   )
   
   function DetailFrascati(){
-    const person = fathers.find((el)=> 'Padre Youhanna el Antony Ava Mousa'===el.name)
+    const person = fathers.find((el)=> 9===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">

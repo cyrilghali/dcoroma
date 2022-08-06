@@ -16,7 +16,7 @@ export default function Sangiorgio () {
   )
   
   function DetailSangiorgio(){
-    const person = fathers.find((el)=> 'Vicario episcopale Rev. Padre Thaoufilos el Soryany'===el.name)
+    const person = fathers.find((el)=> 3===el.id)
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">
