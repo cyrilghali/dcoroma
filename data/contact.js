@@ -12,7 +12,7 @@ const fathers = [
     imageUrl: '/photos/father_youhannaelsoryany.jpg',
   },
   {
-    name: 'Vicario episcopale Rev. Padre Thaoufilos el Soryany',
+    name: 'Padre Thaoufilos el Soryany',
     telephone: '+393397934612',
     imageUrl: '/photos/abounathaoufilos.jpg',
   },
