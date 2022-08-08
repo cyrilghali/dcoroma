@@ -24,7 +24,7 @@ const roma = [
   name: "San Mina Megalomartire",
   imageUrl:"/photos/sanMina.jpg",
   href:"/churches/roma/sanmina",
-  churchName: "Chiesa di San Mina & San Kyrellos",
+  churchName: "Chiesa di San Mina & San Papa Cirillo VI",
   churchImageUrl: "/photos/roma-sanmina.jpg",
   massSchedule: {
       monday: '9:00 - 11:30',
