@@ -44,7 +44,7 @@ const roma = [
   name: "Vergine Maria",
   imageUrl:"/photos/verginemaria.jpg",
   href:"/churches/roma/verginemaria",
-  churchName: "Monasterio della Vergine Maria",
+  churchName: "Monastero della Vergine Maria",
   churchImageUrl: "/photos/monasterio.jpg",
   massSchedule: {
       monday: '9:00 - 11:30',
@@ -67,7 +67,7 @@ const roma = [
   churchName: "Chiesa di San Marco",
   churchImageUrl: "",
   massSchedule: {
-      monday: '	Via Terni, 92 - 9h00 - 11h30',
+      monday: '9:00 - 11:00',
       tuesday: '',
       wednesday: '',
       thursday: '',
@@ -78,6 +78,46 @@ const roma = [
   referentID: 800770,
   location: 'Via Appia Nuova, 244, 00183 Roma RM',
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
+},
+{
+  id: 849184,
+  name: "Santa Vergine Maria - Fiumicino",
+  imageUrl:"/photos/verginemaria.jpg",
+  href:"/churches/roma/santaverginemariafiumicino",
+  churchName: "Chiesa della Santa Vergine Maria",
+  churchImageUrl: "",
+  massSchedule: {
+      monday: '',
+      tuesday: '8:00 - 10:00',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: ''
+  },
+  referentID: 6,
+  location: '',
+  locationUrl: ''
+},
+{
+  id: 849185,
+  name: "San Giorgio - Frascati",
+  imageUrl:"/photos/sangiorgio.jpg",
+  href:"/churches/roma/sangiorgiofrascati",
+  churchName: "Chiesa di San Giorgio",
+  churchImageUrl: "",
+  massSchedule: {
+      monday: '8:00 - 10:30',
+      tuesday: '',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: ''
+  },
+  referentID: 9,
+  location: '',
+  locationUrl: ''
 },
 ]
 export default roma
