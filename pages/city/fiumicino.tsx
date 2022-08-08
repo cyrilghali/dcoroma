@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-import { NextPage } from 'next';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import ContactCard from '../../components/ContactCard';

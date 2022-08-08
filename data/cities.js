@@ -21,74 +21,12 @@ const city = [
       href:"/city/catania"
      },
      {
-      name: "Fiumicino (RM)",
-      imageUrl:"/photos/roma.avif",
-      href:"/city/fiumicino"
-     },
-     {
-      name: "Frascati (RM)",
-      imageUrl:"/photos/roma.avif",
-      href:"/city/frascati"
-     },
-     {
-      name: "Torino",
-      imageUrl:"/photos/torino.png"
-     },
-     {
-      name: "Reggio Emilia",
-      imageUrl:"/photos/reggio.png"
-     },
-     {
       name: "Genova",
       imageUrl:"/photos/torino.avif"
      },
      {
-      name: "Palermo",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Brindisi",
-      imageUrl:"/photos/torino.avif"
-      },
-     {
-      name: "Reggio Calabria",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "La Spezia",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Novara",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Asti",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Viareggio",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Cuneo",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Velletri (RM)",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Ostia (RM)",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Gualdo Tadino (PG)",
-      imageUrl:"/photos/torino.avif"
-     },
-     {
-      name: "Borgo San Lorenzo (FI)",
-      imageUrl:"/photos/torino.avif"
+      name: "Torino",
+      imageUrl:"/photos/torino.png"
      },
 ]
 export default city
