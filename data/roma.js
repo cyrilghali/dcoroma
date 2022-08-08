@@ -2,7 +2,7 @@ const roma = [
 {
   id: 367513,
   name: "San Giorgio Megalomartire",
-  imageUrl:"/photos/sangiorgio.jpg",
+  imageUrl:"/photos/SanGiorgioTH.jpg",
   href:"/churches/roma/sangiorgio",
   churchName: "Chiesa di San Giorgio",
   churchImageUrl: "/photos/roma-sangiorgio.jpg",
@@ -58,7 +58,7 @@ const roma = [
   name: "San Marco Apostolo",
   imageUrl:"/photos/sanmarco.jpg",
   href:"/churches/roma/sanmarco",
-  churchName: "Chiesa di San Marco",
+  churchName: "Chiesa di San Giorgio",
   churchImageUrl: "",
   massSchedule: {
       monday: '	Via Terni, 92 - 9h00 - 11h30',
