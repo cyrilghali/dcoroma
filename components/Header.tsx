@@ -49,7 +49,7 @@ export default function Header() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <div className="h-10 w-auto">
               <Link href="/" className="hover:cursor-pointer">
-                <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
+                <Image width={50} height={50} src={'/photos/logo.png'} alt={'logo'}/>
               </Link>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Header() {
               <div className="flex items-center justify-between">
                 <div className="h-8 w-auto">
                   <Link href="/">
-                    <Image width={50} height={50} src={'/logo.png'} alt={'logo'}/>
+                    <Image width={50} height={50} src={'/photos/logo.png'} alt={'logo'}/>
                   </Link>
                   </div>
                 <div className="-mr-2">

@@ -12,7 +12,7 @@ import ContactCTA from '../components/ContactCTA'
 export async function getStaticProps() {
   // Run API calls in parallel
   const [articlesRes] = await Promise.all([
-    fetchAPI("/articles?_sort=date:DESC", { populate: "*" }),
+    fetchAPI("/articles", { populate: "*" }),
   ])
   return {
     props: {

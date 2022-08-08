@@ -25,3 +25,8 @@ body {
 footer {
   @apply mt-auto;
 }
+
+.rounded-t-lg {
+  border-top-left-radius: 5.5rem;
+  border-top-right-radius: 59.5rem;
+}
