@@ -9,7 +9,7 @@ export default function Firenze() {
         <div>
             <Header />
             <div className="pb-20">
-                <HomeTitle title="Chiese di Roma" />
+                <HomeTitle title="Chiese di Firenze" />
                 <div className="flex flex-row flex-wrap justify-evenly">
                   {firenze.filter(church => church.href).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={church.href}/>
