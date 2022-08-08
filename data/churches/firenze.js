@@ -1,4 +1,4 @@
-const roma = [
+const firenze = [
 {
   id: 800001,
   name: "San Mina Megalomartire",
@@ -20,4 +20,4 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/x6bmQhd6wLExCmPUA'
 }
 ]
-export default roma
+export default firenze
