@@ -5,7 +5,7 @@ const roma = [
   imageUrl:"/photos/SanGiorgioTH.jpg",
   href:"/churches/roma/sangiorgio",
   churchName: "Chiesa di San Giorgio",
-  churchImageUrl: "/photos/SanGiorgioTH.jpg",
+  churchImageUrl: "/photos/roma-sangiorgio.jpg",
   massSchedule: {
       monday: '9:00 - 11:30',
       tuesday: '9:00 - 11:30',
