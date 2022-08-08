@@ -4,8 +4,8 @@ import { ChurchDetail } from '../../../components/ChurchDetail';
 import roma from '../../../data/churches/roma';
 import Error404 from '../../../components/error'
 
-export default function Sangiorgio () {
-  const church = roma.find((church) => 367513===church.id);
+export default function Sanmina () {
+  const church = roma.find((church) => 701147===church.id);
   if (church == null || typeof church == 'undefined' )
   {
     return (
