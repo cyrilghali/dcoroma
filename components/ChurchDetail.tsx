@@ -1,0 +1,99 @@
+import React from 'react'
+import ContactCard from './ContactCard'
+import fathers from '../data/contact'
+
+export const ChurchDetail = (props) => {
+    const person = fathers.find((el)=> props.referentId===el.id)
+    return (
+      <div className="container my-24 px-6 mx-auto">
+        <section className="text-gray-800">
+          <img src={props.churchImageUrl} className="h-96 lg:h-96 mx-auto w-full object-cover rounded-md" alt="" />
+          <div className="flex w-full justify-center">
+            <h1 className="text-4xl lg:text-5xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-3/4 lg:w-1/2 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2">
+              <span>{props.churchName}</span>
+            </h1>
+          </div>
+          <div className="flex w-full justify-center pb-8">
+            <h2 className="text-4xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-1/2 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2">
+              <span>Orari della divina liturgia</span>
+            </h2>
+          </div>
+          <div className="mb-8 flex flex-col">
+            <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                  <table className="min-w-full divide-y divide-gray-300">
+                    <thead className="bg-gray-50">
+                      <tr>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Lunedi
+                        </th>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Martedi
+                        </th>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Mercoledi
+                        </th>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Giovedi
+                        </th>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Venerdi
+                        </th>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Sabato
+                        </th>
+                        <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                          Domenica
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200 bg-white">
+                        <tr key="">
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[0]}
+                          </td>
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[1]}
+                          </td>
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[2]}
+                          </td>
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[3]}
+                          </td>
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[4]}
+                          </td>
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[5]}
+                          </td>
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                            {props.massSchedule[6]}
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </div>
+        </section> 
+          <div className="flex w-full justify-center">
+            <h2 className="text-4xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-1/2 lg:w-1/4 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2">
+
+              <span>Preti</span>
+            </h2>
+          </div>
+        <ul role="list" className="flex justify-center pt-8">
+        <li
+          key="abounathaoufilos"
+          className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
+        >
+         <ContactCard person={person} />
+        </li>
+         </ul>
+      </div>
+    );
+    
+  }

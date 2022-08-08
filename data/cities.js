@@ -3,22 +3,22 @@ const city = [
     {
       name: "Roma",
       imageUrl:"/photos/roma.png",
-      href:"/city/roma"
+      href:"/churches/roma"
      },
      {
       name: "Bologna",
       imageUrl:"/photos/firenze.avif",
-      href:"/city/bologna"
+      href:"/churches/bologna"
      },
      {
       name: "Firenze",
       imageUrl:"/photos/firenze.png",
-      href:"/city/firenze"
+      href:"/churches/firenze"
      },
      {
       name: "Catania",
       imageUrl:"/photos/firenze.avif",
-      href:"/city/catania"
+      href:"/churches/catania"
      },
      {
       name: "Genova",
