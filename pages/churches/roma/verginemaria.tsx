@@ -30,7 +30,10 @@ export default function Verginemaria () {
       church.massSchedule.saturday, 
       church.massSchedule.sunday, 
       ]}
-      referentId={church.referentID}/>
+      referentId={church.referentID}
+      location={church.location}
+      locationUrl={church.locationUrl}
+      />
       <Footer />
     </div>
   )

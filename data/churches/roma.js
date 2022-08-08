@@ -16,6 +16,8 @@ const roma = [
       sunday: '9:00 - 11:30'
   },
   referentID: 3,
+  location: 'Via Sante Bargellini, 13, 00157 Roma RM',
+  locationUrl: 'https://goo.gl/maps/bpjJ6CPcoDu9PWP59'
 },
 {
   id: 701147,
@@ -34,6 +36,8 @@ const roma = [
       sunday: '9:00 - 11:30'
   },
   referentID: 304580,
+  location: 'Piazza della Trasfigurazione, 00151 Roma RM',
+  locationUrl: 'https://goo.gl/maps/QMojMr917Jvw35J6A'
 },
 {
   id: 606375,
@@ -52,6 +56,8 @@ const roma = [
       sunday: '9:00 - 11:30'
   },
   referentID: 905021,
+  location: 'Via Laurentina, 1571, 00134 Roma RM',
+  locationUrl: 'https://goo.gl/maps/JT6r7VkWm45GXEUYA'
 },
 {
   id: 849183,
@@ -70,6 +76,8 @@ const roma = [
       sunday: '9:00 - 11:30'
   },
   referentID: 800770,
+  location: 'Via Appia Nuova, 244, 00183 Roma RM',
+  locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
 },
 ]
 export default roma
