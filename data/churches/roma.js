@@ -96,18 +96,19 @@ const roma = [
       sunday: ''
   },
   referentID: 6,
-  location: '',
-  locationUrl: ''
+  location: 'Via della Scafa, 176, 00054 Fiumicino RM',
+  locationUrl: 'https://goo.gl/maps/KVGPAUxDXYHwT5ZYA'
 },
 {
   id: 849185,
-  name: "San Giorgio - Frascati",
-  imageUrl:"/photos/sangiorgio.jpg",
-  href:"/churches/roma/sangiorgiofrascati",
-  churchName: "Chiesa di San Giorgio",
+  name: "San Musa il nero",
+  imageUrl:"/photos/sanmusa.jpg",
+  href:"/churches/roma/sanmusa",
+  churchName: "Chiesa di San Musa il nero",
   churchImageUrl: "",
+  monthlyMassSchedule:"La messa viene celebrata il 1° e 3° Lunedi' del mese a partire dalle 8:00.",
   massSchedule: {
-      monday: '8:00 - 10:30',
+      monday: '',
       tuesday: '',
       wednesday: '',
       thursday: '',
@@ -116,6 +117,69 @@ const roma = [
       sunday: ''
   },
   referentID: 9,
+  location: 'Via Luigi Cadorna, 6, 00044 Frascati RM',
+  locationUrl: 'https://goo.gl/maps/p5j2JuNPFzaAvgZt7'
+},
+{
+  id: 849186,
+  name: "San Macario",
+  imageUrl:"/photos/sanmacario.jpg",
+  href:"/churches/roma/sanmacario",
+  churchName: "Chiesa di San Macario",
+  churchImageUrl: "",
+  monthlyMassSchedule:"La messa viene celebrata il 1° e 3° Sabato del mese a partire dalle 8:00.",
+  massSchedule: {
+      monday: '',
+      tuesday: '',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: ''
+  },
+  referentID: 9,
+  location: 'Piazza di Santa Monica, 1, 00121 Lido di Ostia RM',
+  locationUrl: 'https://goo.gl/maps/L5xKX5ZD56HQX48H9'
+},
+{
+  id: 849187,
+  name: "Arcangelo Michele",
+  imageUrl:"/photos/arcangelomichele.jpg",
+  href:"/churches/roma/arcangelomichele",
+  churchName: "Chiesa dell'Arcangelo Michele",
+  churchImageUrl: "",
+  monthlyMassSchedule:"La messa viene celebrata una volta al mese.",
+  massSchedule: {
+      monday: '',
+      tuesday: '',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: ''
+  },
+  referentID: 3,
+  location: '',
+  locationUrl: ''
+},
+{
+  id: 849188,
+  name: "Sant'Agostino e Santa Monica",
+  imageUrl:"/photos/sanagostinosantamonica.jpg",
+  href:"/churches/roma/sanagostinosantamonica",
+  churchName: "Chiesa di Sant'Agostino e Santa Monica",
+  churchImageUrl: "",
+  monthlyMassSchedule:"La messa viene celebrata una volta al mese.",
+  massSchedule: {
+      monday: '',
+      tuesday: '',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: ''
+  },
+  referentID: 3,
   location: '',
   locationUrl: ''
 },
