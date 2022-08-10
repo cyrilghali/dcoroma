@@ -2,17 +2,17 @@ import { Card } from '../../../components/Card';
 import Footer from '../../../components/Footer'
 import Header from '../../../components/Header'
 import { HomeTitle } from '../../../components/Title';
-import bologna from '../../../data/churches/bologna.js'
+import calabria from '../../../data/churches/calabria.js'
 
-export default function Bologna() {  
+export default function Calabria() {  
     return (
         <div>
             <Header />
             <div className="pb-20">
-                <HomeTitle title="Chiese di Bologna" />
+                <HomeTitle title="Chiese di Reggio Calabria, Cosenza e Crotone" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {bologna.filter(church => church.href).map((church) => (
-                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/bologna/${church.slug}`}/>
+                  {calabria.filter(church => church.href).map((church) => (
+                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/calabria/${church.slug}`}/>
                 ))}
                 </div>
             </div>

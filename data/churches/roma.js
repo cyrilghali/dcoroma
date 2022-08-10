@@ -151,7 +151,7 @@ const roma = [
       sunday: ''
   },
   referentID: 3,
-  location: '',
+  location: 'Ansio',
   locationUrl: ''
 },
 {
@@ -171,18 +171,8 @@ const roma = [
       sunday: ''
   },
   referentID: 3,
-  location: '',
+  location: 'Velletri',
   locationUrl: ''
-},
-{
-  name: "San Abramo",
-  imageUrl:"/photos/sanabraam.jpg",
-  slug: 'sanabramo',
-  churchName: "Chiesa di San Abramo",
-  churchImageUrl: "/photos/genova-abramo.jpg",
-  referentID: 13,
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  location: 'Corso Europa 33, 83100 Avellino',
-    locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
-},]
+}
+]
 export default roma

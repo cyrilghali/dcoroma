@@ -2,17 +2,17 @@ import { Card } from '../../../components/Card';
 import Footer from '../../../components/Footer'
 import Header from '../../../components/Header'
 import { HomeTitle } from '../../../components/Title';
-import catania from '../../../data/churches/catania.js'
+import sicilia from '../../../data/churches/sicilia.js'
 
 export default function Catania() {  
     return (
         <div>
             <Header />
             <div className="pb-20">
-                <HomeTitle title="Chiese di Catania" />
+                <HomeTitle title="Chiese di Catania, Palermo, Ragusa e Acireale" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {catania.filter(church => church.href).map((church) => (
-                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/catania/${church.slug}`}/>
+                  {sicilia.filter(church => church.href).map((church) => (
+                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/sicilia/${church.slug}`}/>
                 ))}
                 </div>
             </div>

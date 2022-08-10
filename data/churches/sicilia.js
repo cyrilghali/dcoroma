@@ -1,4 +1,4 @@
-const catania = [
+const sicilia = [
 {
   name: "San Giorgio",
   imageUrl:"/photos/sangiorgio.jpg",
@@ -7,16 +7,16 @@ const catania = [
   churchImageUrl: "/photos/catania-sangiorgio.jpg",
   massSchedule: {
       monday: '',
-      tuesday: '8h30',
+      tuesday: '09:00-11:30',
       wednesday: '',
       thursday: '',
       friday: '',
       saturday: '',
-      sunday: '8h30',
+      sunday: '09:00-11:30',
   },
   referentID: 342876,
-  location: 'Via Sante Bargellini, 13, 00157 catania RM',
-  locationUrl: 'https://goo.gl/maps/bpjJ6CPcoDu9PWP59'
+  location: 'Piazza Carlo Alberto, 95100 Catania CT',
+  locationUrl: 'https://goo.gl/maps/wEspNmyp6AkJ6A7v9'
 },
 {
   name: "Santa Maria di Palermo",
@@ -51,28 +51,7 @@ const catania = [
   location: 'Acireale',
   locationUrl: ''
 },
-{
-  name: "Chiesa San Paolo di Tebe",
-  imageUrl:"",
-  slug: 'sanpaolo',
-  churchName: "Chiesa San Paolo di Tebe",
-  churchImageUrl: "/photos/catena-cosenza.jpg",
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  referentID: 342876,
-  location: 'Cosenza',
-  locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
-},
-{
-  name: "Anba Antonious",
-  imageUrl:"/photos/anbaantonios.jpeg",
-  slug: 'anbaantonious',
-  churchName: "Chiesa Anba Antonios",
-  churchImageUrl: "/photos/catena-cosenza.jpg",
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  referentID: 342876,
-  location: 'Crotone',
-  locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
-},
+
 {
   name: "Santa Maria - Matera",
   imageUrl:"/photos/verginemaria.jpg",
@@ -83,29 +62,6 @@ const catania = [
   referentID: 342876,
   location: 'Via Appia Nuova, 244, 00183 catania RM',
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
-},
-{
-  name: "Chiesa di San Michele arcangelo",
-  imageUrl:"/photos/archangelmikhail.jpeg",
-  slug: 'santamichele',
-  churchName: "Chiesa di San Michele arcangelo",
-  churchImageUrl: "",
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  referentID: 342876,
-  location: 'Reggio Calabria - Piazza Sant’Agostino',
-  locationUrl: ''
-},
-{
-  name: "Chiesa di San Gabriele Arcangelo",
-  imageUrl:"/photos/archangelgabriel.jpeg",
-  slug: 'sangabriele',
-  churchName: "Chiesa di San Gabriele Arcangelo",
-  churchImageUrl: "/photos/catania-cagliari.jpg",
-  churchName: "Chiesa di Santa Maria",
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  referentID: 342876,
-  location: 'Cagliari - Vicino al porto',
-  locationUrl: ''
-},
+}
 ]
-export default catania
+export default sicilia
