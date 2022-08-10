@@ -32,7 +32,7 @@ const city = [
      },
      {
       name: "Reggio Calabria, Cosenza e Crotone",
-      imageUrl:"/photos/torino.png",
+      imageUrl:"/photos/calabria.jpg",
       href: "/churches/calabria"
      },
      {
