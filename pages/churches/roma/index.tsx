@@ -12,7 +12,7 @@ export default function Roma() {
                 <HomeTitle title="Chiese di Roma" />
                 <div className="flex flex-row flex-wrap justify-evenly">
                   {roma.filter(church => church.href).map((church) => (
-                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={church.href}/>
+                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/roma/${church.slug}`}/>
                 ))}
                 </div>
             </div>

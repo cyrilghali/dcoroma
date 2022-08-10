@@ -28,6 +28,7 @@ const city = [
      {
       name: "Torino",
       imageUrl:"/photos/torino.png",
+      href: "/churches/torino"
      },
 ]
 export default city

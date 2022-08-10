@@ -3,7 +3,6 @@ const genova = [
   name: "San Giovanni Battista",
   imageUrl:"/photos/giovanni.png",
   slug: 'sangiovanni',
-  href:"/churches/genova/sangiovanni",
   churchName: "Chiesa di San Giovanni Battista",
   churchImageUrl: "/photos/genova-giovanni.jpg",
   referentID: 13,

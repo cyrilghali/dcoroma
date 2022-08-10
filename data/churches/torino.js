@@ -1,10 +1,8 @@
-
 const torino = [
 {
   name: "San Mercurio il Filopatore",
   imageUrl:"/photos/mercurio.jpg",
   slug: 'sanmercurio',
-  href:"/churches/torino/sanmercurio",
   churchName: "Chiesa di San Mercurio il Filopatore",
   churchImageUrl: "/photos/torino-mercurio.jpeg",
   referentID: 13,
@@ -16,7 +14,6 @@ const torino = [
   name: "Santa Verena & San Muris",
   imageUrl:"/photos/verina.jpg",
   slug: 'santaverena',
-  href:"/churches/torino/santaverena",
   churchName: "Chiesa di Santa Verena & San Muris",
   churchImageUrl: "/photos/torino-verina.jpg",
   referentID: 13,
@@ -27,7 +24,6 @@ const torino = [
   name: "Santa Maria & San Giuseppe il falegname",
   imageUrl:"/photos/verginemaria.jpg",
   slug: 'verginemaria',
-  href:"/churches/torino/santamaria",
   churchName: "Chiesa di Santa Maria & San Giuseppe il falegname",
   churchImageUrl: "/photos/torino-santamaria.jpg",
   referentID: 13,
@@ -38,7 +34,6 @@ const torino = [
   name: "San Lazzaro",
   imageUrl:"/photos/lazario.jpg",
   slug: 'sanlazarro',
-  href:"/churches/torino/sanlazarro",
   churchName: "Chiesa di San Lazzaro",
   churchImageUrl: "/photos/torino-lazarro.jpg",
   referentID: 13,
@@ -46,11 +41,9 @@ const torino = [
   location: 'Via trevigi, 47 Casale Monferrato',
   locationUrl: 'https://goo.gl/maps/GELpEx4b59uTxEx48'
 },{
-  id: 900005,
   name: "San Giovanni Battista",
   imageUrl:"/photos/giovanni.png",
   slug: 'sangiovanni',
-  href:"/churches/torino/sangiovanni",
   churchName: "Chiesa di San Giovanni Battista",
   churchImageUrl: "/photos/torino-giovanni.jpg",
   referentID: 13,
@@ -59,11 +52,9 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/vgR9tzie4LVB1Twi9'
 },
 {
-  id: 900006,
   name: "San Abramo",
   imageUrl:"/photos/sanabraam.jpg",
   slug: 'sanabramo',
-  href:"/churches/torino/sanabramo",
   churchName: "Chiesa di San Abramo",
   churchImageUrl: "/photos/torino-abramo.jpg",
   referentID: 13,
