@@ -2,11 +2,11 @@ import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import { ChurchDetail } from '../../../components/ChurchDetail';
 import Error404 from '../../../components/error'
-import catania from '../../../data/churches/catania'
+import cagliari from '../../../data/churches/cagliari'
 
 export async function getStaticPaths() {
   return {
-    paths: catania.map((church) => ({
+    paths: cagliari.map((church) => ({
       params: {
         slug: church.slug,
       },
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = catania.find((church) => church.slug === params.slug)
+  const res = cagliari.find((church) => church.slug === params.slug)
   return {
     props: { church: res },
     revalidate: 1,
