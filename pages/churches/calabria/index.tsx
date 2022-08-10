@@ -11,7 +11,7 @@ export default function Calabria() {
             <div className="pb-20">
                 <HomeTitle title="Chiese di Reggio Calabria, Cosenza e Crotone" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {calabria.filter(church => church.href).map((church) => (
+                  {calabria.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/calabria/${church.slug}`}/>
                 ))}
                 </div>

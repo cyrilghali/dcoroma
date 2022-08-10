@@ -11,7 +11,7 @@ export default function PugliaCampania() {
             <div className="pb-20">
                 <HomeTitle title="Chiese di Avellino, Scafati e Brindisi" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {puglia_campania.filter(church => church.href).map((church) => (
+                  {puglia_campania.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/pugliacampania/${church.slug}`}/>
                 ))}
                 </div>

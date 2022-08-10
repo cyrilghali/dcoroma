@@ -11,7 +11,7 @@ export default function Genova() {
             <div className="pb-20">
                 <HomeTitle title="Chiese di Genova e La Spezia" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {genova.filter(church => church.href).map((church) => (
+                  {genova.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/genova/${church.slug}`}/>
                 ))}
                 </div>

@@ -11,7 +11,7 @@ export default function Bologna() {
             <div className="pb-20">
                 <HomeTitle title="Chiese di Bologna, Rimini e Reggio Emilia" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {bologna.filter(church => church.href).map((church) => (
+                  {bologna.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/emiliaromagna/${church.slug}`}/>
                 ))}
                 </div>

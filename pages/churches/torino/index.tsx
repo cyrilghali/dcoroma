@@ -11,7 +11,7 @@ export default function Torino() {
             <div className="pb-20">
                 <HomeTitle title="Chiese di Torino e nel Piemonte" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {torino.filter(church => church.href).map((church) => (
+                  {torino.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/torino/${church.slug}`}/>
                 ))}
                 </div>
