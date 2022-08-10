@@ -1,9 +1,9 @@
 const catania = [
 {
-  id: 735884,
   name: "San Giorgio",
   imageUrl:"/photos/sangiorgio.jpg",
   href:"/churches/catania/sangiorgio",
+  slug: 'sangiorgio',
   churchName: "Chiesa di San Giorgio",
   churchImageUrl: "/photos/catania-sangiorgio.jpg",
   massSchedule: {
@@ -20,9 +20,9 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/bpjJ6CPcoDu9PWP59'
 },
 {
-  id: 165591,
   name: "Santa Maria di Palermo",
   imageUrl:"/photos/verginemaria.jpg",
+  slug: 'verginemaria',
   href:"/churches/catania/verginemaria",
   churchName: "Chiesa di Santa Maria di Palermo",
   churchImageUrl: "/photos/catania-palermo.jpg",
@@ -32,9 +32,9 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/d4mUJHPkzN7E2eARA'
 },
 {
-  id: 176954,
   name: "Chiesa del papa Cirillo VI",
   imageUrl:"/photos/popekyrellos.jpeg",
+  slug: 'popekyrellos',
   href:"/churches/catania/popekyrellos",
   churchName: "Chiesa del papa Cirillo VI",
   churchImageUrl: "/photos/catena-ragusa.jpg",
@@ -44,9 +44,9 @@ const catania = [
   locationUrl: ''
 },
 {
-  id: 500070,
   name: "San Karas",
   imageUrl:"/photos/sankaras.jpeg",
+  slug: 'sankaras',
   href:"/churches/catania/sankaras",
   churchName: "Chiesa di San Karas",
   churchImageUrl: "/photos/catena-ragusa.jpg",
@@ -56,9 +56,9 @@ const catania = [
   locationUrl: ''
 },
 {
-  id: 479592,
   name: "Chiesa San Paolo di Tebe",
   imageUrl:"",
+  slug: 'sanpaolo',
   href:"/churches/catania/sanpaolo",
   churchName: "Chiesa San Paolo di Tebe",
   churchImageUrl: "/photos/catena-cosenza.jpg",
@@ -68,9 +68,9 @@ const catania = [
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
 },
 {
-  id: 176954,
   name: "Anba Antonious",
   imageUrl:"/photos/anbaantonios.jpeg",
+  slug: 'anbaantonious',
   href:"/churches/catania/anbaantonious",
   churchName: "Chiesa Anba Antonios",
   churchImageUrl: "/photos/catena-cosenza.jpg",
@@ -80,9 +80,9 @@ const catania = [
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
 },
 {
-  id: 327498,
   name: "Santa Maria - Matera",
   imageUrl:"/photos/verginemaria.jpg",
+  slug: 'santamariamatera',
   href:"/churches/catania/santamariamatera",
   churchName: "Chiesa di Santa Maria",
   churchImageUrl: "/photos/catena-matera.jpg",
@@ -92,9 +92,9 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
 },
 {
-  id: 904920,
   name: "Chiesa di San Michele arcangelo",
   imageUrl:"/photos/archangelmikhail.jpeg",
+  slug: 'santamichele',
   href:"/churches/catania/sanmichele`",
   churchName: "Chiesa di San Michele arcangelo",
   churchImageUrl: "",
@@ -104,9 +104,9 @@ const catania = [
   locationUrl: ''
 },
 {
-  id: 665586,
   name: "Chiesa di San Gabriele Arcangelo",
   imageUrl:"/photos/archangelgabriel.jpeg",
+  slug: 'sangabriele',
   href:"/churches/catania/sangabriele",
   churchName: "Chiesa di San Gabriele Arcangelo",
   churchImageUrl: "/photos/catania-cagliari.jpg",

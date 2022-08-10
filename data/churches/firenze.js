@@ -1,8 +1,8 @@
 const firenze = [
 {
-  id: 800001,
   name: "San Mina Megalomartire",
   imageUrl:"/photos/sanMina.jpg",
+  slug: 'sanmina',
   href:"/churches/firenze/sanmina",
   churchName: "Chiesa di San Mina & San Papa Cirillo VI",
   churchImageUrl: "",

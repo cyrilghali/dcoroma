@@ -1,13 +1,28 @@
-
-
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import { ChurchDetail } from '../../../components/ChurchDetail';
-import catania from '../../../data/churches/catania';
 import Error404 from '../../../components/error'
+import bologna from '../../../data/churches/bologna'
 
-export default function Church () {
-  const church = catania.find((church) => 500070===church.id);
+export async function getStaticPaths() {
+  return {
+    paths: bologna.map((church) => ({
+      params: {
+        slug: church.slug,
+      },
+    })),
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const res = bologna.find((church) => church.slug === params.slug)
+  return {
+    props: { church: res },
+    revalidate: 1,
+  }
+}
+export default function Church ({ church }) {
   if (church == null || typeof church == 'undefined' )
   {
     return (
@@ -23,6 +38,7 @@ export default function Church () {
       <ChurchDetail 
       churchName={church.churchName} 
       churchImageUrl={church.churchImageUrl}
+      monthlyMassSchedule={church.monthlyMassSchedule}
       massSchedule={[
       church.massSchedule?.monday, 
       church.massSchedule?.tuesday, 
@@ -41,4 +57,5 @@ export default function Church () {
   )
 };  
 }
+
 

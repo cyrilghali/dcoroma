@@ -1,9 +1,9 @@
 const bologna = [
 {
-  id: 900001,
   name: "Sant'Atanasio Apostolico",
   imageUrl:"/photos/sanAtanasio.jpg",
   href:"/churches/bologna/sanatanasio",
+  slug: 'sanatanasio',
   churchName: "Chiesa di San Atanasio Apostolico",
   churchImageUrl: "",
   massSchedule: {

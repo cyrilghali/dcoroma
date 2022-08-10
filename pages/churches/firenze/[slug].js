@@ -1,11 +1,28 @@
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import { ChurchDetail } from '../../../components/ChurchDetail';
-import roma from '../../../data/churches/roma';
 import Error404 from '../../../components/error'
+import firenze from '../../../data/churches/firenze'
 
-export default function ArcangeloMichele () {
-  const church = roma.find((church) => 849187===church.id);
+export async function getStaticPaths() {
+  return {
+    paths: firenze.map((church) => ({
+      params: {
+        slug: church.slug,
+      },
+    })),
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const res = firenze.find((church) => church.slug === params.slug)
+  return {
+    props: { church: res },
+    revalidate: 1,
+  }
+}
+export default function Church ({ church }) {
   if (church == null || typeof church == 'undefined' )
   {
     return (
@@ -23,13 +40,13 @@ export default function ArcangeloMichele () {
       churchImageUrl={church.churchImageUrl}
       monthlyMassSchedule={church.monthlyMassSchedule}
       massSchedule={[
-      church.massSchedule.monday, 
-      church.massSchedule.tuesday, 
-      church.massSchedule.wednesday, 
-      church.massSchedule.thursday, 
-      church.massSchedule.friday, 
-      church.massSchedule.saturday, 
-      church.massSchedule.sunday, 
+      church.massSchedule?.monday, 
+      church.massSchedule?.tuesday, 
+      church.massSchedule?.wednesday, 
+      church.massSchedule?.thursday, 
+      church.massSchedule?.friday, 
+      church.massSchedule?.saturday, 
+      church.massSchedule?.sunday, 
       ]}
       referentId={church.referentID}
       location={church.location}
@@ -40,3 +57,5 @@ export default function ArcangeloMichele () {
   )
 };  
 }
+
+
