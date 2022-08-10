@@ -4,8 +4,8 @@ import { ChurchDetail } from '../../../components/ChurchDetail';
 import roma from '../../../data/churches/roma';
 import Error404 from '../../../components/error'
 
-export default function SangiorgioFrascati () {
-  const church = roma.find((church) => 849185===church.id);
+export default function SanMusa () {
+  const church = roma.find((church) => 849186===church.id);
   if (church == null || typeof church == 'undefined' )
   {
     return (
@@ -21,6 +21,7 @@ export default function SangiorgioFrascati () {
       <ChurchDetail 
       churchName={church.churchName} 
       churchImageUrl={church.churchImageUrl}
+      monthlyMassSchedule={church.monthlyMassSchedule}
       massSchedule={[
       church.massSchedule.monday, 
       church.massSchedule.tuesday, 
