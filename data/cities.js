@@ -22,11 +22,12 @@ const city = [
      },
      {
       name: "Genova",
-      imageUrl:"/photos/genova.jpg"
+      imageUrl:"/photos/genova.jpg",
+      href: "/churches/genova"
      },
      {
       name: "Torino",
-      imageUrl:"/photos/torino.png"
+      imageUrl:"/photos/torino.png",
      },
 ]
 export default city

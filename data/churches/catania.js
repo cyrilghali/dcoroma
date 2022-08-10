@@ -26,6 +26,7 @@ const catania = [
   href:"/churches/catania/verginemaria",
   churchName: "Chiesa di Santa Maria di Palermo",
   churchImageUrl: "/photos/catania-palermo.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Via Nicolò Garzilli, 90141 Palermo PA',
   locationUrl: 'https://goo.gl/maps/d4mUJHPkzN7E2eARA'
@@ -37,6 +38,7 @@ const catania = [
   href:"/churches/catania/popekyrellos",
   churchName: "Chiesa del papa Cirillo VI",
   churchImageUrl: "/photos/catena-ragusa.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Ragusa',
   locationUrl: ''
@@ -48,6 +50,7 @@ const catania = [
   href:"/churches/catania/sankaras",
   churchName: "Chiesa di San Karas",
   churchImageUrl: "/photos/catena-ragusa.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Acireale',
   locationUrl: ''
@@ -59,6 +62,7 @@ const catania = [
   href:"/churches/catania/sanpaolo",
   churchName: "Chiesa San Paolo di Tebe",
   churchImageUrl: "/photos/catena-cosenza.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Cosenza',
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
@@ -70,6 +74,7 @@ const catania = [
   href:"/churches/catania/anbaantonious",
   churchName: "Chiesa Anba Antonios",
   churchImageUrl: "/photos/catena-cosenza.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Crotone',
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
@@ -81,6 +86,7 @@ const catania = [
   href:"/churches/catania/santamariamatera",
   churchName: "Chiesa di Santa Maria",
   churchImageUrl: "/photos/catena-matera.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Via Appia Nuova, 244, 00183 catania RM',
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
@@ -92,6 +98,7 @@ const catania = [
   href:"/churches/catania/sanmichele`",
   churchName: "Chiesa di San Michele arcangelo",
   churchImageUrl: "",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Reggio Calabria - Piazza Sant’Agostino',
   locationUrl: ''
@@ -104,6 +111,7 @@ const catania = [
   churchName: "Chiesa di San Gabriele Arcangelo",
   churchImageUrl: "/photos/catania-cagliari.jpg",
   churchName: "Chiesa di Santa Maria",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
   location: 'Cagliari - Vicino al porto',
   locationUrl: ''
