@@ -7,6 +7,7 @@ import { fetchAPI } from "../lib/api"
 import { CityChurches } from '../components/CityChurches'
 import { HomeNews } from './news'
 import ContactCTA from '../components/ContactCTA'
+import churches from '../data/churches'
 
 
 export async function getStaticProps() {

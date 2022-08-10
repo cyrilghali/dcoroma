@@ -2,6 +2,7 @@ const bologna = [
 {
   name: "Sant'Atanasio Apostolico",
   imageUrl:"/photos/sanAtanasio.jpg",
+  city: 'bologna',
   slug: 'sanatanasio',
   churchName: "Chiesa di San Atanasio Apostolico",
   churchImageUrl: "",

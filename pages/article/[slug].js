@@ -35,7 +35,6 @@ export async function getStaticProps({ params }) {
 
 
 const Article = ({ article }) => {
-  console.log(article)
   return (
     <div>
       <Header />
