@@ -1,8 +1,8 @@
 const roma = [
 {
-  id: 367513,
   name: "San Giorgio Megalomartire",
   imageUrl:"/photos/sangiorgio.jpg",
+  slug: 'sangiorgio',
   href:"/churches/roma/sangiorgio",
   churchName: "Chiesa di San Giorgio",
   churchImageUrl: "/photos/roma-sangiorgio.jpg",
@@ -20,9 +20,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/bpjJ6CPcoDu9PWP59'
 },
 {
-  id: 701147,
   name: "San Mina Megalomartire",
   imageUrl:"/photos/sanMina.jpg",
+  slug: 'sanmina',
   href:"/churches/roma/sanmina",
   churchName: "Chiesa di San Mina & San Papa Cirillo VI",
   churchImageUrl: "/photos/roma-sanmina.jpg",
@@ -40,9 +40,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/QMojMr917Jvw35J6A'
 },
 {
-  id: 606375,
   name: "Vergine Maria",
   imageUrl:"/photos/verginemaria.jpg",
+  slug: 'verginemaria',
   href:"/churches/roma/verginemaria",
   churchName: "Monastero della Vergine Maria",
   churchImageUrl: "/photos/monasterio.jpg",
@@ -60,9 +60,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/JT6r7VkWm45GXEUYA'
 },
 {
-  id: 849183,
   name: "San Marco Apostolo",
   imageUrl:"/photos/sanmarco.jpg",
+  slug: 'sanmarco',
   href:"/churches/roma/sanmarco",
   churchName: "Chiesa di San Marco",
   churchImageUrl: "",
@@ -80,9 +80,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
 },
 {
-  id: 849184,
   name: "Santa Vergine Maria - Fiumicino",
   imageUrl:"/photos/verginemaria.jpg",
+  slug:"santaverginemariafiumicino",
   href:"/churches/roma/santaverginemariafiumicino",
   churchName: "Chiesa della Santa Vergine Maria",
   churchImageUrl: "",
@@ -100,9 +100,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/KVGPAUxDXYHwT5ZYA'
 },
 {
-  id: 849185,
   name: "San Musa il nero",
   imageUrl:"/photos/sanmusa.jpg",
+  slug: 'sanmusa',
   href:"/churches/roma/sanmusa",
   churchName: "Chiesa di San Musa il nero",
   churchImageUrl: "",
@@ -121,9 +121,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/p5j2JuNPFzaAvgZt7'
 },
 {
-  id: 849186,
   name: "San Macario",
   imageUrl:"/photos/sanmacario.jpg",
+  slug: 'sanmacario',
   href:"/churches/roma/sanmacario",
   churchName: "Chiesa di San Macario",
   churchImageUrl: "",
@@ -142,9 +142,9 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/L5xKX5ZD56HQX48H9'
 },
 {
-  id: 849187,
   name: "Arcangelo Michele",
   imageUrl:"/photos/arcangelomichele.jpg",
+  slug: 'arcangelomichele',
   href:"/churches/roma/arcangelomichele",
   churchName: "Chiesa dell'Arcangelo Michele",
   churchImageUrl: "",
@@ -163,9 +163,9 @@ const roma = [
   locationUrl: ''
 },
 {
-  id: 849188,
   name: "Sant'Agostino e Santa Monica",
   imageUrl:"/photos/sanagostinosantamonica.jpg",
+  slug:"sanagostinosantamonica",
   href:"/churches/roma/sanagostinosantamonica",
   churchName: "Chiesa di Sant'Agostino e Santa Monica",
   churchImageUrl: "",
@@ -183,5 +183,16 @@ const roma = [
   location: '',
   locationUrl: ''
 },
-]
+{
+  name: "San Abramo",
+  imageUrl:"/photos/sanabraam.jpg",
+  slug: 'sanabramo',
+  href:"/churches/genova/sanabramo",
+  churchName: "Chiesa di San Abramo",
+  churchImageUrl: "/photos/genova-abramo.jpg",
+  referentID: 13,
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  location: 'Corso Europa 33, 83100 Avellino',
+    locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
+},]
 export default roma
