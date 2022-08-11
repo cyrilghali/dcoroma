@@ -10,10 +10,16 @@ export const ChurchDetail = (props) => {
     if (typeof person === 'undefined') {
         return error404();
     }
+    const churchImageUrl = props.churchImageUrl;
+
     return (
       <div className="container my-24 px-6 mx-auto">
         <section className="text-gray-800">
-          <img src={props.churchImageUrl} className="h-96 lg:h-96 mx-auto w-full object-cover rounded-md" alt="" />
+          {props.churchImageUrl ?
+            <img src={props.churchImageUrl} className="h-96 lg:h-96 mx-auto w-full object-cover rounded-md" alt="" />
+          :
+          <></>
+          }
           <div className="flex w-full justify-center">
             <h1 className="text-4xl lg:text-5xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-3/4 lg:w-1/2 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2">
               <span>{props.churchName}</span>
@@ -105,11 +111,15 @@ export const ChurchDetail = (props) => {
                 >
                   <ContactCard person={person} />
                 </li>
+                {props.locationUrl ? 
                 <Link href={props.locationUrl}>
                     <li className="flex flex-row hover:cursor-pointer justify-center items-center text-center mt-20 border-b-2 border-sand hover:border-sand-dark px-auto">
                         <LocationMarkerIcon className="h-4 w-4 text-gray-500" /><span>{props.location}</span>
                     </li>
                 </Link>
+                :
+                <></>
+                }
              </ul>
           </div>
       </div>

@@ -173,6 +173,17 @@ const roma = [
   referentID: 3,
   location: 'Velletri',
   locationUrl: ''
+},
+{
+  name: "San Giorgio",
+  imageUrl:"/photos/sangiorgio.jpg",
+  slug: 'sangiorgioperugia',
+  churchName: "Chiesa di San Giorgio",
+  churchImageUrl: "",
+  monthlyMassSchedule: 'Non disponibile',
+  referentID: 4,
+  location: '',
+  locationUrl: ''
 }
 ]
 export default roma
