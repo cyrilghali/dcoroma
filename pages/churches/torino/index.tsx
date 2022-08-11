@@ -9,7 +9,7 @@ export default function Torino() {
         <div>
             <Header />
             <div className="pb-20">
-                <HomeTitle title="Chiese di Torino e nel Piemonte" />
+                <HomeTitle title="Chiese di Torino" />
                 <div className="flex flex-row flex-wrap justify-evenly">
                   {torino.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/torino/${church.slug}`}/>
