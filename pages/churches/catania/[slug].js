@@ -2,11 +2,11 @@ import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import { ChurchDetail } from '../../../components/ChurchDetail';
 import Error404 from '../../../components/error'
-import sicilia from '../../../data/churches/sicilia'
+import catania from '../../../data/churches/catania'
 
 export async function getStaticPaths() {
   return {
-    paths: sicilia.map((church) => ({
+    paths: catania.map((church) => ({
       params: {
         slug: church.slug,
       },
