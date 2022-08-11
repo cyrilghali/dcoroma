@@ -11,7 +11,7 @@ export default function Catania() {
             <div className="pb-20">
                 <HomeTitle title="Chiese di Catania" />
                 <div className="flex flex-row flex-wrap justify-evenly">
-                  {catania.filter(church => church.href).map((church) => (
+                  {catania.filter(church => church.slug).map((church) => (
                     <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/catania/${church.slug}`}/>
                 ))}
                 </div>
