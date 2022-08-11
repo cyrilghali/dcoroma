@@ -1,5 +1,16 @@
 const torino = [
 {
+  name: "San Abanoub e Anba Karas",
+  imageUrl:"",
+  slug: 'sanabanoubkaras',
+  churchName: "Chiesa dei Santi Abanoub e Anba Karas",
+  churchImageUrl: "/photos/novara-karas.jpg",
+  referentID: 13,
+  monthlyMassSchedule: 'La messa viene celebrata la 2° e 4° Domenica del mese a partire dalle ore 8:00',
+  location: '',
+  locationUrl: ''
+},
+{
   name: "San Mercurio il Filopatore",
   imageUrl:"/photos/mercurio.jpg",
   slug: 'sanmercurio',
@@ -52,14 +63,39 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/vgR9tzie4LVB1Twi9'
 },
 {
-  name: "San Abramo",
-  imageUrl:"/photos/sanabraam.jpg",
-  slug: 'sanabramo',
-  churchName: "Chiesa di San Abramo",
-  churchImageUrl: "/photos/torino-abramo.jpg",
-  referentID: 13,
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  location: 'Corso Europa 33, 83100 Avellino',
-    locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
-},]
+  name: "San Giorgio",
+  imageUrl:"/photos/sangiorgio.jpg",
+  slug: 'sangiorgio',
+  churchName: "Chiesa di San Giorgio",
+  churchImageUrl: "",
+  referentID: 6,
+  monthlyMassSchedule: 'Non disponibile',
+  location: 'Piazzetta S. Paolo, 1, 14100 Asti AT',
+  locationUrl: 'https://goo.gl/maps/2SGBUNag19xoi14u5'
+},
+{
+  name: "Arcangelo Michele",
+  imageUrl:"/photos/arcangelomichele.jpg",
+  slug: 'arcangelomichele',
+  churchName: "Chiesa dell'Arcangelo Michele",
+  churchImageUrl: "",
+  referentID: 6,
+  monthlyMassSchedule: 'Non disponibile',
+  location: 'Via Ceretto, 26, 12024 Ceretto CN',
+  locationUrl: 'https://goo.gl/maps/78PpQHbYLuqyFA7P9'
+},
+{
+  name: "Santa Vergine Maria",
+  imageUrl:"/photos/verginemaria.jpg",
+  slug: 'arcangelomichele',
+  churchName: "Chiesa della Santa Vergine Maria",
+  churchImageUrl: "",
+  referentID: 6,
+  monthlyMassSchedule: 'Non disponibile',
+  location: 'Via Spoleto, 12, 10143 Torino TO',
+  locationUrl: 'https://goo.gl/maps/eJwNw8uk7nLPfr9o9'
+}
+
+
+]
 export default torino

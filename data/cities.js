@@ -6,14 +6,19 @@ const city = [
       href:"/churches/roma"
      },
      {
-      name: "Bologna",
-      imageUrl:"/photos/bologna.jpg",
-      href:"/churches/bologna"
+      name: "Torino",
+      imageUrl:"/photos/torino.png",
+      href: "/churches/torino"
      },
      {
       name: "Firenze",
       imageUrl:"/photos/firenze.png",
       href:"/churches/firenze"
+     },
+     {
+      name: "Bologna",
+      imageUrl:"/photos/bologna.jpg",
+      href:"/churches/bologna"
      },
      {
       name: "Catania",
@@ -25,10 +30,6 @@ const city = [
       imageUrl:"/photos/genova.jpg",
       href: "/churches/genova"
      },
-     {
-      name: "Torino",
-      imageUrl:"/photos/torino.png",
-      href: "/churches/torino"
-     },
+
 ]
 export default city

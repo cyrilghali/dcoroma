@@ -7,16 +7,16 @@ const catania = [
   churchImageUrl: "/photos/catania-sangiorgio.jpg",
   massSchedule: {
       monday: '',
-      tuesday: '8h30',
+      tuesday: '09:00-11:30',
       wednesday: '',
       thursday: '',
       friday: '',
       saturday: '',
-      sunday: '8h30',
+      sunday: '09:00-11:30',
   },
   referentID: 342876,
-  location: 'Via Sante Bargellini, 13, 00157 catania RM',
-  locationUrl: 'https://goo.gl/maps/bpjJ6CPcoDu9PWP59'
+  location: 'Piazza Carlo Alberto, 95100 Catania CT',
+  locationUrl: 'https://goo.gl/maps/wEspNmyp6AkJ6A7v9'
 },
 {
   name: "Santa Maria di Palermo",
@@ -51,6 +51,30 @@ const catania = [
   location: 'Acireale',
   locationUrl: ''
 },
+
+{
+  name: "Santa Maria - Matera",
+  imageUrl:"/photos/verginemaria.jpg",
+  slug: 'santamariamatera',
+  churchName: "Chiesa di Santa Maria",
+  churchImageUrl: "/photos/catena-matera.jpg",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  referentID: 342876,
+  location: 'Via Appia Nuova, 244, 00183 catania RM',
+  locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
+},
+{
+  name: "Chiesa dell'Arcangelo Gabriele",
+  imageUrl:"/photos/archangelgabriel.jpeg",
+  slug: 'sangabriele',
+  churchName: "Chiesa di San Gabriele Arcangelo",
+  churchImageUrl: "/photos/catania-cagliari.jpg",
+  churchName: "Chiesa di Santa Maria",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  referentID: 342876,
+  location: 'Cagliari - Vicino al porto',
+  locationUrl: ''
+},
 {
   name: "Chiesa San Paolo di Tebe",
   imageUrl:"",
@@ -74,17 +98,6 @@ const catania = [
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
 },
 {
-  name: "Santa Maria - Matera",
-  imageUrl:"/photos/verginemaria.jpg",
-  slug: 'santamariamatera',
-  churchName: "Chiesa di Santa Maria",
-  churchImageUrl: "/photos/catena-matera.jpg",
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  referentID: 342876,
-  location: 'Via Appia Nuova, 244, 00183 catania RM',
-  locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
-},
-{
   name: "Chiesa di San Michele arcangelo",
   imageUrl:"/photos/archangelmikhail.jpeg",
   slug: 'santamichele',
@@ -96,16 +109,26 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "Chiesa di San Gabriele Arcangelo",
-  imageUrl:"/photos/archangelgabriel.jpeg",
-  slug: 'sangabriele',
-  churchName: "Chiesa di San Gabriele Arcangelo",
-  churchImageUrl: "/photos/catania-cagliari.jpg",
-  churchName: "Chiesa di Santa Maria",
-  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
-  referentID: 342876,
-  location: 'Cagliari - Vicino al porto',
+  name: "Papa Cirillo VI",
+  imageUrl:"/photos/popekyrellos.jpg",
+  slug: 'papacirillovi',
+  churchName: "Chiesa del Papa Cirillo VI",
+  churchImageUrl: "",
+  monthlyMassSchedule: 'Non disponibile',
+  referentID: 3,
+  location: 'Scafati',
   locationUrl: ''
 },
+{
+  name: "San Abramo",
+  imageUrl:"/photos/sanabraam.jpg",
+  slug: 'sanabramo',
+  churchName: "Chiesa di San Abramo",
+  churchImageUrl: "/photos/torino-abramo.jpg",
+  referentID: 13,
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  location: 'Corso Europa 33, 83100 Avellino',
+      locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
+  }
 ]
 export default catania
