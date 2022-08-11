@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = sicilia.find((church) => church.slug === params.slug)
+  const res = catania.find((church) => church.slug === params.slug)
   return {
     props: { church: res },
     revalidate: 1,
