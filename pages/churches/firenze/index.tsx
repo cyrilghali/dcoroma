@@ -12,7 +12,7 @@ export default function Firenze() {
                 <HomeTitle title="Chiese di Firenze" />
                 <div className="flex flex-row flex-wrap justify-evenly">
                   {firenze.filter(church => church.slug).map((church) => (
-                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} href={`/churches/firenze/${church.slug}`}/>
+                    <Card key={church.name} title={church.name} imageUrl={church.imageUrl} className="object-top" href={`/churches/firenze/${church.slug}`}/>
                 ))}
                 </div>
             </div>
