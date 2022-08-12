@@ -2,7 +2,7 @@
 const IBAN = () => {
   return(
     <>
-      <h2 className="flex py-4 mx-5 justify-center font-black text-lg"> Trasferimento </h2>
+      <h2 className="flex py-4 mx-5 justify-center font-black text-lg"> Bonifico </h2>
       <h2 className="flex py-4 mx-5 justify-center font-semibold text-lg underline">IBAN</h2>
       <h2 className="flex py-4 mx-5 justify-center font-semibold text-lg">IT 82 W 02008 05001 000401308210</h2>
       <h2 className="flex py-4 mx-5 justify-center font-semibold text-lg underline">BIC / SWIFT</h2>

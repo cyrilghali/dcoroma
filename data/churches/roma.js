@@ -151,7 +151,7 @@ const roma = [
       sunday: ''
   },
   referentID: 3,
-  location: 'Ansio',
+  location: 'Via del Leone 6, 00042 Anzio',
   locationUrl: ''
 },
 {

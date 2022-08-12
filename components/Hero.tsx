@@ -41,7 +41,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Benvenuti nella pagina ufficiale della Diocesi copto-ortodossa di Roma. 
+                Benvenuti nella pagina ufficiale della Diocesi Copta Ortodossa di Roma. 
               </p>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
