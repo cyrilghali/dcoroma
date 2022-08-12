@@ -48,8 +48,8 @@ export default function Header() {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <div className="h-10 w-auto">
-              <Link href="/" className="hover:cursor-pointer">
-                <Image width={50} height={50} src={'/photos/logo.png'} alt={'logo'}/>
+              <Link href="/">
+                <Image width={50} height={50} className="hover:cursor-pointer" src={'/photos/logo.png'} alt={'logo'}/>
               </Link>
             </div>
           </div>

@@ -29,7 +29,7 @@ export const SocialLinks = () => {
             {links.map((social) => (
               <li key={social.alt}>
                 <div className="flex justify-center">
-                <Link href={social.href}>
+                <Link href={social.href} target="_blank">
                   <Image className="mx-auto h-40 w-40 object-contain rounded-full xl:w-56 xl:h-56 hover:cursor-pointer " width={100} height={150} src={social.imageUrl} alt="" />
                 </Link>
                 </div>

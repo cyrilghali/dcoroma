@@ -12,7 +12,7 @@ export default function LibraryCards() {
         >
           <Link href={category.href}>
             <div className=" h-60 bg-gray-800 content-center rounded-lg text-gray-100 text-4xl overflow-hidden grid relative">
-              <Image className="card-zoom-image bg-cover bg-center relative justify-center items-center img row-span-full col-span-full w-full min-h-full" width={200} height={200} src={category.imageUrl} alt="" />
+              <Image className="card-zoom-image object-cover bg-cover bg-center relative justify-center items-center img row-span-full col-span-full w-full min-h-full" width={200} height={200} src={category.imageUrl} alt="" />
               <div className="row-span-full col-span-full flex justify-center text-center items-center ">
                 <span>{category.name}</span>
               </div>
