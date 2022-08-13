@@ -124,11 +124,35 @@ const catania = [
   imageUrl:"/photos/sanabraam.jpg",
   slug: 'sanabramo',
   churchName: "Chiesa di San Abramo",
-  churchImageUrl: "/photos/torino-abramo.jpg",
-  referentID: 13,
+  churchImageUrl: "",
+  referentID: 3,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Corso Europa 33, 83100 Avellino',
-      locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
-  }
+  locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
+},
+{
+  name: "Termoli",
+  imageUrl:"/photos/termoli.jpg",
+  slug: 'termoli',
+  churchName: "Chiesa Parrocchiale del Sacro Cuore",
+  churchImageUrl: "/photos/termoli.jpg",
+  referentID: 3,
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  location: '86039 Termoli CB, Italia',
+  locationUrl: 'https://goo.gl/maps/weBj2cQRmUDJV2fXA'
+},
+{
+  name: "Brindisi",
+  imageUrl:"",
+  slug: 'brindisi',
+  churchName: "Chiesa Rettoria SS.Crocifisso",
+  churchImageUrl: "",
+  referentID: 3,
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  location: 'Via Cortine, 72100 Brindisi BR',
+  locationUrl: 'https://goo.gl/maps/q74qSDjNcSX8afc87'
+},
+
+
 ]
 export default catania

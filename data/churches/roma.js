@@ -63,7 +63,7 @@ const roma = [
   churchName: "Chiesa di San Marco",
   churchImageUrl: "",
   massSchedule: {
-      monday: '9:00 - 11:00',
+      monday: '9:00 - 11:30 -	Via Terni, 92.',
       tuesday: '',
       wednesday: '',
       thursday: '',
@@ -119,7 +119,7 @@ const roma = [
   imageUrl:"/photos/sanmacario.jpg",
   slug: 'sanmacario',
   churchName: "Chiesa di San Macario",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/ostia-sanmacario.jpg",
   monthlyMassSchedule:"La messa viene celebrata il 1° e 3° Sabato del mese a partire dalle 8:00.",
   massSchedule: {
       monday: '',
