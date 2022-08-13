@@ -20,10 +20,10 @@ const firenze = [
 },
 {
   name: "Bambini di Betlemme",
-  imageUrl:"",
+  imageUrl:"/photos/bambini.jpg",
   slug: 'bambinibetlemme',
   churchName: "Chiesa dei Bambini di Betlemme",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/firenze-bambini.jpg",
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 13,
   location: 'Corso Giacomo Matteotti, 216, 50032 Borgo San Lorenzo FI',

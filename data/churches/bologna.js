@@ -20,14 +20,33 @@ const bologna = [
 },
 {
   name: "Arcangelo Raffaele",
-  imageUrl:"/photos/archangelgabriel.jpg",
+  imageUrl:"/photos/raphael.jpg",
   slug: 'arcangeloraffaele',
   churchName: "Chiesa dell'Arcangelo Raffaele",
-  churchImageUrl: "",
-  monthlyMassSchedule: 'Non disponibile',
+  churchImageUrl: "/photos/bologna1.jpg",
+  massSchedule: {
+      monday: '',
+      tuesday: '',
+      wednesday: '',
+      thursday: '',
+      friday: '',
+      saturday: '',
+      sunday: '9:00 - 11:30'
+  },
   referentID: 8,
   location: 'Via S. Domenico, 3, 42121 Reggio Emilia RE',
   locationUrl: 'https://goo.gl/maps/hCB4ZPoXT6BXDwBb7'
+},
+{
+  name: "Remini",
+  imageUrl:"",
+  slug: 'Remini',
+  churchName: "Remini",
+  churchImageUrl: "",
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  referentID: 7,
+  location: '',
+  locationUrl: ''
 }
 ]
 export default bologna

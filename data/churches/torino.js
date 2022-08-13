@@ -1,7 +1,7 @@
 const torino = [
 {
   name: "San Abanoub e Anba Karas",
-  imageUrl:"",
+  imageUrl:"/photos/karas.png",
   slug: 'sanabanoubkaras',
   churchName: "Chiesa dei Santi Abanoub e Anba Karas",
   churchImageUrl: "/photos/novara-karas.jpg",
@@ -12,10 +12,10 @@ const torino = [
 },
 {
   name: "San Mercurio il Filopatore",
-  imageUrl:"/photos/mercurio.jpg",
+  imageUrl:"/photos/philopatir.jpeg",
   slug: 'sanmercurio',
   churchName: "Chiesa di San Mercurio il Filopatore",
-  churchImageUrl: "/photos/torino-mercurio.jpeg",
+  churchImageUrl: "/photos/torino-mercurio.jpg",
   referentID: 13,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Via dei Seminari, 9 Biella',
@@ -26,7 +26,7 @@ const torino = [
   imageUrl:"/photos/verina.jpg",
   slug: 'santaverena',
   churchName: "Chiesa di Santa Verena & San Muris",
-  churchImageUrl: "/photos/torino-verina.jpg",
+  churchImageUrl: "/photos/torino-verena.jpg",
   referentID: 13,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Via paolo della silva, 15 Domodossola',
@@ -36,7 +36,7 @@ const torino = [
   imageUrl:"/photos/verginemaria.jpg",
   slug: 'verginemaria',
   churchName: "Chiesa di Santa Maria & San Giuseppe il falegname",
-  churchImageUrl: "/photos/torino-santamaria.jpg",
+  churchImageUrl: "/photos/torino-maria.jpg",
   referentID: 13,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Via Parini, 5 Vercelli',
@@ -46,7 +46,7 @@ const torino = [
   imageUrl:"/photos/lazario.jpg",
   slug: 'sanlazarro',
   churchName: "Chiesa di San Lazzaro",
-  churchImageUrl: "/photos/torino-lazarro.jpg",
+  churchImageUrl: "/photos/torino-lazzaro.jpg",
   referentID: 13,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Via trevigi, 47 Casale Monferrato',
@@ -74,32 +74,21 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/2SGBUNag19xoi14u5'
 },
 {
-  name: "Arcangelo Michele - Ceretto",
+  name: "Arcangelo Michele - Cuneo",
   imageUrl:"/photos/arcangelomichele.jpg",
   slug: 'arcangelomichele',
   churchName: "Chiesa dell'Arcangelo Michele",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/cuneo.jpg",
   referentID: 6,
-  monthlyMassSchedule: 'Non disponibile',
-  location: 'Via Ceretto, 26, 12024 Ceretto CN',
-  locationUrl: 'https://goo.gl/maps/78PpQHbYLuqyFA7P9'
+  monthlyMassSchedule: 'Un mercredi e un sabato al mese',
+  location: 'Via San Francesco, 26, Saluzzo',
+  locationUrl: 'https://goo.gl/maps/eCPrRFnXRqKJi2Ts8'
 },
 {
-  name: "Santa Vergine Maria",
+  name: "Santa Vergine Maria - Torino",
   imageUrl:"/photos/verginemaria.jpg",
-  slug: 'arcangelomichele',
+  slug: 'santaverginemariatorino',
   churchName: "Chiesa della Santa Vergine Maria",
-  churchImageUrl: "",
-  referentID: 6,
-  monthlyMassSchedule: 'Non disponibile',
-  location: 'Via Spoleto, 12, 10143 Torino TO',
-  locationUrl: 'https://goo.gl/maps/eJwNw8uk7nLPfr9o9'
-},
-{
-  name: "Santa Vergine Maria e Arcangelo Sourial",
-  imageUrl:"",
-  slug: 'savigliano',
-  churchName: "Chiesa dell'Arcangelo Sourial e della Santa Vergine Maria",
   churchImageUrl: "",
   referentID: 6,
   massSchedule: {
@@ -113,5 +102,16 @@ const torino = [
   },
   location: 'Via Spoleto, 12, 10143 Torino TO',
   locationUrl: 'https://goo.gl/maps/eJwNw8uk7nLPfr9o9'
+},
+{
+  name: "Santa Vergine Maria e Arcangelo Sariale - Savigliano",
+  imageUrl:"/photos/verginemaria2.jpeg",
+  slug: 'savigliano',
+  churchName: "Chiesa dell'Arcangelo Sariale e della Santa Vergine Maria",
+  churchImageUrl: "",
+  referentID: 6,
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
+  location: 'Via Togliatti, 40, 12038 Savigliano CN',
+  locationUrl: 'https://goo.gl/maps/xwZzktwUo61UqoKg8'
 }]
 export default torino

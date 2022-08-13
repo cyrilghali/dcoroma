@@ -8,7 +8,7 @@ export const Card = (props) => {
       <div className="relative">
         <Link href={props.href} >
           <div className="bg-gray-800  content-center rounded-lg text-gray-100 text-4xl overflow-hidden grid relative h-60">
-            <Image className={`${props.className} card-zoom-image object-cover brightness-50`} src={props.imageUrl} layout="fill" alt={props.title}/>
+            <Image className={`${props.className} card-zoom-image object-cover brightness-50`} src={props.imageUrl} layout="fill" alt="" />
             <h1 className="absolute text-center text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-extrabold">
               {props.title}
             </h1>

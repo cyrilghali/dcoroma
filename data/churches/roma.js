@@ -143,7 +143,7 @@ const roma = [
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgioperugia',
   churchName: "Chiesa di San Giorgio",
-  churchImageUrl: "/photos/sangiorgioperugia",
+  churchImageUrl: "/photos/sangiorgioperugia.jpeg",
   monthlyMassSchedule: 'una volta ogni primo mese',
   referentID: 4,
   location: 'Via Flaminia sud gualdo tadino 06023 perugia',
