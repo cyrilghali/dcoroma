@@ -94,8 +94,24 @@ const torino = [
   monthlyMassSchedule: 'Non disponibile',
   location: 'Via Spoleto, 12, 10143 Torino TO',
   locationUrl: 'https://goo.gl/maps/eJwNw8uk7nLPfr9o9'
-}
-
-
-]
+},
+{
+  name: "Santa Vergine Maria e Arcangelo Sourial",
+  imageUrl:"",
+  slug: 'savigliano',
+  churchName: "Chiesa dell'Arcangelo Sourial e della Santa Vergine Maria",
+  churchImageUrl: "",
+  referentID: 6,
+  massSchedule: {
+      monday: '9:00 - 11:30',
+      tuesday: '',
+      wednesday: '9:00 - 11:30',
+      thursday: '',
+      friday: '',
+      saturday: '9:00 - 11:30',
+      sunday: '9:00 - 11:30'
+  },
+  location: 'Via Spoleto, 12, 10143 Torino TO',
+  locationUrl: 'https://goo.gl/maps/eJwNw8uk7nLPfr9o9'
+}]
 export default torino

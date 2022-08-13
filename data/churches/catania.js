@@ -76,14 +76,14 @@ const catania = [
 },
 {
   name: "San Paolo di Tebe - Cosenza",
-  imageUrl:"",
+  imageUrl:"/photos/sanpaolo.jpg",
   slug: 'sanpaolo',
   churchName: "Chiesa San Paolo di Tebe",
   churchImageUrl: "/photos/catena-cosenza.jpg",
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 342876,
-  location: 'Cosenza',
-  locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
+  location: 'Via Pietro Bucci, 8, 87036 Rende CS',
+  locationUrl: 'https://goo.gl/maps/6tcyktaUa4fkZ1un8'
 },
 {
   name: "Anba Antonious - Crotone",
@@ -97,7 +97,7 @@ const catania = [
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
 },
 {
-  name: "Chiesa di San Michele arcangelo - Reggio Calabria",
+  name: "San Michele arcangelo - Reggio Calabria",
   imageUrl:"/photos/archangelmikhail.jpeg",
   slug: 'santamichele',
   churchName: "Chiesa di San Michele arcangelo",
@@ -109,10 +109,10 @@ const catania = [
 },
 {
   name: "Papa Cirillo VI - Scafati",
-  imageUrl:"/photos/popekyrellos.jpg",
+  imageUrl:"/photos/popekyrellos.jpeg",
   slug: 'papacirillovi',
   churchName: "Chiesa del Papa Cirillo VI",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/scafati.jpg",
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 3,
   location: 'Cavalcavia Longobardi, 84018 Scafati SA, Italia',
@@ -123,7 +123,7 @@ const catania = [
   imageUrl:"/photos/sanabraam.jpg",
   slug: 'sanabramo',
   churchName: "Chiesa di San Abramo",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/avellino.jpg",
   referentID: 3,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Corso Europa 33, 83100 Avellino',
@@ -131,7 +131,7 @@ const catania = [
 },
 {
   name: "San Giorgio - Termoli",
-  imageUrl:"/photos/termoli.jpg",
+  imageUrl:"/photos/sangiorgio.jpg",
   slug: 'termoli',
   churchName: "Chiesa Parrocchiale del Sacro Cuore",
   churchImageUrl: "/photos/termoli.jpg",
@@ -142,10 +142,10 @@ const catania = [
 },
 {
   name: "Santa Demiana - Brindisi",
-  imageUrl:"/photos/sangiorgio.jpg",
+  imageUrl:"/photos/santademiana.jpeg",
   slug: 'brindisi',
   churchName: "Santa Demiana",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/brindisi.jpeg",
   referentID: 3,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Via Cortine, 72100 Brindisi BR',

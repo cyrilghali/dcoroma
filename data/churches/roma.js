@@ -97,10 +97,11 @@ const roma = [
 {
   name: "San Musa il nero - Frascati",
   imageUrl:"/photos/sanmusa.jpg",
-  slug: 'sanmusa',
+  slug: 'sanmusailnero',
   churchName: "Chiesa di San Musa il nero",
   churchImageUrl: "",
   monthlyMassSchedule:"La messa viene celebrata il 1° e 3° Lunedi' del mese a partire dalle 8:00.",
+  referentID: 9,
   location: 'Via Luigi Cadorna, 6, 00044 Frascati RM',
   locationUrl: 'https://goo.gl/maps/p5j2JuNPFzaAvgZt7'
 },
@@ -120,7 +121,7 @@ const roma = [
   imageUrl:"/photos/arcangelomichele.jpg",
   slug: 'arcangelomichele',
   churchName: "Chiesa dell'Arcangelo Michele",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/anzio.jpg",
   monthlyMassSchedule:"La messa viene celebrata una volta al mese di Sabato.",
   referentID: 3,
   location: 'Via del Leone 6, 00042 Anzio',
