@@ -38,7 +38,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/QMojMr917Jvw35J6A'
 },
 {
-  name: "Vergine Maria",
+  name: "Vergine Maria - Monastero",
   imageUrl:"/photos/verginemaria.jpg",
   slug: 'verginemaria',
   churchName: "Monastero della Vergine Maria",
@@ -95,87 +95,50 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/KVGPAUxDXYHwT5ZYA'
 },
 {
-  name: "San Musa il nero",
+  name: "San Musa il nero - Frascati",
   imageUrl:"/photos/sanmusa.jpg",
   slug: 'sanmusa',
   churchName: "Chiesa di San Musa il nero",
   churchImageUrl: "",
   monthlyMassSchedule:"La messa viene celebrata il 1° e 3° Lunedi' del mese a partire dalle 8:00.",
-  massSchedule: {
-      monday: '',
-      tuesday: '',
-      wednesday: '',
-      thursday: '',
-      friday: '',
-      saturday: '',
-      sunday: ''
-  },
-  referentID: 9,
   location: 'Via Luigi Cadorna, 6, 00044 Frascati RM',
   locationUrl: 'https://goo.gl/maps/p5j2JuNPFzaAvgZt7'
 },
 {
-  name: "San Macario",
+  name: "San Macario - Ostia",
   imageUrl:"/photos/sanmacario.jpg",
   slug: 'sanmacario',
   churchName: "Chiesa di San Macario",
   churchImageUrl: "/photos/ostia-sanmacario.jpg",
   monthlyMassSchedule:"La messa viene celebrata il 1° e 3° Sabato del mese a partire dalle 8:00.",
-  massSchedule: {
-      monday: '',
-      tuesday: '',
-      wednesday: '',
-      thursday: '',
-      friday: '',
-      saturday: '',
-      sunday: ''
-  },
   referentID: 9,
   location: 'Piazza di Santa Monica, 1, 00121 Lido di Ostia RM',
   locationUrl: 'https://goo.gl/maps/L5xKX5ZD56HQX48H9'
 },
 {
-  name: "Arcangelo Michele",
+  name: "Arcangelo Michele - Anzio",
   imageUrl:"/photos/arcangelomichele.jpg",
   slug: 'arcangelomichele',
   churchName: "Chiesa dell'Arcangelo Michele",
   churchImageUrl: "",
-  monthlyMassSchedule:"La messa viene celebrata una volta al mese.",
-  massSchedule: {
-      monday: '',
-      tuesday: '',
-      wednesday: '',
-      thursday: '',
-      friday: '',
-      saturday: '',
-      sunday: ''
-  },
+  monthlyMassSchedule:"La messa viene celebrata una volta al mese di Sabato.",
   referentID: 3,
   location: 'Via del Leone 6, 00042 Anzio',
   locationUrl: ''
 },
 {
-  name: "Sant'Agostino e Santa Monica",
+  name: "Sant'Agostino e Santa Monica - Velletri",
   imageUrl:"/photos/sanagostinosantamonica.jpg",
   slug:"sanagostinosantamonica",
   churchName: "Chiesa di Sant'Agostino e Santa Monica",
   churchImageUrl: "",
   monthlyMassSchedule:"La messa viene celebrata una volta al mese.",
-  massSchedule: {
-      monday: '',
-      tuesday: '',
-      wednesday: '',
-      thursday: '',
-      friday: '',
-      saturday: '',
-      sunday: ''
-  },
   referentID: 3,
   location: 'Velletri',
   locationUrl: ''
 },
 {
-  name: "San Giorgio",
+  name: "San Giorgio - Perugia",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgioperugia',
   churchName: "Chiesa di San Giorgio",

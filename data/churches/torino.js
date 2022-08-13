@@ -63,18 +63,18 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/vgR9tzie4LVB1Twi9'
 },
 {
-  name: "San Giorgio",
+  name: "San Giorgio - Asti",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgio',
   churchName: "Chiesa di San Giorgio",
   churchImageUrl: "",
   referentID: 6,
-  monthlyMassSchedule: 'Non disponibile',
+  monthlyMassSchedule: 'Un lunedì e un sabato al mese',
   location: 'Piazzetta S. Paolo, 1, 14100 Asti AT',
   locationUrl: 'https://goo.gl/maps/2SGBUNag19xoi14u5'
 },
 {
-  name: "Arcangelo Michele",
+  name: "Arcangelo Michele - Ceretto",
   imageUrl:"/photos/arcangelomichele.jpg",
   slug: 'arcangelomichele',
   churchName: "Chiesa dell'Arcangelo Michele",

@@ -1,6 +1,6 @@
 const catania = [
 {
-  name: "San Giorgio",
+  name: "San Giorgio - Catania",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgio',
   churchName: "Chiesa di San Giorgio",
@@ -19,7 +19,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/wEspNmyp6AkJ6A7v9'
 },
 {
-  name: "Santa Maria di Palermo",
+  name: "Palermo",
   imageUrl:"/photos/verginemaria.jpg",
   slug: 'verginemaria',
   churchName: "Chiesa di Santa Maria di Palermo",
@@ -30,7 +30,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/d4mUJHPkzN7E2eARA'
 },
 {
-  name: "Chiesa del papa Cirillo VI",
+  name: "Cirillo VI - Ragusa",
   imageUrl:"/photos/popekyrellos.jpeg",
   slug: 'popekyrellos',
   churchName: "Chiesa del papa Cirillo VI",
@@ -41,7 +41,7 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "San Karas",
+  name: "San Karas - Acireale",
   imageUrl:"/photos/sankaras.jpeg",
   slug: 'sankaras',
   churchName: "Chiesa di San Karas",
@@ -51,7 +51,6 @@ const catania = [
   location: 'Acireale',
   locationUrl: ''
 },
-
 {
   name: "Santa Maria - Matera",
   imageUrl:"/photos/verginemaria.jpg",
@@ -64,7 +63,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
 },
 {
-  name: "Chiesa dell'Arcangelo Gabriele",
+  name: "Arcangelo Gabriele - Cagliari",
   imageUrl:"/photos/archangelgabriel.jpeg",
   slug: 'sangabriele',
   churchName: "Chiesa di San Gabriele Arcangelo",
@@ -76,7 +75,7 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "Chiesa San Paolo di Tebe",
+  name: "San Paolo di Tebe - Cosenza",
   imageUrl:"",
   slug: 'sanpaolo',
   churchName: "Chiesa San Paolo di Tebe",
@@ -87,7 +86,7 @@ const catania = [
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
 },
 {
-  name: "Anba Antonious",
+  name: "Anba Antonious - Crotone",
   imageUrl:"/photos/anbaantonios.jpeg",
   slug: 'anbaantonious',
   churchName: "Chiesa Anba Antonios",
@@ -98,7 +97,7 @@ const catania = [
   locationUrl: 'https://maps.app.goo.gl/G33kEBNPk1uXThMn6'
 },
 {
-  name: "Chiesa di San Michele arcangelo",
+  name: "Chiesa di San Michele arcangelo - Reggio Calabria",
   imageUrl:"/photos/archangelmikhail.jpeg",
   slug: 'santamichele',
   churchName: "Chiesa di San Michele arcangelo",
@@ -109,18 +108,18 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "Papa Cirillo VI",
+  name: "Papa Cirillo VI - Scafati",
   imageUrl:"/photos/popekyrellos.jpg",
   slug: 'papacirillovi',
   churchName: "Chiesa del Papa Cirillo VI",
   churchImageUrl: "",
-  monthlyMassSchedule: 'Non disponibile',
+  monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   referentID: 3,
-  location: 'Scafati',
-  locationUrl: ''
+  location: 'Cavalcavia Longobardi, 84018 Scafati SA, Italia',
+  locationUrl: 'https://goo.gl/maps/wurBW3Jxjc8azoTL7'
 },
 {
-  name: "San Abramo",
+  name: "San Abramo - Avellino",
   imageUrl:"/photos/sanabraam.jpg",
   slug: 'sanabramo',
   churchName: "Chiesa di San Abramo",
@@ -131,7 +130,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
 },
 {
-  name: "Termoli",
+  name: "San Giorgio - Termoli",
   imageUrl:"/photos/termoli.jpg",
   slug: 'termoli',
   churchName: "Chiesa Parrocchiale del Sacro Cuore",
@@ -142,17 +141,15 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/weBj2cQRmUDJV2fXA'
 },
 {
-  name: "Brindisi",
-  imageUrl:"",
+  name: "Santa Demiana - Brindisi",
+  imageUrl:"/photos/sangiorgio.jpg",
   slug: 'brindisi',
-  churchName: "Chiesa Rettoria SS.Crocifisso",
+  churchName: "Santa Demiana",
   churchImageUrl: "",
   referentID: 3,
   monthlyMassSchedule: 'La messa viene celebrata una volta al mese',
   location: 'Via Cortine, 72100 Brindisi BR',
   locationUrl: 'https://goo.gl/maps/q74qSDjNcSX8afc87'
 },
-
-
 ]
 export default catania
