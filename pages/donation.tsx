@@ -14,8 +14,6 @@ const Contact: NextPage = () => {
       <Title title="Donazione" />
       <Verse />
       <Divider />
-      <Paypal />
-      <Divider />
       <IBAN />
       <Footer />
     </div>
