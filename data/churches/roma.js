@@ -136,7 +136,7 @@ const roma = [
   monthlyMassSchedule:"La messa viene celebrata una volta al mese.",
   referentID: 3,
   location: 'Via Fontana delle Rose, 00049 Velettri RM',
-  locationUrl: ''
+  locationUrl: 'https://goo.gl/maps/Y5U9vBMsNJNfNL827'
 },
 {
   name: "San Giorgio - Perugia",
