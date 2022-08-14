@@ -135,7 +135,7 @@ const roma = [
   churchImageUrl: "",
   monthlyMassSchedule:"La messa viene celebrata una volta al mese.",
   referentID: 3,
-  location: 'Velletri',
+  location: 'Via Fontana delle Rose, 00049 Velettri RM',
   locationUrl: ''
 },
 {
