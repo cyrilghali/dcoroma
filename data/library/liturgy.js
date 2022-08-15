@@ -1,4 +1,4 @@
-const liturgy = [
+aeconst liturgy = [
   {name: 'Agpeya', description: '', href: '/files/agpia.pdf'},
   {name: 'Il Santo Messale', description: '', href: '/files/Il_santo_messale.pdf'},
   {name: 'Santo Messale Grande', description: '', href: '/files/santo_messale_grande.pdf'},
@@ -8,7 +8,8 @@ const liturgy = [
   {name: 'Fidanzamento-Matrimonio', description: '', href: '/files/Fidanzamento-Matrimonio.pdf'},
   {name: 'Lezionario', description: '', href: '/files/lezionario.pdf'},
   {name: 'Lessionario annuale', description: '', href: '/files/lessionario_annuale.pdf'},
-  {name: 'Il Discorso della Montagna', description: '', href: '/files/Il_Discorso_della_Montagna.pdf'},
+  {name: 'Il Sinassario', description: '', href: '/files/synexar.pdf'},
+  {name: 'Tamgid', description:'', href:'/files/tamgid.pdf'}
   {name: 'Corso Matrimonio', description: '', href: '/files/CORSO_MATRIMONIO.pdf'},
   {name: 'Rito del Battesimo', description: '', href: '/files/ritodelbattesimo.pdf'},
   {name: 'Rito della Lampada - 2018', description: '', href: '/files/Rito_della_lampada_2018.pdf'},
