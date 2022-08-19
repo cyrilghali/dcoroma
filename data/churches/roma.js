@@ -38,7 +38,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/QMojMr917Jvw35J6A'
 },
 {
-  name: "Vergine Maria - Monastero",
+  name: "Monastero - Santa Vergine Maria",
   imageUrl:"/photos/verginemaria.jpg",
   slug: 'verginemaria',
   churchName: "Monastero della Vergine Maria",
@@ -76,7 +76,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
 },
 {
-  name: "Santa Vergine Maria - Fiumicino",
+  name: "Fiumicino - Santa Vergine Maria",
   imageUrl:"/photos/verginemaria.jpg",
   slug:"santaverginemariafiumicino",
   churchName: "Chiesa della Santa Vergine Maria",
@@ -95,7 +95,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/KVGPAUxDXYHwT5ZYA'
 },
 {
-  name: "San Musa il nero - Frascati",
+  name: "Frascati - San Musa il nero",
   imageUrl:"/photos/sanmusa.jpg",
   slug: 'sanmusailnero',
   churchName: "Chiesa di San Musa il nero",
@@ -106,7 +106,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/p5j2JuNPFzaAvgZt7'
 },
 {
-  name: "San Macario - Ostia",
+  name: "Ostia - San Macario",
   imageUrl:"/photos/sanmacario.jpg",
   slug: 'sanmacario',
   churchName: "Chiesa di San Macario",
@@ -117,7 +117,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/L5xKX5ZD56HQX48H9'
 },
 {
-  name: "Arcangelo Michele - Anzio",
+  name: "Anzio - Arcangelo Michele",
   imageUrl:"/photos/arcangelomichele.jpg",
   slug: 'arcangelomichele',
   churchName: "Chiesa dell'Arcangelo Michele",
@@ -128,7 +128,7 @@ const roma = [
   locationUrl: ''
 },
 {
-  name: "Sant'Agostino e Santa Monica - Velletri",
+  name: "Velletri - Sant'Agostino e Santa Monica",
   imageUrl:"/photos/sanagostinosantamonica.jpg",
   slug:"sanagostinosantamonica",
   churchName: "Chiesa di Sant'Agostino e Santa Monica",
@@ -139,7 +139,7 @@ const roma = [
   locationUrl: 'https://goo.gl/maps/Y5U9vBMsNJNfNL827'
 },
 {
-  name: "San Giorgio - Perugia",
+  name: "Perugia - San Giorgio",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgioperugia',
   churchName: "Chiesa di San Giorgio",

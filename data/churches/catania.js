@@ -1,6 +1,6 @@
 const catania = [
 {
-  name: "San Giorgio - Catania",
+  name: "Catania - San Giorgio",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgio',
   churchName: "Chiesa di San Giorgio",
@@ -30,7 +30,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/d4mUJHPkzN7E2eARA'
 },
 {
-  name: "Cirillo VI - Ragusa",
+  name: "Ragusa - Cirillo VI",
   imageUrl:"/photos/popekyrellos.jpeg",
   slug: 'popekyrellos',
   churchName: "Chiesa del papa Cirillo VI",
@@ -41,7 +41,7 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "San Karas - Acireale",
+  name: "Acireale - San Karas",
   imageUrl:"/photos/sankaras.jpeg",
   slug: 'sankaras',
   churchName: "Chiesa di San Karas",
@@ -63,7 +63,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/6Yqr8MEjaLBet6Kd8'
 },
 {
-  name: "Arcangelo Gabriele - Cagliari",
+  name: "Cagliari - Arcangelo Gabriele",
   imageUrl:"/photos/archangelgabriel.jpeg",
   slug: 'sangabriele',
   churchName: "Chiesa di San Gabriele Arcangelo",
@@ -75,7 +75,7 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "San Paolo di Tebe - Cosenza",
+  name: "Cosenza - San Paolo di Tebe",
   imageUrl:"/photos/sanpaolo.jpg",
   slug: 'sanpaolo',
   churchName: "Chiesa San Paolo di Tebe",
@@ -86,7 +86,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/6tcyktaUa4fkZ1un8'
 },
 {
-  name: "Anba Antonious - Crotone",
+  name: "Crotone - Anba Antonious",
   imageUrl:"/photos/anbaantonios.jpeg",
   slug: 'anbaantonious',
   churchName: "Chiesa Anba Antonios",
@@ -97,7 +97,7 @@ const catania = [
   locationUrl: ''
 },
 {
-  name: "San Michele arcangelo - Reggio Calabria",
+  name: "Reggio Calabria - San Michele arcangelo",
   imageUrl:"/photos/archangelmikhail.jpeg",
   slug: 'santamichele',
   churchName: "Chiesa di San Michele arcangelo",
@@ -108,7 +108,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/tcDuHRjtC2KRmoPb8'
 },
 {
-  name: "Papa Cirillo VI - Scafati",
+  name: "Scafati - Papa Cirillo VI - Scafati",
   imageUrl:"/photos/popekyrellos.jpeg",
   slug: 'papacirillovi',
   churchName: "Chiesa del Papa Cirillo VI",
@@ -119,7 +119,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/wurBW3Jxjc8azoTL7'
 },
 {
-  name: "San Abramo - Avellino",
+  name: "Avellino - San Abramo",
   imageUrl:"/photos/sanabraam.jpg",
   slug: 'sanabramo',
   churchName: "Chiesa di San Abramo",
@@ -130,7 +130,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/giiCjnRp4PEjKbt77'
 },
 {
-  name: "San Giorgio - Termoli",
+  name: "Termoli - San Giorgio",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'termoli',
   churchName: "Chiesa Parrocchiale del Sacro Cuore",
@@ -141,7 +141,7 @@ const catania = [
   locationUrl: 'https://goo.gl/maps/weBj2cQRmUDJV2fXA'
 },
 {
-  name: "Santa Demiana - Brindisi",
+  name: "Brindisi - Santa Demiana",
   imageUrl:"/photos/santademiana.jpeg",
   slug: 'brindisi',
   churchName: "Santa Demiana",

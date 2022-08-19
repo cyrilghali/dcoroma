@@ -2,7 +2,7 @@ const city = [
 
     {
       name: "Roma",
-      imageUrl:"/photos/roma.png",
+      imageUrl:"/photos/roma.jpg",
       href:"/churches/roma"
      },
      {
