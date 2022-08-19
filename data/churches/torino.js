@@ -63,7 +63,7 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/vgR9tzie4LVB1Twi9'
 },
 {
-  name: "San Giorgio - Asti",
+  name: "Asti - San Giorgio",
   imageUrl:"/photos/sangiorgio.jpg",
   slug: 'sangiorgio',
   churchName: "Chiesa di San Giorgio",
@@ -74,7 +74,7 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/2SGBUNag19xoi14u5'
 },
 {
-  name: "Arcangelo Michele - Cuneo",
+  name: "Cuneo - Arcangelo Michele",
   imageUrl:"/photos/arcangelomichele.jpg",
   slug: 'arcangelomichele',
   churchName: "Chiesa dell'Arcangelo Michele",
@@ -85,7 +85,7 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/eCPrRFnXRqKJi2Ts8'
 },
 {
-  name: "Santa Vergine Maria - Torino",
+  name: "Torino - Santa Vergine Maria",
   imageUrl:"/photos/verginemaria.jpg",
   slug: 'santaverginemariatorino',
   churchName: "Chiesa della Santa Vergine Maria",
@@ -104,7 +104,7 @@ const torino = [
   locationUrl: 'https://goo.gl/maps/eJwNw8uk7nLPfr9o9'
 },
 {
-  name: "Santa Vergine Maria e Arcangelo Sariale - Savigliano",
+  name: "Savigliano - Santa Vergine Maria",
   imageUrl:"/photos/verginemaria2.jpeg",
   slug: 'savigliano',
   churchName: "Chiesa dell'Arcangelo Sariale e della Santa Vergine Maria",
