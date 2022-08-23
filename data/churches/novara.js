@@ -23,7 +23,7 @@ const novara = [
 },
 {
   name: "San Lazzaro",
-  imageUrl:"/photos/lazario.jpg",
+  imageUrl:"/photos/lazzaro.jpg",
   slug: 'sanlazarro',
   churchName: "Chiesa di San Lazzaro",
   churchImageUrl: "/photos/torino-lazzaro.jpg",
