@@ -1,14 +1,13 @@
 const city = [
-
     {
       name: "Roma",
       imageUrl:"/photos/roma.jpg",
       href:"/churches/roma"
      },
      {
-      name: "Torino",
-      imageUrl:"/photos/torino.png",
-      href: "/churches/torino"
+      name: "Novara",
+      imageUrl:"/photos/novara.jpg",
+      href: "/churches/novara"
      },
      {
       name: "Firenze",
@@ -24,6 +23,11 @@ const city = [
       name: "Catania",
       imageUrl:"/photos/catania.jpg",
       href:"/churches/catania"
+     },
+     {
+      name: "Torino",
+      imageUrl:"/photos/torino.png",
+      href: "/churches/torino"
      },
      {
       name: "Genova",
