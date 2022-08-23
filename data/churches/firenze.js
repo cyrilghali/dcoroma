@@ -1,7 +1,7 @@
 const firenze = [
 {
   name: "San Mina e San Cirillo VI",
-  imageUrl:"/photos/sanMina.jpg",
+  imageUrl:"/photos/sanMinaSanCirillo.jpg",
   slug: 'sanmina',
   churchName: "Chiesa di San Mina & San Papa Cirillo VI",
   churchImageUrl: "/photos/sanminafirenze.jpg",
