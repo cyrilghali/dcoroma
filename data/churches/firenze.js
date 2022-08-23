@@ -1,10 +1,10 @@
 const firenze = [
 {
-  name: "San Mina Megalomartire",
+  name: "San Mina e San Cirillo VI",
   imageUrl:"/photos/sanMina.jpg",
   slug: 'sanmina',
   churchName: "Chiesa di San Mina & San Papa Cirillo VI",
-  churchImageUrl: "",
+  churchImageUrl: "/photos/sanminafirenze.jpg",
   massSchedule: {
       monday: '9:00 - 11:30',
       tuesday: '9:00 - 11:30',
