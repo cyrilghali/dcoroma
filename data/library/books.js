@@ -23,6 +23,9 @@ const books = [
   {name: 'TeologiaComparativa - Papa Shenouda III', description: '', href: '/files/TeologiaComparativa.pdf'},
   {name: 'Trasfigurazione - Papa Shenouda III', description: '', href: '/files/Trasfigurazione.pdf'},
   {name: 'Vita di conversione - Papa Shenouda III', description: '', href: '/files/Vita_di_conversione.pdf'},
+  {name: 'Cenni storici sulla Chiesa Copta Ortodossa di Alessandria', description: '', href: '/files/cenni_storici_balbis.pdf'},
+  {name: 'La Fase dell\'adolescenza', description: '', href: '/files/FASE ADOLESCENZIALE (sacerdote Andraues Matta).pdf'},
+  {name: 'Commento al Vangelo di Giovanni', description: '', href: '/files/Commento Vangelo Giovanni (Passione) P.Cirillo 1.pdf'},
 ]
 
 export default books
