@@ -6,13 +6,13 @@ const firenze = [
   churchName: "Chiesa di San Mina & San Papa Cirillo VI",
   churchImageUrl: "/photos/sanminafirenze.jpg",
   massSchedule: {
-      monday: '9:00 - 11:30',
-      tuesday: '9:00 - 11:30',
-      wednesday: '9:00 - 11:30',
+      monday: '9:00 - 11:00',
+      tuesday: '8:00 - 10:00',
+      wednesday: '',
       thursday: '',
-      friday: '9:00 - 11:30',
-      saturday: '9:00 - 11:30',
-      sunday: '9:00 - 11:30'
+      friday: '',
+      saturday: '8:00 - 10:00',
+      sunday: '8:00 - 10:30'
   },
   referentID: 13,
   location: 'Via S.Bartolo in Tuto 7, 50018 Scandicci FI',
