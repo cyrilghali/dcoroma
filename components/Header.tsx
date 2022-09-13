@@ -10,7 +10,6 @@ import {
   HomeIcon,
   XIcon,
   ExternalLinkIcon,
-  NewspaperIcon,
   BookOpenIcon,
 } from '@heroicons/react/outline'
 import Image from 'next/image'
@@ -29,7 +28,6 @@ const navigation = [
   },
   { name: 'Fare una donazione', href: '/donation', icon: HeartIcon},
   { name: 'Katameros', href: 'https://katameros.app/?lang=it', icon: ExternalLinkIcon },
-  { name: 'Notizie', href: '/news', icon: NewspaperIcon },
   {
     name: 'Libreria',
     href: '/library',
