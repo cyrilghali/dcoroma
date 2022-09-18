@@ -14,7 +14,6 @@ const Home = () => {
       <SocialLinks />
       <CityChurches />
       <DonationCTA />
-      <ContactCTA />
       <Footer />
     </div>
   )
