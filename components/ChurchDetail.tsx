@@ -88,9 +88,10 @@ export const ChurchDetail = (props) => {
                           {props.massSchedule.saturday}
                         </td>
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                          {props.massSchedule.sunday.split(',').map((time, index) => (
+                          {props.massSchedule && props.massSchedule.sunday && props.massSchedule.sunday.split(',').map((time, index) => (
                             <p key={index}>{time}</p>
                           ))}
+
                         </td>
                       </tr>
                     </tbody>
