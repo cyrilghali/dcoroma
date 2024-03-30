@@ -88,7 +88,7 @@ const roma = [
 			thursday: "",
 			friday: "",
 			saturday: "",
-			sunday: "",
+			sunday: " ",
 		},
 		referentID: 6,
 		location: "Via della Scafa, 176, 00054 Fiumicino RM",
