@@ -35,7 +35,7 @@ export default function Hero() {
             <div className="flex sm:text-center items-center flex-col justify-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
                 <Image className="flex items-center" src="/assets/cross.svg" height={80} width={80} alt="Croce copta"/>
               <h1>
-                <span className="block pt-16 tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+                <span className="block text-center pt-16 tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-6xl text-gray-900">Diocesi Copta Ortodossa</span>
                   <span className="block text-6xl text-gray-900">di Roma</span>
                 </span>
