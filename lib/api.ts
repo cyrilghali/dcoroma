@@ -1,13 +1,13 @@
-import qs from "qs"
+import qs from 'qs'
 
 /**
  * Get full Strapi URL from path
  * @param {string} path Path of the URL
  * @returns {string} Full Strapi URL
  */
-export function getStrapiURL(path = "") {
+export function getStrapiURL(path = '') {
   return `${
-    process.env.NEXT_PUBLIC_STRAPI_API_URL || "https://strapi.dcoroma.it/"
+    process.env.NEXT_PUBLIC_STRAPI_API_URL || 'https://strapi.dcoroma.it/'
   }${path}`
 }
 
@@ -22,8 +22,8 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
   // Merge default and user options
   const mergedOptions = {
     headers: {
-      "Content-Type": "application/json",
-      "Authorization": `${"Bearer " + process.env.STRAPI_TOKEN}`,
+      'Content-Type': 'application/json',
+      Authorization: `${'Bearer ' + process.env.STRAPI_TOKEN}`,
     },
     ...options,
   }
@@ -31,7 +31,7 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
   // Build request URL
   const queryString = qs.stringify(urlParamsObject)
   const requestUrl = `${getStrapiURL(
-    `/api${path}${queryString ? `?${queryString}` : ""}`
+    `/api${path}${queryString ? `?${queryString}` : ''}`,
   )}`
 
   // Trigger API call
@@ -42,6 +42,5 @@ export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
     console.error(response.statusText)
     throw new Error(`An error occured please try again`)
   }
-  const data = await response.json()
-  return data
+  return await response.json()
 }
