@@ -2,12 +2,12 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 
-import Header from '../../../components/Header'
-import Footer from '../../../components/Footer'
-import { Card } from '../../../components/Card'
-import { HomeTitle } from '../../../components/Title'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
+import { Card } from 'components/Card'
+import { HomeTitle } from 'components/Title'
 
-import { listAllCities, getCityData } from '../../../lib/cities'
+import { listAllCities, getCityData } from 'lib/cities'
 
 // Function to get city data. This could also be an API call in a real app
 

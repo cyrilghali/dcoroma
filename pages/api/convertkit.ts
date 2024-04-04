@@ -30,7 +30,7 @@ export default async (req, res) => {
 
     return res.status(201).json({ error: '' })
   } catch (error) {
+    // @ts-ignore
     return res.status(500).json({ error: error.message || error.toString() })
   }
 }
-

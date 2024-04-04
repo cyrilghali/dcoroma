@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactCard from './ContactCard'
-import fathers from '../data/contact'
-import error404 from '../pages/404'
+import fathers from 'data/contact'
+import error404 from 'pages/404'
 import { LocationMarkerIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
