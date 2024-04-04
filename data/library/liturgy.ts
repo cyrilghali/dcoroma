@@ -70,6 +70,6 @@ const liturgy = [
     href: '/files/settimanasanta.pdf',
   },
   // More documents...
-];
+]
 
-export default liturgy;
+export default liturgy
