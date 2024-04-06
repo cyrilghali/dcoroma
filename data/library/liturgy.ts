@@ -1,4 +1,4 @@
-const liturgy = [
+const liturgyWithoutCover = [
   { name: 'Agpeya', description: '', href: '/files/Agbia dato a Gamil.pdf' },
   {
     name: 'Il Santo Messale',
@@ -69,7 +69,11 @@ const liturgy = [
     description: '',
     href: '/files/settimanasanta.pdf',
   },
-  // More documents...
 ]
+
+const liturgy = liturgyWithoutCover.map((liturgy) => ({
+  ...liturgy,
+  cover: `/covers/${liturgy.name.replace(/ /g, '_').toLowerCase()}.jpg`,
+}))
 
 export default liturgy

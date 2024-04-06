@@ -1,4 +1,4 @@
-const books = [
+const booksWithoutCover = [
   {
     name: 'A te la Potenza e Gloria - Papa Shenouda III',
     description: '',
@@ -135,5 +135,10 @@ const books = [
     href: '/files/Commento Vangelo Giovanni (Passione) P.Cirillo 1.pdf',
   },
 ]
+
+const books = booksWithoutCover.map((book) => ({
+  ...book,
+  cover: `/covers/${book.name.replace(/ /g, '_').toLowerCase()}.jpg`,
+}))
 
 export default books
