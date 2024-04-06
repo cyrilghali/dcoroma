@@ -15,7 +15,7 @@ for pdf in $PDF_DIR/*.pdf; do
 	# Extract filename without the extension
 	filename=$(basename "$pdf" .pdf)
 	# Use pdftoppm to generate an image of the first page of the PDF
-	pdftoppm -f 1 -l 1 -jpeg -jpegopt quality=90 "$pdf" "$COVER_DIR/$filename"
+    pdftoppm -f 1 -l 1 -jpeg -jpegopt quality=90 -singlefile "$pdf" "$COVER_DIR/$filename"
 done
 
 echo "Cover images generated in $COVER_DIR."

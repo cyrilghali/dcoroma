@@ -138,7 +138,7 @@ const booksWithoutCover = [
 
 const books = booksWithoutCover.map((book) => ({
   ...book,
-  cover: `/covers/${book.name.replace(/ /g, '_').toLowerCase()}.jpg`,
+  cover: `/covers/${book.href.replace('/files/', '').replace('.pdf', '').replace(/ /g, '_')}.jpg`,
 }))
 
 export default books

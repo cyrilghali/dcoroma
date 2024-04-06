@@ -26,7 +26,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 const CityPage = ({ cityData }) => {
   const router = useRouter()
   const { city } = router.query
-  console.log('Cyril', cityData)
   return (
     <div>
       <Header />

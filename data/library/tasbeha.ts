@@ -9,7 +9,7 @@ const tasbehaWithoutCover = [
 
 const tasbeha = tasbehaWithoutCover.map((tasbeha) => ({
   ...tasbeha,
-  cover: `/covers/${tasbeha.name.replace(/ /g, '_').toLowerCase()}.jpg`,
+  cover: `/covers/${tasbeha.href.replace('/files/', '').replace('.pdf', '').replace(/ /g, '_')}.jpg`,
 }))
 
 export default tasbeha
