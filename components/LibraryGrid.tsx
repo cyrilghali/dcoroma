@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
-export default function LibraryTable(props) {
+export default function LibraryGrid(props) {
   const documents: any = Array.from(props.docs)
   console.log('Cyril', documents)
   return (
@@ -14,16 +15,17 @@ export default function LibraryTable(props) {
           className='col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow'
         >
           <div className='group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100'>
-            <img
+            <Image
               src={document.cover}
               alt={`Cover of ${document.name}`}
               className='object-cover pointer-events-none group-hover:opacity-75'
+              fill
             />
             <Link href={document.href}>
               <span className='sr-only'>View details for {document.name}</span>
             </Link>
           </div>
-          <p className='p-2 block truncate text-sm font-medium text-gray-900'>
+          <p className='p-2 block truncate text-lg text-gray-900 font-medium'>
             {document.name}
           </p>
         </li>
