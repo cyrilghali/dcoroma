@@ -9,7 +9,10 @@ export default function LibraryTable(props) {
       className='grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 px-4 sm:px-9 lg:px-8'
     >
       {documents.map((document) => (
-        <li key={document.name} className='relative'>
+        <li
+          key={document.name}
+          className='col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow'
+        >
           <div className='group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100'>
             <img
               src={document.cover}
@@ -20,7 +23,7 @@ export default function LibraryTable(props) {
               <span className='sr-only'>View details for {document.name}</span>
             </Link>
           </div>
-          <p className='mt-2 block truncate text-sm font-medium text-gray-900'>
+          <p className='p-2 block truncate text-sm font-medium text-gray-900'>
             {document.name}
           </p>
         </li>
