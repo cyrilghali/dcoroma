@@ -34,13 +34,6 @@ const fathers = [
     imageUrl: '/photos/padre_bola_akhmimy.jpg',
   },
   {
-    id: 6,
-    name: 'Padre Samaan el Anba Pola',
-    telephone: '+393899146048',
-    email: 'samaan_fr@yahoo.com',
-    imageUrl: '/photos/samaan_elanbapola.jpg',
-  },
-  {
     id: 7,
     name: 'Padre Dawoud el Naklouni',
     telephone: '+393907881283',
@@ -53,13 +46,6 @@ const fathers = [
     telephone: '+393282080997',
     email: 'abonaarmia@gmail.com',
     imageUrl: '/photos/abuna_armia_elantony.jpg',
-  },
-  {
-    id: 9,
-    name: 'Padre Youhanna el Antony',
-    telephone: '+393890568095',
-    email: 'fr.youhannas@yahoo.it',
-    imageUrl: '/photos/youhanna_elantonyavamoussa.jpg',
   },
   {
     id: 11,
