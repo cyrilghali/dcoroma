@@ -1,15 +1,11 @@
 import React from 'react'
 import ContactCard from './ContactCard'
 import fathers from 'data/contact'
-import error404 from 'pages/404'
 import { LocationMarkerIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 export const ChurchDetail = (props) => {
   const person = fathers.find((el) => props.referentId === el.id)
-  if (typeof person === 'undefined') {
-    return error404()
-  }
 
   return (
     <div className='container my-24 px-6 mx-auto'>
@@ -128,27 +124,30 @@ export const ChurchDetail = (props) => {
         )}
       </section>
       <div className='flex flex-col items-center w-full text-center justify-center'>
-        <h2 className='text-4xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-1/2 lg:w-1/4 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2'>
-          <span>Preti</span>
-        </h2>
-        <ul role='list' className='pt-8 w-max'>
-          <li
-            key={person.id}
-            className='rounded-lg shadow divide-y divide-gray-200'
-          >
-            <ContactCard person={person} />
-          </li>
-          {props.locationUrl ? (
-            <Link href={props.locationUrl}>
-              <li className='flex flex-row hover:cursor-pointer justify-center items-center text-center mt-20 border-b-2 border-sand hover:border-sand-dark px-auto'>
-                <LocationMarkerIcon className='h-4 w-4 text-gray-500' />
-                <span>{props.location}</span>
-              </li>
-            </Link>
-          ) : (
-            <></>
-          )}
-        </ul>
+        {person && (
+          <>
+            <h2 className='text-4xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-1/2 lg:w-1/4 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2'>
+              <span>Preti</span>
+            </h2>
+            <div
+              key={person.id}
+              className='rounded-lg shadow divide-y divide-gray-200'
+            >
+              <ContactCard person={person} />
+            </div>
+          </>
+        )}
+
+        {props.locationUrl ? (
+          <Link href={props.locationUrl}>
+            <div className='flex flex-row hover:cursor-pointer justify-center items-center text-center mt-20 border-b-2 border-sand hover:border-sand-dark px-auto'>
+              <LocationMarkerIcon className='h-4 w-4 text-gray-500' />
+              <span>{props.location}</span>
+            </div>
+          </Link>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   )
