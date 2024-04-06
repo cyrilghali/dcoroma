@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import { HomeTitle, Title } from 'components/Title'
+import { HomeTitle } from 'components/Title'
 import ContactCard from 'components/ContactCard'
 import fathers from 'data/contact'
 
