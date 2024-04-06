@@ -1,5 +1,5 @@
 const liturgyWithoutCover = [
-  { name: 'Agpeya', description: '', href: '/files/Agbia dato a Gamil.pdf' },
+  { name: 'Agbeya', description: '', href: '/files/Agbeya.pdf' },
   {
     name: 'Il Santo Messale',
     description: '',
