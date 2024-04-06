@@ -25,7 +25,7 @@ export default function LibraryGrid(props) {
               <span className='sr-only'>View details for {document.name}</span>
             </Link>
           </div>
-          <p className='p-2 block truncate text-lg text-gray-900 font-medium'>
+          <p className='p-2 block truncate text-lg text-gray-900 font-semibold'>
             {document.name}
           </p>
         </li>
