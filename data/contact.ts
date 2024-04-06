@@ -48,12 +48,6 @@ const fathers = [
     imageUrl: '/photos/abuna_armia_elantony.jpg',
   },
   {
-    id: 11,
-    name: 'Padre Youlios el Anba Pola',
-    telephone: '+393279554281',
-    imageUrl: '/photos/padre_youlios_anba_bola.jpg',
-  },
-  {
     id: 304580,
     name: 'Padre Antonio Gabriel',
     telephone: '+393397186153',
