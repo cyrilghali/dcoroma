@@ -28,15 +28,7 @@ const ChurchPage = ({ church }) => {
   return (
     <div>
       <Header />
-      <ChurchDetail
-        churchName={church.name}
-        churchImageUrl={church.imageUrl}
-        monthlyMassSchedule={church.monthlyMassSchedule}
-        massSchedule={church.massSchedule}
-        referentId={church.referentID}
-        location={church.location}
-        locationUrl={church.locationUrl}
-      />
+      <ChurchDetail churchData={church} />
       <Footer />
     </div>
   )

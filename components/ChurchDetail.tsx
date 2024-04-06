@@ -5,14 +5,14 @@ import { LocationMarkerIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 export const ChurchDetail = (props) => {
-  const person = fathers.find((el) => props.referentId === el.id)
+  const person = fathers.find((el) => props.churchData.referentId === el.id)
 
   return (
     <div className='container my-24 px-6 mx-auto'>
       <section className='text-gray-800'>
-        {props.churchImageUrl ? (
+        {props.churchData.churchImageUrl ? (
           <img
-            src={props.churchImageUrl}
+            src={props.churchData.churchImageUrl}
             className='h-96 lg:h-96 mx-auto w-full object-cover rounded-md'
             alt=''
           />
@@ -21,7 +21,7 @@ export const ChurchDetail = (props) => {
         )}
         <div className='flex w-full justify-center'>
           <h1 className='text-4xl lg:text-5xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-3/4 lg:w-1/2 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2'>
-            <span>{props.churchName}</span>
+            <span>{props.churchData.churchName}</span>
           </h1>
         </div>
         <div className='flex w-full justify-center pb-8'>
@@ -29,10 +29,10 @@ export const ChurchDetail = (props) => {
             <span>Orari della divina liturgia</span>
           </h2>
         </div>
-        {props.monthlyMassSchedule ? (
+        {props.churchData.monthlyMassSchedule ? (
           <div className='flex w-full justify-center pb-8'>
             <h4 className='text-2xl mt-12 font-extrabold text-center px-2 border-b-2 border-sand-dark w-1/2 lg:ml-auto lg:mr-auto mx-12 sm:mx-24 pb-2'>
-              <span>{props.monthlyMassSchedule}</span>
+              <span>{props.churchData.monthlyMassSchedule}</span>
             </h4>
           </div>
         ) : (
@@ -90,27 +90,27 @@ export const ChurchDetail = (props) => {
                     <tbody className='divide-y divide-gray-200 bg-white'>
                       <tr key=''>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule.monday}
+                          {props.churchData.massSchedule.monday}
                         </td>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule.tuesday}
+                          {props.churchData.massSchedule.tuesday}
                         </td>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule.wednesday}
+                          {props.churchData.massSchedule.wednesday}
                         </td>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule.thursday}
+                          {props.churchData.massSchedule.thursday}
                         </td>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule.friday}
+                          {props.churchData.massSchedule.friday}
                         </td>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule.saturday}
+                          {props.churchData.massSchedule.saturday}
                         </td>
                         <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>
-                          {props.massSchedule &&
-                            props.massSchedule.sunday &&
-                            props.massSchedule.sunday
+                          {props.churchData.massSchedule &&
+                            props.churchData.massSchedule.sunday &&
+                            props.churchData.massSchedule.sunday
                               .split(',')
                               .map((time, index) => <p key={index}>{time}</p>)}
                         </td>
@@ -131,18 +131,18 @@ export const ChurchDetail = (props) => {
             </h2>
             <div
               key={person.id}
-              className='rounded-lg shadow divide-y divide-gray-200'
+              className='mt-6 rounded-lg shadow divide-y divide-gray-200'
             >
               <ContactCard person={person} />
             </div>
           </>
         )}
 
-        {props.locationUrl ? (
-          <Link href={props.locationUrl}>
+        {props.churchData.locationUrl ? (
+          <Link href={props.churchData.locationUrl}>
             <div className='flex flex-row hover:cursor-pointer justify-center items-center text-center mt-20 border-b-2 border-sand hover:border-sand-dark px-auto'>
               <LocationMarkerIcon className='h-4 w-4 text-gray-500' />
-              <span>{props.location}</span>
+              <span>{props.churchData.location}</span>
             </div>
           </Link>
         ) : (

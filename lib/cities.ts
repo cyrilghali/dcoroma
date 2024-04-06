@@ -5,7 +5,6 @@ export function listAllCities(): string[] {
 export async function getCityData(city) {
   try {
     const data = await import(`data/churches/${city}`)
-    console.log('Get city data', data.default)
     return data.default
   } catch (err) {
     console.error(`Could not load data for city: ${city}`, err)
