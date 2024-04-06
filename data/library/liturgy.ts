@@ -73,7 +73,7 @@ const liturgyWithoutCover = [
 
 const liturgy = liturgyWithoutCover.map((liturgy) => ({
   ...liturgy,
-  cover: `/covers/${liturgy.name.replace(/ /g, '_').toLowerCase()}.jpg`,
+  cover: `/covers/${liturgy.href.replace('/files/', '').replace('.pdf', '').replace(/ /g, '_')}.jpg`,
 }))
 
 export default liturgy

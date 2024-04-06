@@ -9,7 +9,7 @@ const SearchBar = ({ onSearch }) => {
   }
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center py-6'>
       <input
         type='text'
         placeholder='Search...'
