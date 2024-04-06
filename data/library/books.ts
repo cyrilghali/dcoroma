@@ -45,11 +45,6 @@ const booksWithoutCover = [
     href: '/files/ildiscorsodellamontagna.pdf',
   },
   {
-    name: 'LA DIVINITÀ DI CRISTO - Papa Shenouda III',
-    description: '',
-    href: '/files/divinita_cristo.pdf',
-  },
-  {
     name: "L'epifaniae san giovanni - Papa Shenouda III",
     description: '',
     href: '/files/lepifaniaesangiovanni.pdf',
@@ -58,11 +53,6 @@ const booksWithoutCover = [
     name: 'La Santa Vergine Maria - Papa Shenouda III',
     description: '',
     href: '/files/LasantaVergineMaria.pdf',
-  },
-  {
-    name: 'La Serenità - Papa Shenouda III',
-    description: '',
-    href: '/files/La_Serenita.pdf',
   },
   {
     name: 'La festa della Croce - Papa Shenouda III',

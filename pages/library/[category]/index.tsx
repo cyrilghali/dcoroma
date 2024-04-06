@@ -25,19 +25,23 @@ const CategoryPage = () => {
   const router = useRouter()
   const { category } = router.query
   const [items, setItems] = useState([])
+  const [allItems, setAllItems] = useState([]) // Aggiungi questo
 
   useEffect(() => {
-    getCategoryData(category).then((data) => {
-      if (data) {
-        setItems(data)
-      } else {
-        router.replace('/404') // Programmatically navigate to the 404 page
-      }
-    })
+    if (category) {
+      getCategoryData(category).then((data) => {
+        if (data) {
+          setAllItems(data) // Imposta tutti gli elementi qui
+          setItems(data)
+        } else {
+          router.replace('/404') // Programmatically navigate to the 404 page
+        }
+      })
+    }
   }, [category, router])
 
   const handleSearch = (searchTerm) => {
-    const filtered = items.filter((item: any) =>
+    const filtered = allItems.filter((item: any) =>
       item.name.toLowerCase().includes(searchTerm.toLowerCase()),
     )
     setItems(filtered)
