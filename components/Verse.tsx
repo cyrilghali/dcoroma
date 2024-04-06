@@ -13,7 +13,7 @@ export default function Verse() {
             <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full'>
               <div className='aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full'>
                 <Image
-                  className=' aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full object-cover lg:h-full lg:w-full'
+                  className=' aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full object-cover lg:w-full'
                   src='/photos/church.jpg'
                   layout='fill'
                   alt=''
@@ -39,8 +39,8 @@ export default function Verse() {
                   </p>
                 </div>
                 <footer className='mt-6'>
-                  <p className='text-base font-medium text-white'>Neemia</p>
-                  <p className='text-base font-medium text-rose-100'>2:17-18</p>
+                  <p className='text-xl font-medium text-white'>Neemia</p>
+                  <p className='text-xl font-medium text-rose-100'>2:17-18</p>
                 </footer>
               </blockquote>
             </div>
