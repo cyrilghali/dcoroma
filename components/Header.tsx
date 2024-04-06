@@ -17,17 +17,6 @@ import Link from 'next/link'
 
 const navigation = [
   {
-    name: 'Home',
-    href: '/',
-    icon: HomeIcon,
-  },
-  {
-    name: 'Chiese',
-    href: '/churches',
-    icon: LocationMarkerIcon,
-  },
-  { name: 'Fare una donazione', href: '/donation', icon: HeartIcon },
-  {
     name: 'Katameros',
     href: 'https://katameros.app/?lang=it',
     icon: ExternalLinkIcon,
@@ -38,9 +27,20 @@ const navigation = [
     icon: BookOpenIcon,
   },
   {
+    name: 'Chiese',
+    href: '/churches',
+    icon: LocationMarkerIcon,
+  },
+  {
     name: 'Contatti',
     href: '/contact',
     icon: SupportIcon,
+  },
+  { name: 'Fare una donazione', href: '/donation', icon: HeartIcon },
+  {
+    name: 'Home',
+    href: '/',
+    icon: HomeIcon,
   },
 ]
 export default function Header() {

@@ -25,8 +25,8 @@ export default function LibraryCards() {
                   alt={category.name}
                   role='presentation'
                 />
-                <div className='absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center'>
-                  <span className='text-gray-100 text-4xl'>
+                <div className='absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center'>
+                  <span className='text-gray-100 text-6xl font-semibold'>
                     {category.name}
                   </span>
                 </div>
