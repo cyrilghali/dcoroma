@@ -27,7 +27,7 @@ const torino = [
     slug: 'santaverginemariatorino',
     churchName: 'Chiesa della Santa Vergine Maria',
     churchImageUrl: '',
-    referentID: 6,
+    referentID: 12,
     massSchedule: {
       monday: '9:00 - 11:30',
       tuesday: '',
