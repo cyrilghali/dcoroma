@@ -12,7 +12,7 @@ import {
   ExternalLinkIcon,
   BookOpenIcon,
 } from '@heroicons/react/outline'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link'
 
 const navigation = [
@@ -57,7 +57,10 @@ export default function Header() {
                   className='hover:cursor-pointer'
                   src={'/photos/logo.png'}
                   alt={'logo'}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </Link>
             </div>
           </div>
@@ -104,7 +107,10 @@ export default function Header() {
                       height={50}
                       src={'/photos/logo.png'}
                       alt={'logo'}
-                    />
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                      }} />
                   </Link>
                 </div>
                 <div className='-mr-2'>
@@ -138,5 +144,5 @@ export default function Header() {
         </Popover.Panel>
       </Transition>
     </Popover>
-  )
+  );
 }

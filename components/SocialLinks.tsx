@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomeTitle } from './Title'
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 export const links = [
   {
@@ -29,13 +29,16 @@ export const SocialLinks = () => {
                 height={100}
                 src={social.imageUrl}
                 alt={social.alt}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </Link>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 export default SocialLinks
