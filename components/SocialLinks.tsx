@@ -1,7 +1,8 @@
-import React from 'react'
-import { HomeTitle } from './Title'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+import { HomeTitle } from './Title'
 
 export const links = [
   {
@@ -17,14 +18,14 @@ export const links = [
 ]
 export const SocialLinks = () => {
   return (
-    <div className='bg-rose-50'>
-      <HomeTitle title='Rimanere in contatto' />
-      <ul role='list' className='flex justify-center mb-8'>
+    <div className="bg-rose-50">
+      <HomeTitle title="Rimanere in contatto" />
+      <ul role="list" className="flex justify-center mb-8">
         {links.map((social) => (
-          <li key={social.alt} className='m-6'>
-            <Link href={social.href} target='_blank' className='static'>
+          <li key={social.alt} className="m-6">
+            <Link href={social.href} target="_blank" className="static">
               <Image
-                className='object-contain rounded-full hover:cursor-pointer'
+                className="object-contain rounded-full hover:cursor-pointer"
                 width={100}
                 height={100}
                 src={social.imageUrl}
