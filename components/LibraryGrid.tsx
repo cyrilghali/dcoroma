@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function LibraryGrid(props) {
   const documents: any = Array.from(props.docs)
@@ -19,10 +19,7 @@ export default function LibraryGrid(props) {
               alt={`Cover of ${document.name}`}
               className='object-cover pointer-events-none group-hover:opacity-75'
               fill
-              style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
+            />
             <Link href={document.href}>
               <span className='sr-only'>View details for {document.name}</span>
             </Link>
@@ -33,5 +30,5 @@ export default function LibraryGrid(props) {
         </li>
       ))}
     </ul>
-  );
+  )
 }

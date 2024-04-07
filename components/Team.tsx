@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import diocese from 'data/diocese'
 import { HomeTitle } from './Title'
 export default function Team() {
@@ -20,10 +20,7 @@ export default function Team() {
                     height={200}
                     src={person.imageUrl}
                     alt=''
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto"
-                    }} />
+                  />
                   <div className='space-y-2'>
                     <div className='text-lg leading-6 font-medium space-y-1'>
                       <h3>{person.name}</h3>
@@ -37,5 +34,5 @@ export default function Team() {
         </div>
       </div>
     </div>
-  );
+  )
 }
