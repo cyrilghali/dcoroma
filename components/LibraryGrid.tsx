@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from 'next/image'
 
 export default function LibraryGrid(props) {
-  const documents: any = Array.from(props.docs);
+  const documents: any = Array.from(props.docs)
   return (
     <ul
       role='list'

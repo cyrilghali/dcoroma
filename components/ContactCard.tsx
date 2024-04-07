@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
-import Image from "next/legacy/image"
+import Image from 'next/image'
 
 export default function ContactCard({ person }) {
   return (
