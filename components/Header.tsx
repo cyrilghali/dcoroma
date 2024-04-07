@@ -14,6 +14,7 @@ import {
 } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import { NewspaperIcon } from '@heroicons/react/solid'
 
 const navigation = [
   {
@@ -28,6 +29,13 @@ const navigation = [
     icon: BookOpenIcon,
     dataUmamiEvent: 'click_library',
   },
+  {
+    name: 'Notizie',
+    href: '/news',
+    icon: NewspaperIcon,
+    dataUmamiEvent: 'click_news',
+  },
+
   {
     name: 'Chiese',
     href: '/churches',
