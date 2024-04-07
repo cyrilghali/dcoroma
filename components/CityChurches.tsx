@@ -15,7 +15,6 @@ export const CityChurches = () => {
               title={ct.name}
               imageUrl={ct.imageUrl}
               href={ct.href}
-              data-umami-event-city={'Card of ' + ct.name}
             />
           ))}
       </div>

@@ -80,6 +80,7 @@ export default function Footer() {
               <a
                 href={item.href}
                 className='text-base text-gray-500 hover:text-gray-900'
+                data-umami-event={item.dataUmamiEvent}
               >
                 {item.name}
               </a>
@@ -92,6 +93,7 @@ export default function Footer() {
               key={item.name}
               href={item.href}
               className='text-gray-400 hover:text-gray-500'
+              data-umami-event={item.dataUmamiEvent}
             >
               <span className='sr-only'>{item.name}</span>
               <item.icon className='h-6 w-6' aria-hidden='true' />
