@@ -12,7 +12,7 @@ import {
   ExternalLinkIcon,
   BookOpenIcon,
 } from '@heroicons/react/outline'
-import Image from "next/image"
+import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
@@ -20,27 +20,37 @@ const navigation = [
     name: 'Katameros',
     href: 'https://katameros.app/?lang=it',
     icon: ExternalLinkIcon,
+    dataUmamiEvent: 'click_katameros',
   },
   {
     name: 'Libreria',
     href: '/library',
     icon: BookOpenIcon,
+    dataUmamiEvent: 'click_library',
   },
   {
     name: 'Chiese',
     href: '/churches',
     icon: LocationMarkerIcon,
+    dataUmamiEvent: 'click_churches',
   },
   {
     name: 'Contatti',
     href: '/contact',
     icon: SupportIcon,
+    dataUmamiEvent: 'click_contact',
   },
-  { name: 'Fare una donazione', href: '/donation', icon: HeartIcon },
+  {
+    name: 'Fare una donazione',
+    href: '/donation',
+    icon: HeartIcon,
+    dataUmamiEvent: 'click_donation',
+  },
   {
     name: 'Home',
     href: '/',
     icon: HomeIcon,
+    dataUmamiEvent: 'click_home',
   },
 ]
 export default function Header() {
@@ -58,9 +68,10 @@ export default function Header() {
                   src={'/photos/logo.png'}
                   alt={'logo'}
                   style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    maxWidth: '100%',
+                    height: 'auto',
+                  }}
+                />
               </Link>
             </div>
           </div>
@@ -76,6 +87,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className='text-base font-medium text-gray-500 hover:text-gray-900'
+                data-umami-event={item.dataUmamiEvent}
               >
                 {item.name}
               </a>
@@ -108,9 +120,10 @@ export default function Header() {
                       src={'/photos/logo.png'}
                       alt={'logo'}
                       style={{
-                        maxWidth: "100%",
-                        height: "auto"
-                      }} />
+                        maxWidth: '100%',
+                        height: 'auto',
+                      }}
+                    />
                   </Link>
                 </div>
                 <div className='-mr-2'>
@@ -127,6 +140,7 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       className='-m-3 p-3 flex items-center rounded-md hover:bg-gray-50'
+                      data-umami-event={item.dataUmamiEvent}
                     >
                       <item.icon
                         className='flex-shrink-0 h-6 w-6 text-rose-900'
@@ -144,5 +158,5 @@ export default function Header() {
         </Popover.Panel>
       </Transition>
     </Popover>
-  );
+  )
 }

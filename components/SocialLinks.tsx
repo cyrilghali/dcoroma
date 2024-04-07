@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomeTitle } from './Title'
 import Link from 'next/link'
-import Image from "next/image"
+import Image from 'next/image'
 
 export const links = [
   {
@@ -29,16 +29,20 @@ export const SocialLinks = () => {
                 height={100}
                 src={social.imageUrl}
                 alt={social.alt}
+                data-umami-event-social-link={
+                  'click_' + social.alt.toLowerCase()
+                }
                 style={{
-                  maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  maxWidth: '100%',
+                  height: 'auto',
+                }}
+              />
             </Link>
           </li>
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
 export default SocialLinks
