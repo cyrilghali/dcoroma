@@ -2,7 +2,7 @@ import Hero from 'components/Hero'
 import Team from 'components/Team'
 import Footer from 'components/Footer'
 import SocialLinks from 'components/SocialLinks'
-import DonationCTA from 'components/DonationCTA'
+import DonationCallToAction from '@/components/DonationCallToAction'
 import { CityChurches } from 'components/CityChurches'
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <Team />
       <SocialLinks />
       <CityChurches />
-      <DonationCTA />
+      <DonationCallToAction />
       <Footer />
     </div>
   )

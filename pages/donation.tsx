@@ -4,19 +4,19 @@ import Footer from 'components/Footer'
 import { Title } from 'components/Title'
 import Verse from 'components/Verse'
 import Divider from 'components/Divider'
-import IBAN from 'components/IBAN'
+import IbanComponent from '@/components/IbanComponent'
 
-const Contact: NextPage = () => {
+const Donation: NextPage = () => {
   return (
     <div>
       <Header />
       <Title title='Donazione' />
       <Verse />
       <Divider />
-      <IBAN />
+      <IbanComponent />
       <Footer />
     </div>
   )
 }
 
-export default Contact
+export default Donation

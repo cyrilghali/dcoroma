@@ -9,7 +9,7 @@ const InfoBlock = ({ label, text }) => (
   </div>
 )
 
-const IBAN = () => {
+const IbanComponent = () => {
   return (
     <>
       <h1 className='flex py-4 mx-5 justify-center font-black text-3xl'>
@@ -33,4 +33,4 @@ const IBAN = () => {
   )
 }
 
-export default IBAN
+export default IbanComponent

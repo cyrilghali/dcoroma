@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from "next/legacy/image"
-export default function ContactCTA() {
+import Image from 'next/legacy/image'
+export default function ContactCallToAction() {
   return (
     <div className='bg-rose-50'>
       <div className='max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8'>
