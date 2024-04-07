@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 export default function Verse() {
   return (
@@ -15,9 +15,9 @@ export default function Verse() {
                 <Image
                   className=' aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full object-cover lg:w-full'
                   src='/photos/church.jpg'
-                  layout='fill'
                   alt=''
-                />
+                  fill
+                  sizes="100vw" />
               </div>
             </div>
           </div>
@@ -48,5 +48,5 @@ export default function Verse() {
         </div>
       </div>
     </div>
-  )
+  );
 }
