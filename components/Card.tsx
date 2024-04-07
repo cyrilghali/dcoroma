@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link'
 import React from 'react'
 
@@ -11,9 +11,9 @@ export const Card = (props) => {
             <Image
               className={`${props.className} card-zoom-image object-cover brightness-50`}
               src={props.imageUrl}
-              layout='fill'
               alt=''
-            />
+              fill
+              sizes="100vw" />
             <h1 className='absolute text-center text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-extrabold'>
               {props.title}
             </h1>
@@ -21,5 +21,5 @@ export const Card = (props) => {
         </Link>
       </div>
     </div>
-  )
+  );
 }

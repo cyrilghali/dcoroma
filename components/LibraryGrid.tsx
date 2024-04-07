@@ -19,6 +19,7 @@ export default function LibraryGrid(props) {
               alt={`Cover of ${document.name}`}
               className='object-cover pointer-events-none group-hover:opacity-75'
               fill
+              sizes='(min-width: 640px) 50vw, 100vw'
             />
             <Link href={document.href}>
               <span className='sr-only'>View details for {document.name}</span>

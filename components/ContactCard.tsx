@@ -6,13 +6,15 @@ export default function ContactCard({ person }) {
   return (
     <div>
       <div className='flex-1 flex flex-col p-8'>
-        <Image
-          className='w-32 h-32 flex-shrink-0 mx-auto object-contain rounded-full'
-          width={200}
-          height={200}
-          src={person.imageUrl}
-          alt=''
-        />
+        <div className='w-32 h-32 flex-shrink-0 mx-auto object-contain rounded-full'>
+          <Image
+            className='w-32 h-32 object-cover rounded-full'
+            width={200}
+            height={200}
+            src={person.imageUrl}
+            alt=''
+          />
+        </div>
         <h3 className='mt-6 text-gray-900 text-sm font-medium'>
           {person.name}
         </h3>

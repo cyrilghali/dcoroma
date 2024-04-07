@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image"
 import Link from 'next/link'
 import categories from 'data/library/categories'
 
@@ -24,7 +24,10 @@ export default function LibraryCards() {
                   src={category.imageUrl}
                   alt={category.name}
                   role='presentation'
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
                 <div className='absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center'>
                   <span className='text-gray-100 text-6xl font-semibold'>
                     {category.name}
@@ -36,5 +39,5 @@ export default function LibraryCards() {
         </li>
       ))}
     </ul>
-  )
+  );
 }

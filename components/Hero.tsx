@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Header from './Header'
 
 export default function Hero() {
@@ -60,7 +60,10 @@ export default function Hero() {
                 height={80}
                 width={80}
                 alt='Croce copta'
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h1>
                 <span className='block text-center pt-16 tracking-tight font-extrabold sm:text-5xl xl:text-6xl'>
                   <span className='block text-6xl text-gray-900'>
@@ -122,11 +125,14 @@ export default function Hero() {
                 alt=''
                 width={1024}
                 height={770}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </main>
       </div>
     </div>
-  )
+  );
 }
