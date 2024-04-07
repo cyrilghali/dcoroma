@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomeTitle } from './Title'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 export const links = [
   {

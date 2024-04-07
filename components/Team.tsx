@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import diocese from 'data/diocese'
 import { HomeTitle } from './Title'
 export default function Team() {

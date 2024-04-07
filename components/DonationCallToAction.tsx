@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { HomeTitle } from './Title'
-export default function DonationCTA() {
+export default function DonationCallToAction() {
   return (
     <div className='bg-rose-50'>
       <HomeTitle title='Vuoi aiutare?' />
