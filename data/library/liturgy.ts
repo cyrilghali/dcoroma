@@ -63,11 +63,31 @@ const liturgyWithoutCover = [
     description: '',
     href: '/files/benedizione_della_casa_nuova.pdf',
   },
-  { name: 'Nativity', description: '', href: '/files/nativity.pdf' },
+  { name: 'Natale', description: '', href: '/files/nativity.pdf' },
   {
     name: 'Rito della settimana Santa',
     description: '',
     href: '/files/settimanasanta.pdf',
+  },
+  {
+    name: 'Sabato di Lazzaro domenica delle palme',
+    description: '',
+    href: '/files/Sabato_di_Lazzaro_domenica_delle_palme.pdf',
+  },
+  {
+    name: 'Lunedì, Martedì e Mercoledì Santo',
+    description: '',
+    href: '/files/Lun_Mar_Mer_Santo.pdf',
+  },
+  {
+    name: 'Giovedì Santo',
+    description: '',
+    href: '/files/Giovedi_Santo.pdf',
+  },
+  {
+    name: 'Venerdì Santo',
+    description: '',
+    href: '/files/Venerdi_Santo.pdf',
   },
 ]
 
