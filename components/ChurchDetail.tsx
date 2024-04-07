@@ -5,7 +5,7 @@ import { LocationMarkerIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 export const ChurchDetail = (props) => {
-  const person = fathers.find((el) => props.churchData.referentId === el.id)
+  const person = fathers.find((el) => props.churchData.referentID === el.id)
 
   return (
     <div className='container my-24 px-6 mx-auto'>

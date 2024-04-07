@@ -24,7 +24,6 @@ const ChurchPage = ({ church }) => {
   if (!church) {
     return <Error404 />
   }
-
   return (
     <div>
       <Header />
