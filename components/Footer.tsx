@@ -99,7 +99,7 @@ export default function Footer() {
           ))}
         </div>
         <p className='mt-8 text-center text-base text-gray-400'>
-          &copy; 2024 DCO Roma. All rights reserved.
+          &copy; 2022 DCO Roma. All rights reserved.
         </p>
       </div>
     </footer>
