@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
-
+  images: { remotePatterns: [{ hostname: 'cdn.sanity.io' }] },
   async headers() {
     return [
       {

@@ -16,15 +16,22 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
       "@/components/*": ["components/*"],
       "@/data/*": ["data/*"],
       "@/lib/*": ["lib/*"],
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "~/*": ["./*"]
+
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
