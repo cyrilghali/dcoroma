@@ -1,5 +1,5 @@
 import { defineField, defineType } from 'sanity'
-import { CalendarIcon } from '@sanity/icons'
+import { CalendarIcon } from '@heroicons/react/outline'
 
 const eventType = defineType({
   name: 'event',
@@ -19,10 +19,6 @@ const eventType = defineType({
     defineField({
       name: 'date',
       type: 'datetime',
-    }),
-    defineField({
-      name: 'headline',
-      type: 'reference',
     }),
     defineField({
       name: 'image',
