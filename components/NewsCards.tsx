@@ -19,7 +19,7 @@ export default function NewsCards({ articles }) {
         <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
           {articles.map((article) => (
             <div key={article.title} className="cursor-pointer">
-              <Link href={`/news/${article.slug}`}>
+              <Link href={`/news/${article.slug.current}`}>
                 <div>
                   <p className="text-sm text-gray-800">
                     <time dateTime={article.date}>{article.date}</time>

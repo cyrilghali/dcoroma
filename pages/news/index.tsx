@@ -1,33 +1,42 @@
-import { useState, useEffect } from 'react'
-import { SanityDocument } from 'next-sanity'
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { useLiveQuery } from 'next-sanity/preview'
 
-import Header from '@/components/Header'
-import Title from '@/components/Title'
-import NewsCards from '@/components/NewsCards'
 import Footer from '@/components/Footer'
-import getClient from '@/lib/sanity.client'
-import { readToken } from '@/lib/sanity.api'
+import Header from '@/components/Header'
+import NewsCards from '@/components/NewsCards'
+import Title from '@/components/Title'
+import { readToken } from '~/lib/sanity.api'
+import { getClient } from '~/lib/sanity.client'
+import { getPosts, type Post, postsQuery } from '~/lib/sanity.queries'
+import type { SharedPageProps } from '~/pages/_app'
 
-const EVENTS_QUERY = `*[]`
+export const getStaticProps: GetStaticProps<
+  SharedPageProps & {
+    posts: Post[]
+  }
+> = async ({ draftMode = false }) => {
+  const client = getClient(draftMode ? { token: readToken } : undefined)
+  const posts = await getPosts(client)
 
-export default function IndexPage() {
-  const [events, setEvents] = useState<SanityDocument[]>([])
+  return {
+    props: {
+      draftMode,
+      token: draftMode ? readToken : '',
+      posts,
+    },
+  }
+}
 
-  useEffect(() => {
-    const fetchEvents = async () => {
-      const client = getClient(undefined)
-      const fetchedEvents = await client.fetch<SanityDocument[]>(EVENTS_QUERY)
-      setEvents(fetchedEvents)
-    }
-
-    fetchEvents()
-  }, [])
+export default function IndexPage(
+  props: InferGetStaticPropsType<typeof getStaticProps>,
+) {
+  const [posts] = useLiveQuery<Post[]>(props.posts, postsQuery)
 
   return (
     <div>
       <Header />
       <Title title="Notizie" />
-      <NewsCards articles={events} />
+      <NewsCards articles={posts} />
       <Footer />
     </div>
   )
