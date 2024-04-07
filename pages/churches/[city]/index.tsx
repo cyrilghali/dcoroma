@@ -1,13 +1,11 @@
 // pages/[city]/index.tsx
+import { Card } from 'components/Card'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import { HomeTitle } from 'components/Title'
+import { getCityData,listAllCities } from 'lib/cities'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
-
-import Header from 'components/Header'
-import Footer from 'components/Footer'
-import { Card } from 'components/Card'
-import { HomeTitle } from 'components/Title'
-
-import { listAllCities, getCityData } from 'lib/cities'
 
 // Function to get city data. This could also be an API call in a real app
 
@@ -29,9 +27,9 @@ const CityPage = ({ cityData }) => {
   return (
     <div>
       <Header />
-      <div className='pb-20'>
+      <div className="pb-20">
         <HomeTitle title={`Chiese di ${city}`} />
-        <div className='flex flex-row flex-wrap justify-evenly'>
+        <div className="flex flex-row flex-wrap justify-evenly">
           {cityData.map((church) => (
             <Card
               key={church.slug} // Assuming slug is unique

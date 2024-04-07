@@ -1,9 +1,10 @@
 // pages/[city]/[slug].js
-import { GetStaticPaths, GetStaticProps } from 'next'
-import Header from 'components/Header'
-import Footer from 'components/Footer'
 import { ChurchDetail } from 'components/ChurchDetail'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
 import { getAllChurchSlugs, getChurchData } from 'lib/cities'
+import { GetStaticPaths, GetStaticProps } from 'next'
+
 import Error404 from '@/components/NotFoundPage'
 
 export const getStaticPaths: GetStaticPaths = async () => {

@@ -39,18 +39,18 @@ const NewsletterForm = () => {
   return (
     <div>
       <form
-        className='mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-end'
+        className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-end"
         onSubmit={subscribe}
       >
         <div>
-          <label className='sr-only' htmlFor='email-input'>
+          <label className="sr-only" htmlFor="email-input">
             Email
           </label>
           <input
-            autoComplete='email'
-            className='block w-full md:w-96 py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-rose-800 focus:border-rose-800 sm:flex-1 border-gray-300'
-            id='email-input'
-            name='email'
+            autoComplete="email"
+            className="block w-full md:w-96 py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-rose-800 focus:border-rose-800 sm:flex-1 border-gray-300"
+            id="email-input"
+            name="email"
             placeholder={
               subscribed
                 ? 'Sei iscritto !  🎉'
@@ -58,20 +58,20 @@ const NewsletterForm = () => {
             }
             ref={inputEl}
             required
-            type='email'
+            type="email"
             disabled={subscribed}
           />
         </div>
         <button
-          className='mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-rose-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-800 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto'
-          type='submit'
+          className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-rose-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-800 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+          type="submit"
           disabled={subscribed}
         >
           {subscribed ? 'Grazie!' : 'Avvisami'}
         </button>
       </form>
       {error && (
-        <div className='w-72 pt-2 text-sm text-red-500 dark:text-red-400 sm:w-96'>
+        <div className="w-72 pt-2 text-sm text-red-500 dark:text-red-400 sm:w-96">
           {message}
         </div>
       )}
