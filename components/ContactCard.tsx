@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { MailIcon, PhoneIcon } from '@heroicons/react/solid'
-import Image from 'next/image'
+import Image from "next/image"
 
 export default function ContactCard({ person }) {
   return (
@@ -12,7 +12,10 @@ export default function ContactCard({ person }) {
           height={200}
           src={person.imageUrl}
           alt=''
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
         <h3 className='mt-6 text-gray-900 text-sm font-medium'>
           {person.name}
         </h3>
@@ -52,5 +55,5 @@ export default function ContactCard({ person }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
