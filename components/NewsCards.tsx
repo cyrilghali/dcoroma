@@ -17,8 +17,8 @@ export default function NewsCards({ articles }) {
         </div>
         <div className='mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12'>
           {articles.map((article) => (
-            <div key={article.attributes.title} className='cursor-pointer'>
-              <Link href={`/article/${article.attributes.slug}`}>
+            <div key={article.slug} className='cursor-pointer'>
+              <Link href={`/article/${article.slug}`}>
                 <div>
                   <p className='text-sm text-gray-800'>
                     <time dateTime={article.date}>{article.date}</time>
@@ -26,10 +26,10 @@ export default function NewsCards({ articles }) {
 
                   <div className='mt-2 block'>
                     <p className='text-xl font-semibold text-gray-900'>
-                      {article.attributes.title}
+                      {article.title}
                     </p>
                     <p className='mt-3 text-base text-gray-800'>
-                      {article.attributes.description}
+                      {article.title}
                     </p>
                   </div>
 
