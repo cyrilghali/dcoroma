@@ -1,15 +1,41 @@
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
   main: [
-    { name: 'Libreria', href: '/library' },
-    { name: 'Katameros', href: 'https://katameros.app' },
-    { name: 'Chiese', href: '/churches' },
-    { name: 'Contatti', href: '/contact' },
+    {
+      name: 'Katameros',
+      href: 'https://katameros.app/?lang=it',
+      dataUmamiEvent: 'click_katameros',
+    },
+    {
+      name: 'Libreria',
+      href: '/library',
+      dataUmamiEvent: 'click_library',
+    },
+    {
+      name: 'Chiese',
+      href: '/churches',
+      dataUmamiEvent: 'click_churches',
+    },
+    {
+      name: 'Contatti',
+      href: '/contact',
+      dataUmamiEvent: 'click_contact',
+    },
+    {
+      name: 'Fare una donazione',
+      href: '/donation',
+      dataUmamiEvent: 'click_donation',
+    },
+    {
+      name: 'Home',
+      href: '/',
+      dataUmamiEvent: 'click_home',
+    },
   ],
   social: [
     {
       name: 'Facebook',
       href: 'https://www.facebook.com/DCOTorinoRoma',
+      dataUmamiEvent: 'click_facebook',
       icon: (props) => (
         <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
           <path
@@ -23,6 +49,7 @@ const navigation = {
     {
       name: 'Youtube',
       href: 'https://www.youtube.com/channel/UCVc5TVZEoB3k5SZWe1daXcA',
+      dataUmamiEvent: 'click_youtube',
       icon: () => (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -53,6 +80,7 @@ export default function Footer() {
               <a
                 href={item.href}
                 className='text-base text-gray-500 hover:text-gray-900'
+                data-umami-event={item.dataUmamiEvent}
               >
                 {item.name}
               </a>
@@ -65,6 +93,7 @@ export default function Footer() {
               key={item.name}
               href={item.href}
               className='text-gray-400 hover:text-gray-500'
+              data-umami-event={item.dataUmamiEvent}
             >
               <span className='sr-only'>{item.name}</span>
               <item.icon className='h-6 w-6' aria-hidden='true' />

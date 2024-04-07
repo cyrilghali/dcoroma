@@ -19,7 +19,11 @@ const CopyButton = (props) => {
     return
   }
   return (
-    <button className='' onClick={copyToClipboard}>
+    <button
+      className=''
+      onClick={copyToClipboard}
+      data-umami-event='Donation copy button'
+    >
       {copied ? (
         <svg
           className='h-10 w-6 text-green-500'
