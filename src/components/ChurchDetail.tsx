@@ -1,8 +1,9 @@
-import React from 'react'
-import ContactCard from './ContactCard'
-import fathers from 'data/contact'
 import { LocationMarkerIcon } from '@heroicons/react/outline'
+import fathers from 'data/contact'
 import Link from 'next/link'
+import React from 'react'
+
+import ContactCard from './ContactCard'
 
 export const ChurchDetail = (props) => {
   const person = fathers.find((el) => props.churchData.referentID === el.id)

@@ -1,7 +1,8 @@
-import React from 'react'
-import { HomeTitle } from './Title'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+import { HomeTitle } from './Title'
 
 export const links = [
   {

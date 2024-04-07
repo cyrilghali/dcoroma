@@ -1,9 +1,10 @@
-import type { NextPage } from 'next'
 import fathers from 'data/contact'
-import Header from '~/components/Header'
-import { HomeTitle } from '~/components/Title'
+import type { NextPage } from 'next'
+
 import ContactCard from '~/components/ContactCard'
 import Footer from '~/components/Footer'
+import Header from '~/components/Header'
+import { HomeTitle } from '~/components/Title'
 
 const Contact: NextPage = () => {
   return (

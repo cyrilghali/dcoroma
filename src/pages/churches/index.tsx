@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
-import Header from '~/components/Header'
+
 import { CityChurches } from '~/components/CityChurches'
 import Footer from '~/components/Footer'
+import Header from '~/components/Header'
 
 const Churches: NextPage = () => {
   return (

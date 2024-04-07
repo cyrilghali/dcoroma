@@ -1,12 +1,12 @@
 // pages/[city]/index.tsx
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
+import { getCityData,listAllCities } from 'src/lib/cities'
 
-import { listAllCities, getCityData } from 'src/lib/cities'
+import { Card } from '~/components/Card'
+import Footer from '~/components/Footer'
 import Header from '~/components/Header'
 import { HomeTitle } from '~/components/Title'
-import Footer from '~/components/Footer'
-import { Card } from '~/components/Card'
 
 // Function to get city data. This could also be an API call in a real app
 

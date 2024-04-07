@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import NewsletterForm from './NewsletterForm'
 export default function NewsCards({ articles }) {
   return (

@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
-import LibraryGrid from '~/components/LibraryGrid'
+import { useEffect,useState } from 'react'
+
 import Footer from '~/components/Footer'
+import Header from '~/components/Header'
+import LibraryGrid from '~/components/LibraryGrid'
 import SearchBar from '~/components/SearchBar'
 import Title from '~/components/Title'
-import Header from '~/components/Header'
 
 function capitalize(str) {
   if (!str) return ''

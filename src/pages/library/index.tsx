@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
-import Header from '~/components/Header'
-import Title from '~/components/Title'
-import LibraryCards from '~/components/LibraryCards'
+
 import Footer from '~/components/Footer'
+import Header from '~/components/Header'
+import LibraryCards from '~/components/LibraryCards'
+import Title from '~/components/Title'
 
 const Library: NextPage = () => {
   return (

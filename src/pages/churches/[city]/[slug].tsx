@@ -2,10 +2,11 @@
 
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getAllChurchSlugs, getChurchData } from 'src/lib/cities'
-import Error404 from '~/components/NotFoundPage'
-import Header from '~/components/Header'
+
 import { ChurchDetail } from '~/components/ChurchDetail'
 import Footer from '~/components/Footer'
+import Header from '~/components/Header'
+import Error404 from '~/components/NotFoundPage'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllChurchSlugs() // [{ params: { city: 'roma', slug: 'san-pietro' } }, ...]

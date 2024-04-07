@@ -1,7 +1,8 @@
-import React from 'react'
-import { HomeTitle } from './Title'
-import { Card } from './Card'
 import city from 'data/cities'
+import React from 'react'
+
+import { Card } from './Card'
+import { HomeTitle } from './Title'
 export const CityChurches = () => {
   return (
     <div className='pb-20'>

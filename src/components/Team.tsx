@@ -1,5 +1,6 @@
-import Image from "next/image"
 import diocese from 'data/diocese'
+import Image from "next/image"
+
 import { HomeTitle } from './Title'
 export default function Team() {
   return (

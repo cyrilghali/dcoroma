@@ -1,19 +1,18 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-
 import {
+  BookOpenIcon,
+  ExternalLinkIcon,
+  HeartIcon,
+  HomeIcon,
   LocationMarkerIcon,
   MenuIcon,
-  HeartIcon,
   SupportIcon,
-  HomeIcon,
   XIcon,
-  ExternalLinkIcon,
-  BookOpenIcon,
 } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Fragment } from 'react'
 
 const navigation = [
   {

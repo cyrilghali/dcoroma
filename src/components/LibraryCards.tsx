@@ -1,6 +1,6 @@
+import categories from 'data/library/categories'
 import Image from 'next/image'
 import Link from 'next/link'
-import categories from 'data/library/categories'
 
 export default function LibraryCards() {
   return (
