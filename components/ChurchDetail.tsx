@@ -140,7 +140,10 @@ export const ChurchDetail = (props) => {
 
         {props.churchData.locationUrl ? (
           <Link href={props.churchData.locationUrl}>
-            <div className='flex flex-row hover:cursor-pointer justify-center items-center text-center mt-20 border-b-2 border-sand hover:border-sand-dark px-auto'>
+            <div
+              className='flex flex-row hover:cursor-pointer justify-center items-center text-center mt-20 border-b-2 border-sand hover:border-sand-dark px-auto'
+              data-umami-event='Click on Church location'
+            >
               <LocationMarkerIcon className='h-4 w-4 text-gray-500' />
               <span>{props.churchData.location}</span>
             </div>

@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 import Link from 'next/link'
 import categories from 'data/library/categories'
 
@@ -16,7 +16,10 @@ export default function LibraryCards() {
         >
           <Link href={category.href}>
             <div className='focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500'>
-              <div className='h-60 bg-gray-800 rounded-lg overflow-hidden relative'>
+              <div
+                className='h-60 bg-gray-800 rounded-lg overflow-hidden relative'
+                data-umami-event={'click_library_card_' + category.name}
+              >
                 <Image
                   className='object-cover w-full h-full'
                   width={200}
@@ -25,9 +28,10 @@ export default function LibraryCards() {
                   alt={category.name}
                   role='presentation'
                   style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    maxWidth: '100%',
+                    height: 'auto',
+                  }}
+                />
                 <div className='absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center'>
                   <span className='text-gray-100 text-6xl font-semibold'>
                     {category.name}
@@ -39,5 +43,5 @@ export default function LibraryCards() {
         </li>
       ))}
     </ul>
-  );
+  )
 }
