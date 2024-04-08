@@ -6,7 +6,6 @@ import Header from '@/components/Header'
 import NewsCards from '@/components/NewsCards'
 import Title from '@/components/Title'
 import { readToken } from '~/lib/sanity.api'
-import { getClient } from '~/lib/sanity.client'
 import { getPosts, type Post, postsQuery } from '~/lib/sanity.queries'
 import type { SharedPageProps } from '~/pages/_app'
 
@@ -23,6 +22,7 @@ export const getStaticProps: GetStaticProps<
       token: draftMode ? readToken : '',
       posts,
     },
+    revalidate: 60,
   }
 }
 
