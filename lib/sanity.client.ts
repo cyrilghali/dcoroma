@@ -1,4 +1,5 @@
 import { createClient, type SanityClient } from 'next-sanity'
+import { QueryParams } from 'sanity'
 
 import { apiVersion, dataset, projectId, useCdn } from '~/lib/sanity.api'
 
@@ -21,5 +22,25 @@ export function getClient(preview?: { token: string }): SanityClient {
       perspective: 'previewDrafts',
     })
   }
+
   return client
+}
+
+export async function sanityFetch<QueryResponse>({
+  query,
+  qParams,
+  tags,
+  preview,
+}: {
+  query: string
+  qParams?: QueryParams
+  tags: string[]
+  preview?: { token: string }
+}): Promise<QueryResponse> {
+  const client = getClient(preview)
+  // @ts-ignore
+  return client.fetch<QueryResponse>(query, qParams, {
+    cache: 'force-cache',
+    next: { tags },
+  })
 }
