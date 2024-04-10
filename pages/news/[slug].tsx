@@ -3,16 +3,13 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { useLiveQuery } from 'next-sanity/preview'
 
-import { readToken } from '~/lib/sanity.api'
-import { getClient } from '~/lib/sanity.client'
 import { urlForImage } from '~/lib/sanity.image'
 import {
   getPost,
+  getPosts,
   type Post,
   postBySlugQuery,
-  postSlugsQuery,
 } from '~/lib/sanity.queries'
-import type { SharedPageProps } from '~/pages/_app'
 import { formatDate } from '~/utils'
 
 interface Query {
@@ -20,13 +17,12 @@ interface Query {
 }
 
 export const getStaticProps: GetStaticProps<
-  SharedPageProps & {
+  {
     post: Post
   },
   Query
-> = async ({ draftMode = false, params = {} }) => {
-  const client = getClient(draftMode ? { token: readToken } : undefined)
-  const post = await getPost(client, params.slug)
+> = async ({ params = {} }) => {
+  const post = await getPost(params.slug)
 
   if (!post) {
     return {
@@ -36,8 +32,6 @@ export const getStaticProps: GetStaticProps<
 
   return {
     props: {
-      draftMode,
-      token: draftMode ? readToken : '',
       post,
     },
   }
@@ -55,10 +49,7 @@ export default function ProjectSlugRoute(
       {post.mainImage ? (
         <Image
           className="post__cover"
-          src={
-            // @ts-ignore
-            urlForImage(post.mainImage).url()
-          }
+          src={urlForImage(post.mainImage)?.url() || ''}
           height={231}
           width={367}
           alt=""
@@ -79,8 +70,7 @@ export default function ProjectSlugRoute(
 }
 
 export const getStaticPaths = async () => {
-  const client = getClient()
-  const slugs = await client.fetch(postSlugsQuery)
+  const slugs = await getPosts()
 
   return {
     paths: slugs?.map(({ slug }) => `/news/${slug}`) || [],

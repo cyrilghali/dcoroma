@@ -5,24 +5,18 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import NewsCards from '@/components/NewsCards'
 import Title from '@/components/Title'
-import { readToken } from '~/lib/sanity.api'
 import { getPosts, type Post, postsQuery } from '~/lib/sanity.queries'
-import type { SharedPageProps } from '~/pages/_app'
 
-export const getStaticProps: GetStaticProps<
-  SharedPageProps & {
-    posts: Post[]
-  }
-> = async ({ draftMode = false }) => {
+export const getStaticProps: GetStaticProps<{
+  posts: Post[]
+}> = async () => {
   const posts = await getPosts()
 
   return {
     props: {
-      draftMode,
-      token: draftMode ? readToken : '',
       posts,
     },
-    revalidate: 60,
+    revalidate: 10,
   }
 }
 
