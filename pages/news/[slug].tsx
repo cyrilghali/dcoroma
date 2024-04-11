@@ -3,16 +3,15 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { useLiveQuery } from 'next-sanity/preview'
 
-import { readToken } from '~/lib/sanity.api'
-import { getClient } from '~/lib/sanity.client'
+import Header from '@/components/Header'
+import Title from '@/components/Title'
 import { urlForImage } from '~/lib/sanity.image'
 import {
   getPost,
+  getPosts,
   type Post,
   postBySlugQuery,
-  postSlugsQuery,
 } from '~/lib/sanity.queries'
-import type { SharedPageProps } from '~/pages/_app'
 import { formatDate } from '~/utils'
 
 interface Query {
@@ -20,13 +19,12 @@ interface Query {
 }
 
 export const getStaticProps: GetStaticProps<
-  SharedPageProps & {
+  {
     post: Post
   },
   Query
-> = async ({ draftMode = false, params = {} }) => {
-  const client = getClient(draftMode ? { token: readToken } : undefined)
-  const post = await getPost(client, params.slug)
+> = async ({ params = {} }) => {
+  const post = await getPost(params.slug)
 
   if (!post) {
     return {
@@ -36,10 +34,9 @@ export const getStaticProps: GetStaticProps<
 
   return {
     props: {
-      draftMode,
-      token: draftMode ? readToken : '',
       post,
     },
+    revalidate: 10,
   }
 }
 
@@ -51,36 +48,38 @@ export default function ProjectSlugRoute(
   })
 
   return (
-    <section className="post">
-      {post.mainImage ? (
-        <Image
-          className="post__cover"
-          src={
-            // @ts-ignore
-            urlForImage(post.mainImage).url()
-          }
-          height={231}
-          width={367}
-          alt=""
-        />
-      ) : (
-        <div className="post__cover--none" />
-      )}
-      <div className="post__container">
-        <h1 className="post__title">{post.title}</h1>
-        <p className="post__excerpt">{post.excerpt}</p>
-        <p className="post__date">{formatDate(post._createdAt)}</p>
-        <div className="post__content">
-          <PortableText value={post.body} />
+    <div>
+      <Header />
+      <Title title={post.title} />
+      <section className="w-full max-w-2xl mx-auto mt-8">
+        {post.mainImage ? (
+          <div className="relative h-64 w-full">
+            <Image
+              className="absolute h-full w-full object-cover"
+              src={urlForImage(post.mainImage)?.url() || ''}
+              layout="fill"
+              alt=""
+            />
+          </div>
+        ) : (
+          <></>
+        )}
+        <div className="mt-4 px-4 lg:px-0">
+          <p className="text-lg text-gray-700">{post.excerpt}</p>
+          <p className="text-sm text-gray-500 mt-2">
+            {formatDate(post._createdAt)}
+          </p>
+          <div className="mt-4 text-gray-800">
+            <PortableText value={post.body} />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
 export const getStaticPaths = async () => {
-  const client = getClient()
-  const slugs = await client.fetch(postSlugsQuery)
+  const slugs = await getPosts()
 
   return {
     paths: slugs?.map(({ slug }) => `/news/${slug}`) || [],
