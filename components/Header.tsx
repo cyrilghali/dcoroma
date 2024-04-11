@@ -7,6 +7,7 @@ import {
   HomeIcon,
   LocationMarkerIcon,
   MenuIcon,
+  NewspaperIcon,
   SupportIcon,
   XIcon,
 } from '@heroicons/react/outline'
@@ -26,6 +27,12 @@ const navigation = [
     href: '/library',
     icon: BookOpenIcon,
     dataUmamiEvent: 'click_library',
+  },
+  {
+    name: 'Notizie',
+    href: '/news',
+    icon: NewspaperIcon,
+    dataUmamiEvent: 'click_news',
   },
   {
     name: 'Chiese',
