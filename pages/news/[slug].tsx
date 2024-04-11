@@ -3,6 +3,8 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { useLiveQuery } from 'next-sanity/preview'
 
+import Header from '@/components/Header'
+import Title from '@/components/Title'
 import { urlForImage } from '~/lib/sanity.image'
 import {
   getPost,
@@ -34,6 +36,7 @@ export const getStaticProps: GetStaticProps<
     props: {
       post,
     },
+    revalidate: 10,
   }
 }
 
@@ -45,27 +48,33 @@ export default function ProjectSlugRoute(
   })
 
   return (
-    <section className="post">
-      {post.mainImage ? (
-        <Image
-          className="post__cover"
-          src={urlForImage(post.mainImage)?.url() || ''}
-          height={231}
-          width={367}
-          alt=""
-        />
-      ) : (
-        <div className="post__cover--none" />
-      )}
-      <div className="post__container">
-        <h1 className="post__title">{post.title}</h1>
-        <p className="post__excerpt">{post.excerpt}</p>
-        <p className="post__date">{formatDate(post._createdAt)}</p>
-        <div className="post__content">
-          <PortableText value={post.body} />
+    <div>
+      <Header />
+      <Title title={post.title} />
+      <section className="w-full max-w-2xl mx-auto mt-8">
+        {post.mainImage ? (
+          <div className="relative h-64 w-full">
+            <Image
+              className="absolute h-full w-full object-cover"
+              src={urlForImage(post.mainImage)?.url() || ''}
+              layout="fill"
+              alt=""
+            />
+          </div>
+        ) : (
+          <></>
+        )}
+        <div className="mt-4 px-4 lg:px-0">
+          <p className="text-lg text-gray-700">{post.excerpt}</p>
+          <p className="text-sm text-gray-500 mt-2">
+            {formatDate(post._createdAt)}
+          </p>
+          <div className="mt-4 text-gray-800">
+            <PortableText value={post.body} />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 

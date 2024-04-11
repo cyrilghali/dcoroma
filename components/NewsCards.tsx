@@ -1,14 +1,15 @@
 import Autoplay from 'embla-carousel-autoplay'
+import { chunk } from 'lodash'
 import Link from 'next/link'
+import { useMediaQuery } from 'react-responsive'
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel'
+
 import NewsletterForm from './NewsletterForm'
-import { chunk } from 'lodash'
-import { useMediaQuery } from 'react-responsive'
 export default function NewsCards({ articles }) {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' }) // Tailwind's sm breakpoint
   const chunkSize = isSmallScreen ? 1 : 4
@@ -63,7 +64,7 @@ export default function NewsCards({ articles }) {
                               {article.title}
                             </p>
                             <p className="mt-3 text-base text-gray-800">
-                              {article.title}
+                              {article.excerpt}
                             </p>
                           </div>
 
