@@ -9,7 +9,6 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel'
 
-import NewsletterForm from './NewsletterForm'
 export default function NewsCards({ articles }) {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' }) // Tailwind's sm breakpoint
   const chunkSize = isSmallScreen ? 1 : 4
@@ -26,7 +25,6 @@ export default function NewsCards({ articles }) {
             <p className="text-xl text-gray-800">
               Se desiderate ricevere le ultime notizie, registratevi qui sotto.
             </p>
-            <NewsletterForm />
           </div>
         </div>
         <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
