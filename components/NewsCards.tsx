@@ -11,7 +11,7 @@ import {
 
 export default function NewsCards({ articles }) {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' }) // Tailwind's sm breakpoint
-  const chunkSize = isSmallScreen ? 1 : 4
+  const chunkSize = isSmallScreen ? 2 : 4
   const articleGroups = chunk(articles, chunkSize) // Group articles into chunks of 4
 
   return (
