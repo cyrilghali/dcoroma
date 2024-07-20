@@ -29,12 +29,6 @@ const navigation = [
     dataUmamiEvent: 'click_library',
   },
   {
-    name: 'Notizie',
-    href: '/news',
-    icon: NewspaperIcon,
-    dataUmamiEvent: 'click_news',
-  },
-  {
     name: 'Chiese',
     href: '/churches',
     icon: LocationMarkerIcon,
