@@ -16,7 +16,7 @@ export default function Document() {
         />
         <script
           defer
-          src="https://analytics.eu.umami.is/script.js"
+          src="https://cloud.umami.is/script.js"
           data-website-id="3144784c-ff39-4ba4-90d6-1c4e945740c2"
         ></script>
       </Head>
